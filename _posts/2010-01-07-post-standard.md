@@ -1,8 +1,8 @@
 ---
-title: "Post: Standard"
+title: "Data Movement and Types of Networks"
 excerpt_separator: "<!--more-->"
 categories:
-  - Blog
+  - Project
 tags:
   - Post Formats
   - readability
