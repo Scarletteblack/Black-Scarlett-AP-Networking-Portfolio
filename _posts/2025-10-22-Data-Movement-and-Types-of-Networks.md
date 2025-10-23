@@ -1,18 +1,30 @@
 ---
 title: "Data Movement and Types of Networks"
-excerpt_separator: "<!--more-->"
+last_modified_at: 2025-10-22T22:20:30-22:35:00
 categories:
+  - AP Networking
   - Project
 tags:
-  - Post Formats
-  - readability
-  - standard
+  - LAN Components
 ---
 
-All children, except one, grow up. They soon know that they will grow up, and the way Wendy knew was this. One day when she was two years old she was playing in a garden, and she plucked another flower and ran with it to her mother. I suppose she must have looked rather delightful, for Mrs. Darling put her hand to her heart and cried, "Oh, why can't you remain like this for ever!" This was all that passed between them on the subject, but henceforth Wendy knew that she must grow up. You always know after you are two. Two is the beginning of the end.
+**Design and Planning**
+Here is an analogy to help conceptualize the Networking and the relationship between devices: 
+> First think of the Local Area Network (LAN) - The LAN is like a neighborhood
 
-Mrs. Darling first heard of Peter when she was tidying up her children's minds. It is the nightly custom of every good mother after her children are asleep to rummage in their minds and put things straight for next morning, repacking into their proper places the many articles that have wandered during the day.
+Photo9DataMovementandTypesofNetworks.jpg
 
+Photo10DataMovementandTypesofNetworks.jpg
+
+Photo11DataMovementandTypesofNetworks.jpg
+
+Photo12DataMovementandTypesofNetworks.jpg
+
+**Technical Development**
+
+**Test and Evaluation**
+
+**Reflection and Analysis**
 <!--more-->
 
 This post has a manual excerpt `<!--more-->` set after the second paragraph. The following YAML Front Matter has also be applied:
