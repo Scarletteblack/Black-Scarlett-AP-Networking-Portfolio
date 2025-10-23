@@ -13,13 +13,10 @@ tags:
 Here is an analogy to help conceptualize the Networking and the relationship between devices: 
 First think of the Local Area Network (LAN) - The LAN is like a neighborhood
 
-(/assets/images/Photo9DataMovementandTypesofNetworks.jpg)
-
-(/assets/images/Photo10DataMovementandTypesofNetworks.jpg)
-
-(/assets/images/Photo11DataMovementandTypesofNetworks.jpg)
-
-(/assets/images/Photo12DataMovementandTypesofNetworks.jpg)
+![Neighborhood diagram 1](/assets/images/Photo9DataMovementandTypesofNetworks.jpg)
+![Neighborhood diagram 2](/assets/images/Photo10DataMovementandTypesofNetworks.jpg)
+![Neighborhood diagram 3](/assets/images/Photo11DataMovementandTypesofNetworks.jpg)
+![Neighborhood diagram 4](/assets/images/Photo12DataMovementandTypesofNetworks.jpg)
 
 **Technical Development**
 
