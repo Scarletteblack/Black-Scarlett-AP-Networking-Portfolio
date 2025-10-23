@@ -23,3 +23,6 @@ First think of the Local Area Network (LAN) - The LAN is like a neighborhood
 **Test and Evaluation**
 
 **Reflection and Analysis**
+<!-- ...existing code... -->
+![Neighborhood diagram 1](/assets/images/Photo9DataMovementandTypesofNetworks.jpg)
+<!-- ...existing code... -->
