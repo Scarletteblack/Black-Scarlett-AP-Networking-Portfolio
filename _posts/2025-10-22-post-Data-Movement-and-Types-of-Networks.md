@@ -8,15 +8,16 @@ tags:
   - LAN Components
 ---
 
-**Design and Planning**
-
+<h1>Design and Planning</h1>
+<p>**Networking Analogy:** 
 Here is an analogy to help conceptualize the Networking and the relationship between devices: 
 First think of the Local Area Network (LAN) - The LAN is like a neighborhood
+<p align="center"><img src="(/assets/images/Photo9DataMovementandTypesofNetworks.jpg)" /></p>
+align="center"><img src="(/assets/images/Photo10DataMovementandTypesofNetworks.jpg)"/></p>
+align="center"><img src="(/assets/images/Photo11DataMovementandTypesofNetworks.jpg)"/></p>
+align="center"><img src="(/assets/images/Photo12DataMovementandTypesofNetworks.jpg)"/></p></p>
 
-![Neighborhood diagram 1](/assets/images/Photo9DataMovementandTypesofNetworks.jpg)
-![Neighborhood diagram 2](/assets/images/Photo10DataMovementandTypesofNetworks.jpg)
-![Neighborhood diagram 3](/assets/images/Photo11DataMovementandTypesofNetworks.jpg)
-![Neighborhood diagram 4](/assets/images/Photo12DataMovementandTypesofNetworks.jpg)
+**Numbering Systems**
 
 **Technical Development**
 
