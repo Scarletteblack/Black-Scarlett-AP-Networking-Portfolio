@@ -9,16 +9,17 @@ tags:
 ---
 
 **Design and Planning**
+
 Here is an analogy to help conceptualize the Networking and the relationship between devices: 
-> First think of the Local Area Network (LAN) - The LAN is like a neighborhood
+First think of the Local Area Network (LAN) - The LAN is like a neighborhood
 
-Photo9DataMovementandTypesofNetworks.jpg
+(/assets/images/Photo9DataMovementandTypesofNetworks.jpg)
 
-Photo10DataMovementandTypesofNetworks.jpg
+(/assets/images/Photo10DataMovementandTypesofNetworks.jpg)
 
-Photo11DataMovementandTypesofNetworks.jpg
+(/assets/images/Photo11DataMovementandTypesofNetworks.jpg)
 
-Photo12DataMovementandTypesofNetworks.jpg
+(/assets/images/Photo12DataMovementandTypesofNetworks.jpg)
 
 **Technical Development**
 
