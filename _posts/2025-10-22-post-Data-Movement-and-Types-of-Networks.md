@@ -17,6 +17,11 @@ align="center"> <img src="(/assets/images/Photo10DataMovementandTypesofNetworks.
 align="center"> <img src="(/assets/images/Photo11DataMovementandTypesofNetworks.jpg)"/></p>
 align="center"> <img src="(/assets/images/Photo12DataMovementandTypesofNetworks.jpg)"/></p></p>
 
+![text if the image fails to load](/assets/images/Photo12DataMovementandTypesofNetworks.jpg)
+
+[logo]: (/assets/images/Photo12DataMovementandTypesofNetworks.jpg) "Hover me"
+![error text][logo]
+
 **Numbering Systems**
 
 **Technical Development**
