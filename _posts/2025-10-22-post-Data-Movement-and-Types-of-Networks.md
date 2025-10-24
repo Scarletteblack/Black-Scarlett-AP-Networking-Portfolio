@@ -9,17 +9,31 @@ tags:
 ---
 
 # Design and Planning
-## Networking Analogy:
-<p>Here is an analogy to help conceptualize the Networking and the relationship between devices: 
-First think of the Local Area Network (LAN) - The LAN is like a neighborhood
-<p> align="center"> <img src="(/assets/images/Photo9DataMovementandTypesofNetworks.jpg)" /></p>
-align="center"> <img src="(/assets/images/Photo10DataMovementandTypesofNetworks.jpg)"/></p>
-align="center"> <img src="(/assets/images/Photo11DataMovementandTypesofNetworks.jpg)"/></p>
-align="center"> <img src="(/assets/images/Photo12DataMovementandTypesofNetworks.jpg)"/></p></p>
 
-![text if the image fails to load](/assets/images/Photo12DataMovementandTypesofNetworks.jpg)
+## Networking Analogy
 
-[logo]: (/assets/images/Photo12DataMovementandTypesofNetworks.jpg) "Hover me"
+Here is an analogy to help conceptualize the Networking and the relationship between devices:  
+First, think of the Local Area Network (LAN) — the LAN is like a neighborhood.
+
+<palign="center">
+  <img src="/assets/images/Photo9DataMovementandTypesofNetworks.jpg" alt="Network analogy 1" width="400" />
+</p>
+
+<palign="center">
+  <img src="/assets/images/Photo10DataMovementandTypesofNetworks.jpg" alt="Network analogy 2" width="400" />
+</p>
+
+<palign="center">
+  <img src="/assets/images/Photo11DataMovementandTypesofNetworks.jpg" alt="Network analogy 3" width="400" />
+</p>
+
+<palign="center">
+  <img src="/assets/images/Photo12DataMovementandTypesofNetworks.jpg" alt="Network analogy 4" width="400" />
+</p>
+
+![If image fails to load](/assets/images/Photo12DataMovementandTypesofNetworks.jpg)
+
+[logo]: /assets/images/Photo12DataMovementandTypesofNetworks.jpg "Hover me"
 ![error text][logo]
 
 **Numbering Systems**
