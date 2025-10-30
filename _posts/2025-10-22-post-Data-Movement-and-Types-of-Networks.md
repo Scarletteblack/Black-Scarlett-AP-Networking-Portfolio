@@ -24,7 +24,9 @@ First, think of the Local Area Network (LAN) — the LAN is like a neighborhood.
 
 
 **Numbering Systems**
-
+![Data Movement and Types of Networks](assets/images/Photo10DataMovementandTypesofNetworks.jpg)
+![Data Movement and Types of Networks](assets/images/Photo11DataMovementandTypesofNetworks.jpg)
+![Data Movement and Types of Networks](assets/images/Photo12DataMovementandTypesofNetworks.jpg)
 **Technical Development**
 
 **Test and Evaluation**
