@@ -73,8 +73,7 @@ footer:
       icon: "fab fa-fw fa-github"
       url: "https://github.com/"
 
-# this is a test 
-## i hope this appears
+
 defaults:
   # _posts
   - scope:
