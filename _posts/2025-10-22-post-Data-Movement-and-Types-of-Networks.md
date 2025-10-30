@@ -31,4 +31,3 @@ First, think of the Local Area Network (LAN) — the LAN is like a neighborhood.
 
 **Reflection and Analysis**
 
-!(/assets/images/Photo9DataMovementandTypesofNetworks.jpg)
