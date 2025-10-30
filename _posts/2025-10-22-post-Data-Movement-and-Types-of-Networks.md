@@ -15,10 +15,10 @@ tags:
 Here is an analogy to help conceptualize the Networking and the relationship between devices:  
 First, think of the Local Area Network (LAN) — the LAN is like a neighborhood.
 
-![Alt text](/Documents/GitHub/Black-Scarlett-AP-Networking-Portfolio/assets/images/Photo9DataMovementandTypesofNetworks.jpg)
-![Alt text](assets/images/Photo10DataMovementandTypesofNetworks.jpg)
-![Alt text](assets/images/Photo11DataMovementandTypesofNetworks.jpg)
-![Alt text](assets/images/Photo12DataMovementandTypesofNetworks.jpg)
+![Data Movement and Types of Networks](/Documents/GitHub/Black-Scarlett-AP-Networking-Portfolio/assets/images/Photo9DataMovementandTypesofNetworks.jpg)
+![Data Movement and Types of Networks](assets/images/Photo10DataMovementandTypesofNetworks.jpg)
+![Data Movement and Types of Networks](assets/images/Photo11DataMovementandTypesofNetworks.jpg)
+![Data Movement and Types of Networks](assets/images/Photo12DataMovementandTypesofNetworks.jpg)
 
 
 **Numbering Systems**
