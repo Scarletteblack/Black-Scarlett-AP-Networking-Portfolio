@@ -30,4 +30,12 @@ computer?
 computer behind another device?
 4. Why might an organization choose Bridged mode instead of Shared (NAT) mode?
 5. What security or management challenges could come with using Bridged mode?
+---
+
+### Shared Mode VS Bridged Mode
+
+| Mode | Internal (Private) IP | External (Public) IP | External (Public) IP |
+| :------------------- | :----------: | ----------: | ----------: |
+| Shared           | 192.168.64.2/24      | MySQL       | MySQL       |
+| Bridged              | Express      | MongoDB     | MySQL       |
 
