@@ -34,8 +34,8 @@ computer behind another device?
 
 ### Shared Mode VS Bridged Mode
 
-| Mode | Internal (Private) IP | External (Public) IP | External (Public) IP |
+| Mode | Internal (Private) IP | External (Public) IP | Notes |
 | :------------------- | :----------: | ----------: | ----------: |
-| Shared           | 192.168.64.2/24      | MySQL       | MySQL       |
-| Bridged              | Express      | MongoDB     | MySQL       |
+| Shared           | 192.168.64.2/24      | 173.95.44.210       |        |
+| Bridged              |       |      |        |
 
