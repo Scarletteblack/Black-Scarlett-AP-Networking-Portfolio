@@ -7,7 +7,7 @@ last_modified_at: 2025-11-04T22:20:30-22:35:00
 ## Design and Planning
 
 ### Shared Mode 
-In Shared mode the **internal** IP address was: inet 192.168.64.2/24
+In Shared mode the **internal** IP address was: 192.168.64.2/24
 
 **External** (public) IP address: 
 <img width="1178" height="338" alt="shared-mode0  " src="https://github.com/user-attachments/assets/1bedb508-60c0-4cc4-9f2e-7c86d550285a" />
@@ -23,7 +23,7 @@ computer?
 --- 
 ### Bridged Mode
 
-In Bridged mode the **internal** IP address was: inet 192.168.64.2/24
+In Bridged mode the **internal** IP address was: 10.32.1.32/23
 
 **External** (public) IP address: 
 <img width="1178" height="338" alt="shared-mode0  " src="https://github.com/user-attachments/assets/1bedb508-60c0-4cc4-9f2e-7c86d550285a" />
@@ -39,8 +39,8 @@ computer behind another device?
 
 ### Shared Mode VS Bridged Mode
 
-| Mode | Internal (Private) IP | External (Public) IP | Notes |
-| :------------------- | :----------: | ----------: | ----------: |
-| Shared           | 192.168.64.2/24      | 173.95.44.210       |        |
-| Bridged              |       |      |        |
-
+| Mode | Internal (Private) IP | External (Public) IP |
+| :------------------- | :----------: | ----------: |
+| Shared           | 192.168.64.2/24      | 173.95.44.210       |
+| Bridged              |  10.32.1.32/23     |  173.95.44.210    |
+| Notes              | Both private IP Addresses| Same |
