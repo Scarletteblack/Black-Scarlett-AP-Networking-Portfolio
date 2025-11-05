@@ -23,6 +23,10 @@ computer?
 --- 
 ### Bridged Mode
 
+In Bridged mode the **internal** IP address was: inet 192.168.64.2/24
+
+**External** (public) IP address: 
+
 #### Reflection - Bridged Mode
 1. How did your internal IP address change when you switched to Bridged mode?
 2. Did your external IP address change or remain the same?
