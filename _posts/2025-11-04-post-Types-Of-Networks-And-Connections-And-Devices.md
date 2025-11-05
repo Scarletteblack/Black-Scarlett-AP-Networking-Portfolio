@@ -71,28 +71,11 @@ lab environments?
 
 ---
 
-Objectives:
-• Explain common topologies: star, bus, ring, mesh, hybrid.
-• Choose a topology that balances cost, reliability, and user needs.
-What Is a Network Topology?
-A network topology is the way that computers, devices, and other pieces of technology are
-arranged and connected within a network. It’s like a map or blueprint that shows how data
-travels from one device to another.
+**Analogy**
 Imagine a group of friends passing notes in a classroom. The way they choose to pass the notes
 — in a circle, in a line, or everyone handing notes to one central person — represents different
 network topologies. Each method affects how quickly messages travel, how easy it is to add
 more friends, and what happens if someone stops passing notes.
-Physical vs. Logical Topology
-There are two main ways to think about topology:
-1. Physical topology
-• This shows the actual layout — where cables, computers, routers, and switches
-are placed.
-• Example: A diagram showing wires connecting each computer to a central switch.
-2. Logical topology
-• This shows how data actually moves through the network, which might be
-different from the physical setup.
-• Example: Even if computers look like they’re connected in a star shape, the data
-might still travel in a ring pattern.
 
 How Devices Connect in a Network
 Every network includes devices that either send, receive, or direct data. Here’s how they connect
@@ -107,20 +90,8 @@ o Access Point: Allows wireless devices to connect using Wi-Fi.
 • Cables or Wireless Connections: The “roads” that data travels along.
 o Examples include Ethernet cables, fiber optic cables, or radio waves (for Wi-Fi).
 
-When data travels, it moves in packets — small chunks of information that include details about
-where they’re coming from and where they’re going. The topology determines which path those
-packets take and how efficiently they reach their destination.
-Why Network Topology Matters
-The topology you choose affects how well a network performs:
-• Speed: Some topologies allow data to move faster by reducing congestion.
-• Cost: More connections mean more cables and hardware — which can get expensive.
-• Reliability: Some topologies can keep working even if one connection fails.
-• Scalability: Certain layouts make it easier to add more devices later.
-In Short
-A network topology is like a road map for your data.
-It shows how devices are connected and how information travels from one point to another.
-Choosing the right topology helps ensure that the network is fast, reliable, and easy to
-maintain.
+
+
 Part 1: Digital Drawing Activity
 Instructions:
 1. Create one labeled drawing for each topology below.
