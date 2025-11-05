@@ -157,66 +157,8 @@ Write one complete, well-structured paragraph that answers the following:
 | Topography Type | Description | Sketch |
 | :------------------- | :----------: | ----------: |
 | Star Topology |  • One central switch or hub in the middle • All computers connect to that central point • Example label: “Central Switch” in the middle with arrows to each “Computer" • Common use: Office networks and home Wi-Fi routers.|        |
-| Bridged              |  10.32.1.32/23     |  173.95.44.210    |
-| Notes              | Both private IP Addresses| Same |
+| Bus Topography | • A single straight line (“backbone cable”) with all computers branching off • Add short perpendicular lines for each device • Common use: Early Ethernet networks (now outdated)|   |
+| Ring Topography |• Devices form a circle with connections between neighbors • Data travels one way (or both in dual-ring) •Common use: Some legacy fiber networks and token ring systems |  |
+| Mesh Topography |• Every device connects to multiple others (use 4–5 devices for clarity) • Show redundancy — if one path breaks, another can still carry data • Common use: Data centers and IoT or wireless mesh networks |  |
+| Hybrid Topography |• Combine two or more types (for example, multiple Star networks connected in a Bus layout) • Common use: Large organizations with multiple departments or floors |  |
 
- • One central switch or hub
-
-in the middle.
-• All computers connect to
-that central point.
-• Example label: “Central
-Switch” in the middle with
-arrows to each
-“Computer.”
-• Common use: Office
-networks and home Wi-Fi
-routers.
-
-Bus
-Topography
-
-• A single straight line
-(“backbone cable”) with all
-computers branching off.
-• Add short perpendicular
-lines for each device.
-• Common use: Early
-Ethernet networks (now
-outdated).
-
-Ring
-Topography
-
-• Devices form a circle with
-connections between
-neighbors.
-• Data travels one way (or
-both in dual-ring).
-• Common use: Some
-legacy fiber networks and
-token ring systems.
-
-Mesh
-Topography
-
-• Every device connects to
-multiple others (use 4–5
-devices for clarity).
-• Show redundancy — if one
-path breaks, another can
-still carry data.
-• Common use: Data
-centers and IoT or wireless
-mesh networks.
-
-Hybrid
-Topography
-
-• Combine two or more
-types (for example,
-multiple Star networks
-connected in a Bus layout).
-• Common use: Large
-organizations with multiple
-departments or floors.
