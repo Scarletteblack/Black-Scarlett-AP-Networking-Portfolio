@@ -156,11 +156,7 @@ Write one complete, well-structured paragraph that answers the following:
 
 | Topography Type | Description | Sketch |
 | :------------------- | :----------: | ----------: |
-| Star Topology |  • One central switch or hub in the middle.
-• All computers connect to that central point.
-• Example label: “Central Switch” in the middle with
-arrows to each “Computer.”
-• Common use: Office networks and home Wi-Fi routers.|        |
+| Star Topology |  • One central switch or hub in the middle • All computers connect to that central point • Example label: “Central Switch” in the middle with arrows to each “Computer" • Common use: Office networks and home Wi-Fi routers.|        |
 | Bridged              |  10.32.1.32/23     |  173.95.44.210    |
 | Notes              | Both private IP Addresses| Same |
 
