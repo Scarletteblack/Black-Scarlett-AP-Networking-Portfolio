@@ -42,6 +42,19 @@ Next, two MACs were connected to send and receive messages. The receiving MAC us
 
 <img width="295" height="30" alt=" connecting" src="https://github.com/user-attachments/assets/f6b222e5-28cb-4eb1-a8ea-b98ee652ba44" />
 
+### Reflection
+1. What information did ifconfig or ip a show about your network? 
+It displays details about the computers network interface. Things like IP Address, MAC Address, and Broadcast Address. 
+
+2. What did the ping results tell you about your network connection? 
+By using the ping command and receiving a successful reply, I was able to see that the network was working 
+
+3. What role did TCP play when using Netcat? 
+TCP established a reliable connection between two hosts and simplified it. 
+
+4. Which OSI Layers were used during this entire activity? 
+All of them, but mainly the Transport layer.
+
 
 ## **Test and Evaluation**
 
