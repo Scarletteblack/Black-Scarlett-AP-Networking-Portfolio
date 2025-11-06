@@ -27,12 +27,15 @@ This diagram is corrected and from the class:
 
 ## **Technical Development**
 
-Using the ifconfig command the IP Adress was identified as **192.168.64.2** as shown below:
+Using the ifconfig command, the IP Address was identified as **192.168.64.2** as shown below:
 ![Photo1](https://github.com/user-attachments/assets/b28b730d-5997-4fe3-9587-cb82e6fe5f67)
+
 **Switch to MAC terminal**
-Then using the **ping** command connectivity was checked and displayed a successful connection:
+
+Then, using the **ping** command, connectivity was checked, and a successful connection was established:
 <img width="480" height="290" alt="Untitled" src="https://github.com/user-attachments/assets/726a92a1-aedb-401c-8e87-cbc6bf2013ce" />
-Next, the ports were checked using **netstat -a** and a few of the active ports are shown below:
+
+Next, the ports were checked using **netstat -a**, and a few of the active ports are shown below:
 <img width="408" height="342" alt="active" src="https://github.com/user-attachments/assets/a3ba0a1e-7aa8-423b-98ec-e87f5b87c5b1" />
 
 Next 
