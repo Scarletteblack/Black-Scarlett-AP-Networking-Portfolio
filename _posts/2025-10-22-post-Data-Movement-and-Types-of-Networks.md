@@ -43,20 +43,38 @@ Next, two MACs were connected to send and receive messages. The receiving MAC us
 <img width="295" height="30" alt=" connecting" src="https://github.com/user-attachments/assets/f6b222e5-28cb-4eb1-a8ea-b98ee652ba44" />
 
 ### Reflection
-1. What information did ifconfig or ip a show about your network? 
-It displays details about the computers network interface. Things like IP Address, MAC Address, and Broadcast Address. 
-
-2. What did the ping results tell you about your network connection? 
-By using the ping command and receiving a successful reply, I was able to see that the network was working 
-
-3. What role did TCP play when using Netcat? 
-TCP established a reliable connection between two hosts and simplified it. 
-
-4. Which OSI Layers were used during this entire activity? 
-All of them, but mainly the Transport layer.
-
+The ifconfig displays details about the computer's network interface. Information like IP Address, MAC Address, and Broadcast Address. By using the ping command and receiving a successful reply, it was determined that the network was working. TCP established a reliable connection between two hosts and simplified it. All OSL layers were present, but mainly the **Transport layer**.
 
 ## **Test and Evaluation**
+
+Ping:
+![Photo3](https://github.com/user-attachments/assets/99005a6f-3780-460b-94b9-4d344663a5cf)
+* 8.8.8.8
+![Photo2](https://github.com/user-attachments/assets/612eec40-cf83-4fff-ba35-4033a6f1e00f)
+* google
+
+
+Traceroute: 
+![Photo5](https://github.com/user-attachments/assets/734c36b1-d5c3-4e5b-8f7f-1a3e634d4600)
+
+Latency Hops: the delay introduced when a data packet passes through a single network device
+
+### Binary and Hexadecimal
+
+Notes on denary, binary, and hexadecimal conversions:  
+![binary-denary-hex-notes](https://github.com/user-attachments/assets/bcf32a0b-dd3a-42f1-be9d-17cba6d9c013)
+
+Practice conversions: 
+![binary-denary-hex-practice](https://github.com/user-attachments/assets/da26e74a-e1bb-4851-b8bf-018877471aea)
+
+
+**Converting in Ubuntu VM**
+![Image 10-28-25 at 10 05 AM](https://github.com/user-attachments/assets/f4ed2115-3582-4923-939c-3d9d0f4921c0)
+![Image 10-28-25 at 10 09 AM (1)](https://github.com/user-attachments/assets/80475447-d186-47e4-9e8a-c51232b877ec)
+
+###### An additional way of converting hexadecimal to denary: 
+Take the first part of the hexadecimal number and multiply it by 16. This is because hexadecimal is base 16. Then the second number is just multiplied by 1. Then add the two values to find the number in denary. 
+The reverse would be to see how many times 16 goes into the number in denary, that number becomes the first hexadecimal number and the remainder is the second part.
 
 ## **Reflection and Analysis**
 
