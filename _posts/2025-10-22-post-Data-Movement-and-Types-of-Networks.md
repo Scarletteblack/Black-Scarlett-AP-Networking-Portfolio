@@ -1,6 +1,6 @@
 ---
 title: "Data Movement and Types of Networks"
-last_modified_at: 2025-10-22T22:20:30-22:35:00
+last_modified_at: 2025-11-06
 
 ---
 
@@ -38,7 +38,8 @@ Then, using the **ping** command, connectivity was checked, and a successful con
 Next, the ports were checked using **netstat -a**, and a few of the active ports are shown below:
 <img width="408" height="342" alt="active" src="https://github.com/user-attachments/assets/a3ba0a1e-7aa8-423b-98ec-e87f5b87c5b1" />
 
-Next 
+Next, two MACs were connected to send and receive messages. The receiving MAC used the command **nc -1 4444**, meaning it was open to receive messages. The sender then used the command **nc <receiving_IP> 4444**, inserting the receiving MAC IP address to connect to it. The typing 'hi' from the sending MAC appeared on the receiving. 
+<img width="295" height="30" alt=" connecting" src="https://github.com/user-attachments/assets/f6b222e5-28cb-4eb1-a8ea-b98ee652ba44" />
 
 
 ## **Test and Evaluation**
