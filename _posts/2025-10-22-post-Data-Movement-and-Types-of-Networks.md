@@ -74,6 +74,7 @@ Practice conversions:
 **Converting in Ubuntu VM**
 
 ipcalc, as seen below, first displays the IP address in denary (blue). It is followed by the IP address in binary (orange/brown)
+
 ![Image 10-28-25 at 10 05 AM](https://github.com/user-attachments/assets/f4ed2115-3582-4923-939c-3d9d0f4921c0)
 
 printf, as seen below, displays the IP address in hexadecimal after inputting it in denary.
