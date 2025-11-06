@@ -133,3 +133,8 @@ Write one complete, well-structured paragraph that answers the following:
 | Mesh Topography |• Every device connects to multiple others (use 4–5 devices for clarity) • Show redundancy — if one path breaks, another can still carry data • Common use: Data centers and IoT or wireless mesh networks |  |
 | Hybrid Topography |• Combine two or more types (for example, multiple Star networks connected in a Bus layout) • Common use: Large organizations with multiple departments or floors |  |
 
+
+### The Wire Order
+
+Using the crimping tool to strip the wire: 
+![strippedwire](https://github.com/user-attachments/assets/3fd808f0-dad8-46e7-ae12-5cdfae4916d1)
