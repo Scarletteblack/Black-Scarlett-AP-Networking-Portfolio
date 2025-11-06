@@ -50,9 +50,10 @@ The ifconfig displays details about the computer's network interface. Informatio
 Ping:
 The ping command sends small data packets to an IP address and measures how long it takes to get a response, checking connectivity.
 ![Photo3](https://github.com/user-attachments/assets/99005a6f-3780-460b-94b9-4d344663a5cf)
-* The command above (ping 8.8.8.8) only tests the connectivity
+The command above (ping 8.8.8.8) only tests the connectivity
+
 ![Photo2](https://github.com/user-attachments/assets/612eec40-cf83-4fff-ba35-4033a6f1e00f)
-* This command, however, (ping google.com) tests both connectivity and DNS
+This command, however, (ping google.com) tests both connectivity and DNS
 
 
 Traceroute: 
@@ -71,7 +72,11 @@ Practice conversions:
 
 
 **Converting in Ubuntu VM**
+
+ipcalc, as seen below, first displays the IP address in denary (blue). It is followed by the IP address in binary (orange/brown)
 ![Image 10-28-25 at 10 05 AM](https://github.com/user-attachments/assets/f4ed2115-3582-4923-939c-3d9d0f4921c0)
+
+printf, as seen below, displays the IP address in hexadecimal after inputting it in denary.
 ![Image 10-28-25 at 10 09 AM (1)](https://github.com/user-attachments/assets/80475447-d186-47e4-9e8a-c51232b877ec)
 
 ###### An additional way of converting hexadecimal to denary: 
