@@ -48,13 +48,15 @@ The ifconfig displays details about the computer's network interface. Informatio
 ## **Test and Evaluation**
 
 Ping:
+The ping command sends small data packets to an IP address and measures how long it takes to get a response, checking connectivity.
 ![Photo3](https://github.com/user-attachments/assets/99005a6f-3780-460b-94b9-4d344663a5cf)
-* 8.8.8.8
+* The command above (ping 8.8.8.8) only tests the connectivity
 ![Photo2](https://github.com/user-attachments/assets/612eec40-cf83-4fff-ba35-4033a6f1e00f)
-* google
+* This command, however, (ping google.com) tests both connectivity and DNS
 
 
 Traceroute: 
+The traceroute command follows the path data takes and shows all of the hops.
 ![Photo5](https://github.com/user-attachments/assets/734c36b1-d5c3-4e5b-8f7f-1a3e634d4600)
 
 Latency Hops: the delay introduced when a data packet passes through a single network device
