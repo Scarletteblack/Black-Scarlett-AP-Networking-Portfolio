@@ -4,10 +4,10 @@ last_modified_at: 2025-11-04T22:20:30-22:35:00
 
 ---
 
-## Design and Planning
+# Design and Planning
 
 
-
+## Topography Activity
 ### Shared Mode 
 In Shared mode the **internal** IP address was: 192.168.64.2/24
 <img width="719" height="356" alt="Image 11-5-25 at 10 25 AM" src="https://github.com/user-attachments/assets/3b97b973-2472-4cf0-bae1-aae3f429f0c6" />
@@ -92,44 +92,66 @@ o Examples include Ethernet cables, fiber optic cables, or radio waves (for Wi-F
 
 
 
-Part 1: Digital Drawing Activity
-Instructions:
-1. Create one labeled drawing for each topology below.
-Each drawing should include:
-• 3 computers or laptops, 1 networking device(servers, routers, or access point) (use
-simple icons or shapes) and 1 server printer or IoT device (for example, a smart
-TV, NAS, or phone).
-• Lines showing how devices are connected.
-• A label naming each device type and the topology name.
-• Add the drawings to the right-hand column on the next two pages. You will then
-add the screenshots to your digital portfolio. Neatness and Clarity
+
 
 • Use different colors for cables, devices, and labels.
 • Ensure text is legible and aligned.
 • Organize each topology on its own section of the page.
 • Your diagrams should look professional and technical, not rough sketches.
-Digital Portfolio Submission
-1. Take screenshots of each completed topology drawing. Do not just take a picture of
-your entire table—each drawing needs to have its own screenshot.
-2. Upload the screenshots to your digital portfolio under Lesson 2: Network Topologies.
-3. Title each image clearly (e.g., Star Topology, Bus Topology, etc.).
 
-4. Below your images, write a well-written reflection paragraph that answers all
-questions below.
-Reflection Paragraph (on digital portfolio)
-Write one complete, well-structured paragraph that answers the following:
-1. Which topology would be easiest to set up for a small business, and why?
-2. Which topology would be the most reliable if one connection fails?
-3. Which topology would be most expensive to implement, and why?
-4. Which topology do you think your school uses? Provide reasoning.
-5. How does the physical layout of a topology affect speed and reliability?
 
+**Reflection**
+A star topology would be the easiest to set up for a business because all devices connect to a central switch or hub. This makes it simple to add or remove devices and easy to manage. A mesh topology is the most reliable if a connection fails because every device is connected to multiple other devices. If one cable or connection fails, the data can still travel through another path. The most expensive topology is the mesh topology because every device is connected to every other device, requiring more cables and hardware than other topologies. I think our school uses a hybrid or star topology, because many computers in different rooms probably connect back to central switches and servers, making it easier to manage and repair. The physical layout of a topology affects speed and reliability because shorter and more direct connections allow data to travel faster, while more intricate layouts make it easier to avoid collisions and reduce delays.
+
+---
 
 | Topography Type | Description | Sketch |
 | :------------------- | :----------: | ----------: |
-| Star Topology |  • One central switch or hub in the middle • All computers connect to that central point • Example label: “Central Switch” in the middle with arrows to each “Computer" • Common use: Office networks and home Wi-Fi routers.|        |
+| Star Topology |  • One central switch or hub in the middle • All computers connect to that central point • Example label: “Central Switch” in the middle with arrows to each “Computer" • Common use: Office networks and home Wi-Fi routers.|![startopology](https://github.com/user-attachments/assets/5fc69c1d-425a-489b-875a-5d6360d44894)|
 | Bus Topography | • A single straight line (“backbone cable”) with all computers branching off • Add short perpendicular lines for each device • Common use: Early Ethernet networks (now outdated)|   |
 | Ring Topography |• Devices form a circle with connections between neighbors • Data travels one way (or both in dual-ring) •Common use: Some legacy fiber networks and token ring systems |  |
 | Mesh Topography |• Every device connects to multiple others (use 4–5 devices for clarity) • Show redundancy — if one path breaks, another can still carry data • Common use: Data centers and IoT or wireless mesh networks |  |
 | Hybrid Topography |• Combine two or more types (for example, multiple Star networks connected in a Bus layout) • Common use: Large organizations with multiple departments or floors |  |
 
+---
+
+## Cable Constructing and Testing
+### Making the Cable (T568B)
+
+**T568B cables are more common in commercial installations**
+
+Using the crimping tool to strip the wire: 
+![strippedwire](https://github.com/user-attachments/assets/3fd808f0-dad8-46e7-ae12-5cdfae4916d1)
+
+This is a photo of the cables after being split and separated from one another:
+![splitandseparatedwires](https://github.com/user-attachments/assets/a0356ec8-bb84-4bfa-a99d-aaca4f8cf9ab)
+
+This displays the wires straightened and ordered:
+![orderedwires](https://github.com/user-attachments/assets/3f9fc3fc-18a1-496f-a963-d5c133e6af0a)
+T568B wire order: White/Orange, Orange, White/Green, Blue, White/Blue, Green, White/Brown, Brown
+
+Then the wires were inserted into the RJ45 connector:
+
+For ease, the wires were left long and inserted individually and then cut once all were in the correct order.
+
+RJ45 connector after crimping: 
+
+The same process is repeated for the other side of the cable; both finished sides of the cable are pictured below: 
+
+### Stripping Demonstration Video
+
+### Testing the Cable
+
+### Cable Testing Demonstration
+
+### T568A Cable 
+
+**T568A cables perform basically the same electrically as the T568B and are commonly used in government and residential installations in the U.S**
+The order for T568A cables is slightly different: White/Green, Green, White/Orange, Blue, White/Blue, Orange, White/Brown, Brown
+
+### Comparison and Reflection
+
+Below are the side-by-side labeled cables. On the left is the T568A and on the right is the T568B.
+
+**Reflection**
+The most challenging step in building the cable was inserting the wires into the RJ45 connector in the correct order. Ensuring that all of the wires are in the correct order is  important because if they are not, the signal won’t go to the right place and the cable will not work. This connects to the Physical Layer of the OSI Model because it is the layer responsible for all physical elements, such as cables. If a cable is made incorrectly and not tested, it would mess up the rest of the network and due to not testing the cable, it may seem like there is an issue elsewhere in the network. Labeling the cable and using tools like crimpers and testers mimics the real processes that people in the industry must go through to stay organized and make sure everything works correctly.
