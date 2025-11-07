@@ -86,3 +86,5 @@ The reverse would be to see how many times 16 goes into the number in denary, th
 
 ## **Reflection and Analysis**
 
+This project taught about Local Area Network (LAN) connections and communication, using analogies like neighborhoods. The OSI and TCP/IP models helped teach how data travels in layers, from the physical signals all the way up to the applications we use every day. When using the Ubuntu VM, commands like ifconfig, ping, netstat, and nc are used to observe how devices can be identified, test connectivity, and exchange data across the network. Seeing the ‘hi’ message appear between two MACs demonstrated how TCP ensures reliable communication between hosts. The ping and traceroute commands also revealed the path and latency of data packets, showing how real networks experience hops. Converting IP addresses between binary, denary, and hexadecimal taught how computers process and represent data. Together, these skills connected theory with practice and showed how each OSI layer plays a role in transmitting information. 
+
