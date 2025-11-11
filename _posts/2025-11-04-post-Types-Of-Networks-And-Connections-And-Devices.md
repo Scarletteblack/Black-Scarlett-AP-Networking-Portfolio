@@ -142,7 +142,7 @@ The same process is repeated for the other side of the cable; both finished side
 ### Testing the Cable
 
 ### Cable Testing Demonstration
-
+/Users/ScarlettLatin/Documents/GitHub/Black-Scarlett-AP-Networking-Portfolio/assets/TypesofNetworks&ConnectionsandDevices/IMG_2428.MOV 
 ### T568A Cable 
 
 **T568A cables perform basically the same electrically as the T568B and are commonly used in government and residential installations in the U.S**
@@ -151,6 +151,9 @@ The order for T568A cables is slightly different: White/Green, Green, White/Oran
 ### Comparison and Reflection
 
 Below are the side-by-side labeled cables. On the left is the T568A and on the right is the T568B.
+
+![labeledback](https://github.com/user-attachments/assets/ead2d765-9242-445c-87ae-77789954f828)
+![labeledfront](https://github.com/user-attachments/assets/d0c86b44-e72c-49b5-8dc9-0189e667e158)
 
 **Reflection**
 The most challenging step in building the cable was inserting the wires into the RJ45 connector in the correct order. Ensuring that all of the wires are in the correct order is  important because if they are not, the signal won’t go to the right place and the cable will not work. This connects to the Physical Layer of the OSI Model because it is the layer responsible for all physical elements, such as cables. If a cable is made incorrectly and not tested, it would mess up the rest of the network and due to not testing the cable, it may seem like there is an issue elsewhere in the network. Labeling the cable and using tools like crimpers and testers mimics the real processes that people in the industry must go through to stay organized and make sure everything works correctly.
