@@ -115,6 +115,7 @@ A star topology would be the easiest to set up for a business because all device
 ---
 
 ## Cable Constructing and Testing
+
 ### Making the Cable (T568B)
 
 **T568B cables are more common in commercial installations**
@@ -130,19 +131,23 @@ This displays the wires straightened and ordered:
 T568B wire order: White/Orange, Orange, White/Green, Blue, White/Blue, Green, White/Brown, Brown
 
 Then the wires were inserted into the RJ45 connector:
+![beforecrimpingb](https://github.com/user-attachments/assets/ade0de35-eef7-41ce-a80e-0078b8279284)
 
 For ease, the wires were left long and inserted individually and then cut once all were in the correct order.
 
 RJ45 connector after crimping: 
+![finishedb](https://github.com/user-attachments/assets/f257a757-1258-4a47-8ae9-b6b9da5d9c15)
 
 The same process is repeated for the other side of the cable; both finished sides of the cable are pictured below: 
+![bothsides](https://github.com/user-attachments/assets/b5a5eaaa-c5b8-44e6-ab89-6925b1af86d9)
 
 ### Stripping Demonstration Video
 
 ### Testing the Cable
+![workingpic](https://github.com/user-attachments/assets/f45be748-e0d1-4dd7-8a9e-c1d6d5942150)
 
 ### Cable Testing Demonstration
-/Users/ScarlettLatin/Documents/GitHub/Black-Scarlett-AP-Networking-Portfolio/assets/TypesofNetworks&ConnectionsandDevices/IMG_2428.MOV 
+
 ### T568A Cable 
 
 **T568A cables perform basically the same electrically as the T568B and are commonly used in government and residential installations in the U.S**
@@ -152,6 +157,7 @@ The order for T568A cables is slightly different: White/Green, Green, White/Oran
 
 Below are the side-by-side labeled cables. On the left is the T568A and on the right is the T568B.
 
+![comparingab](https://github.com/user-attachments/assets/0c8e6c90-6bb5-4618-82f6-fd54a0a3f8ad)
 ![labeledback](https://github.com/user-attachments/assets/ead2d765-9242-445c-87ae-77789954f828)
 ![labeledfront](https://github.com/user-attachments/assets/d0c86b44-e72c-49b5-8dc9-0189e667e158)
 
