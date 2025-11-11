@@ -163,3 +163,24 @@ Below are the side-by-side labeled cables. On the left is the T568A and on the r
 
 **Reflection**
 The most challenging step in building the cable was inserting the wires into the RJ45 connector in the correct order. Ensuring that all of the wires are in the correct order is  important because if they are not, the signal won’t go to the right place and the cable will not work. This connects to the Physical Layer of the OSI Model because it is the layer responsible for all physical elements, such as cables. If a cable is made incorrectly and not tested, it would mess up the rest of the network and due to not testing the cable, it may seem like there is an issue elsewhere in the network. Labeling the cable and using tools like crimpers and testers mimics the real processes that people in the industry must go through to stay organized and make sure everything works correctly.
+
+---
+
+sudo eth<img width="723" height="127" alt="Screenshot 2025-11-11 at 1 27 56 PM" src="https://github.com/user-attachments/assets/4b462f49-aa73-4e66-b09d-57b9bdeb8543" />
+
+<img width="424" height="329" alt="Screenshot 2025-11-11 at 1 29 12 PM" src="https://github.com/user-attachments/assets/b461a58a-8c8a-4af9-bd34-2802586bb524" />
+
+<img width="722" height="268" alt="Screenshot 2025-11-11 at 1 33 29 PM" src="https://github.com/user-attachments/assets/5b24bde7-aa04-4419-a1d8-49f85bf71f1c" />
+RX packets: 239846
+TX packets: 35940
+There were no errors.
+
+
+<img width="457" height="326" alt="Screenshot 2025-11-11 at 1 39 01 PM" src="https://github.com/user-attachments/assets/55ba9454-89f0-49bd-802f-9ae00b48ba0e" />
+* Speed (Mb/s): Unknown
+* Duplex: Unknown
+* Link detected: Yes
+
+* MAC Address: 
+* Destination MAC Address:
+* Protocols used: (like ARP, IP, or ICMP)
