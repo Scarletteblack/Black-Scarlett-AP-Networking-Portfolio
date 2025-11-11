@@ -6,7 +6,6 @@ last_modified_at: 2025-11-04T22:20:30-22:35:00
 
 # Design and Planning
 
-
 ## Topography Activity
 ### Shared Mode 
 In Shared mode the **internal** IP address was: 192.168.64.2/24
