@@ -107,10 +107,8 @@ A star topology would be the easiest to set up for a business because all device
 | Topography Type | Description | Sketch |
 | :------------------- | :----------: | ----------: |
 | Star Topology |  • One central switch or hub in the middle • All computers connect to that central point • Example label: “Central Switch” in the middle with arrows to each “Computer" • Common use: Office networks and home Wi-Fi routers.|![startopology](https://github.com/user-attachments/assets/5fc69c1d-425a-489b-875a-5d6360d44894)|
-| Bus Topography | • A single straight line (“backbone cable”) with all computers branching off • Add short perpendicular lines for each device • Common use: Early Ethernet networks (now outdated)| ![bus](https://github.com/user-attachments/assets/a3989fbb-b8a5-4be4-b035-fcddace16a5c)
-  |
-| Ring Topography |• Devices form a circle with connections between neighbors • Data travels one way (or both in dual-ring) •Common use: Some legacy fiber networks and token ring systems |![ring](https://github.com/user-attachments/assets/62981fbe-6765-48b2-8e76-baeba741365e)
-  |
+| Bus Topography | • A single straight line (“backbone cable”) with all computers branching off • Add short perpendicular lines for each device • Common use: Early Ethernet networks (now outdated)| ![bus](https://github.com/user-attachments/assets/a3989fbb-b8a5-4be4-b035-fcddace16a5c) |
+| Ring Topography |• Devices form a circle with connections between neighbors • Data travels one way (or both in dual-ring) •Common use: Some legacy fiber networks and token ring systems |![ring](https://github.com/user-attachments/assets/62981fbe-6765-48b2-8e76-baeba741365e)|
 | Mesh Topography |• Every device connects to multiple others (use 4–5 devices for clarity) • Show redundancy — if one path breaks, another can still carry data • Common use: Data centers and IoT or wireless mesh networks | ![mesh](https://github.com/user-attachments/assets/6187b53c-c3c8-4697-89fd-387c2bbf66e8) |
 | Hybrid Topography |• Combine two or more types (for example, multiple Star networks connected in a Bus layout) • Common use: Large organizations with multiple departments or floors |  |
 
