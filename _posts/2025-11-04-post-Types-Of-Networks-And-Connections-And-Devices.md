@@ -182,6 +182,6 @@ There were no errors.
 * Duplex: Unknown
 * Link detected: Yes
 
-* MAC Address: 
-* Destination MAC Address:
+<img width="728" height="276" alt="Screenshot 2025-11-11 at 1 57 44 PM" src="https://github.com/user-attachments/assets/22a78311-d1fa-42d6-ab80-a005beb1a4bc" />
+* MAC Address: 18:57:03.221977* Destination MAC Address: 1a:63:23:39:a4:2c
 * Protocols used: (like ARP, IP, or ICMP)
