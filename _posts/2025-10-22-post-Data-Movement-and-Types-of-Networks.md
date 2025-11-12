@@ -23,7 +23,14 @@ This diagram is corrected and from the class:
 <img width="710" height="858" alt="classmodel" src="https://github.com/user-attachments/assets/1145faeb-cfb3-4cab-9053-3148c7f828b0" />
 
 ### Roadmap
-* project due Nov 11
+
+<img width="649" height="808" alt="roadmap" src="https://github.com/user-attachments/assets/1d8fc3f0-ba48-4d7f-a4dc-cc7f04c92bb7" />
+
+Above is a roadmap representing the transfer of data through the OSI Model
+
+**Reflection**
+
+This roadmap shows how data travels like a car going on a journey, starting at the Application Layer (in the driveway) and moving through the OSI layers before reaching its destination. Each layer plays a specific role in organizing, routing, and safely delivering data. The Transport layer is most important because it ensures the trip is completed accurately and orderly. This project taught how the OSI Models flows to keep all digital traffic running smoothly.
 
 ## **Technical Development**
 

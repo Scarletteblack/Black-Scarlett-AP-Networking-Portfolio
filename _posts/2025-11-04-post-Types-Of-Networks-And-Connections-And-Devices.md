@@ -6,7 +6,6 @@ last_modified_at: 2025-11-04T22:20:30-22:35:00
 
 # Design and Planning
 
-
 ## Topography Activity
 ### Shared Mode 
 In Shared mode the **internal** IP address was: 192.168.64.2/24
@@ -108,14 +107,16 @@ A star topology would be the easiest to set up for a business because all device
 | Topography Type | Description | Sketch |
 | :------------------- | :----------: | ----------: |
 | Star Topology |  • One central switch or hub in the middle • All computers connect to that central point • Example label: “Central Switch” in the middle with arrows to each “Computer" • Common use: Office networks and home Wi-Fi routers.|![startopology](https://github.com/user-attachments/assets/5fc69c1d-425a-489b-875a-5d6360d44894)|
-| Bus Topography | • A single straight line (“backbone cable”) with all computers branching off • Add short perpendicular lines for each device • Common use: Early Ethernet networks (now outdated)|   |
-| Ring Topography |• Devices form a circle with connections between neighbors • Data travels one way (or both in dual-ring) •Common use: Some legacy fiber networks and token ring systems |  |
-| Mesh Topography |• Every device connects to multiple others (use 4–5 devices for clarity) • Show redundancy — if one path breaks, another can still carry data • Common use: Data centers and IoT or wireless mesh networks |  |
-| Hybrid Topography |• Combine two or more types (for example, multiple Star networks connected in a Bus layout) • Common use: Large organizations with multiple departments or floors |  |
+| Bus Topography | • A single straight line (“backbone cable”) with all computers branching off • Add short perpendicular lines for each device • Common use: Early Ethernet networks (now outdated)| ![bus](https://github.com/user-attachments/assets/a3989fbb-b8a5-4be4-b035-fcddace16a5c) |
+| Ring Topography |• Devices form a circle with connections between neighbors • Data travels one way (or both in dual-ring) •Common use: Some legacy fiber networks and token ring systems |![ring](https://github.com/user-attachments/assets/62981fbe-6765-48b2-8e76-baeba741365e)|
+| Mesh Topography |• Every device connects to multiple others (use 4–5 devices for clarity) • Show redundancy — if one path breaks, another can still carry data • Common use: Data centers and IoT or wireless mesh networks | ![mesh](https://github.com/user-attachments/assets/6187b53c-c3c8-4697-89fd-387c2bbf66e8) |
+| Hybrid Topography |• Combine two or more types (for example, multiple Star networks connected in a Bus layout) • Common use: Large organizations with multiple departments or floors | <img width="471" height="637" alt="Note Nov 6, 2025" src="https://github.com/user-attachments/assets/bb8ce3fc-47df-4d4a-aa51-94b84571fd17" />
+ |
 
 ---
 
 ## Cable Constructing and Testing
+
 ### Making the Cable (T568B)
 
 **T568B cables are more common in commercial installations**
@@ -131,16 +132,20 @@ This displays the wires straightened and ordered:
 T568B wire order: White/Orange, Orange, White/Green, Blue, White/Blue, Green, White/Brown, Brown
 
 Then the wires were inserted into the RJ45 connector:
+![beforecrimpingb](https://github.com/user-attachments/assets/ade0de35-eef7-41ce-a80e-0078b8279284)
 
 For ease, the wires were left long and inserted individually and then cut once all were in the correct order.
 
 RJ45 connector after crimping: 
+![finishedb](https://github.com/user-attachments/assets/f257a757-1258-4a47-8ae9-b6b9da5d9c15)
 
 The same process is repeated for the other side of the cable; both finished sides of the cable are pictured below: 
+![bothsides](https://github.com/user-attachments/assets/b5a5eaaa-c5b8-44e6-ab89-6925b1af86d9)
 
 ### Stripping Demonstration Video
 
 ### Testing the Cable
+![workingpic](https://github.com/user-attachments/assets/f45be748-e0d1-4dd7-8a9e-c1d6d5942150)
 
 ### Cable Testing Demonstration
 
@@ -153,5 +158,30 @@ The order for T568A cables is slightly different: White/Green, Green, White/Oran
 
 Below are the side-by-side labeled cables. On the left is the T568A and on the right is the T568B.
 
+![comparingab](https://github.com/user-attachments/assets/0c8e6c90-6bb5-4618-82f6-fd54a0a3f8ad)
+![labeledback](https://github.com/user-attachments/assets/ead2d765-9242-445c-87ae-77789954f828)
+![labeledfront](https://github.com/user-attachments/assets/d0c86b44-e72c-49b5-8dc9-0189e667e158)
+
 **Reflection**
 The most challenging step in building the cable was inserting the wires into the RJ45 connector in the correct order. Ensuring that all of the wires are in the correct order is  important because if they are not, the signal won’t go to the right place and the cable will not work. This connects to the Physical Layer of the OSI Model because it is the layer responsible for all physical elements, such as cables. If a cable is made incorrectly and not tested, it would mess up the rest of the network and due to not testing the cable, it may seem like there is an issue elsewhere in the network. Labeling the cable and using tools like crimpers and testers mimics the real processes that people in the industry must go through to stay organized and make sure everything works correctly.
+
+---
+
+sudo eth<img width="723" height="127" alt="Screenshot 2025-11-11 at 1 27 56 PM" src="https://github.com/user-attachments/assets/4b462f49-aa73-4e66-b09d-57b9bdeb8543" />
+
+<img width="424" height="329" alt="Screenshot 2025-11-11 at 1 29 12 PM" src="https://github.com/user-attachments/assets/b461a58a-8c8a-4af9-bd34-2802586bb524" />
+
+<img width="722" height="268" alt="Screenshot 2025-11-11 at 1 33 29 PM" src="https://github.com/user-attachments/assets/5b24bde7-aa04-4419-a1d8-49f85bf71f1c" />
+RX packets: 239846
+TX packets: 35940
+There were no errors.
+
+
+<img width="457" height="326" alt="Screenshot 2025-11-11 at 1 39 01 PM" src="https://github.com/user-attachments/assets/55ba9454-89f0-49bd-802f-9ae00b48ba0e" />
+* Speed (Mb/s): Unknown
+* Duplex: Unknown
+* Link detected: Yes
+
+<img width="728" height="276" alt="Screenshot 2025-11-11 at 1 57 44 PM" src="https://github.com/user-attachments/assets/22a78311-d1fa-42d6-ab80-a005beb1a4bc" />
+* MAC Address: 18:57:03.221977* Destination MAC Address: 1a:63:23:39:a4:2c
+* Protocols used: (like ARP, IP, or ICMP)
