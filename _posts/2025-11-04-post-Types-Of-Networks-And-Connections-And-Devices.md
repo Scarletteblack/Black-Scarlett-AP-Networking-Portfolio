@@ -167,6 +167,7 @@ The most challenging step in building the cable was inserting the wires into the
 
 ---
 
+## OSI & TCP/IP — Layers 1 and 2
 sudo eth<img width="723" height="127" alt="Screenshot 2025-11-11 at 1 27 56 PM" src="https://github.com/user-attachments/assets/4b462f49-aa73-4e66-b09d-57b9bdeb8543" />
 
 <img width="424" height="329" alt="Screenshot 2025-11-11 at 1 29 12 PM" src="https://github.com/user-attachments/assets/b461a58a-8c8a-4af9-bd34-2802586bb524" />
@@ -185,3 +186,7 @@ There were no errors.
 <img width="728" height="276" alt="Screenshot 2025-11-11 at 1 57 44 PM" src="https://github.com/user-attachments/assets/22a78311-d1fa-42d6-ab80-a005beb1a4bc" />
 * MAC Address: 18:57:03.221977* Destination MAC Address: 1a:63:23:39:a4:2c
 * Protocols used: (like ARP, IP, or ICMP)
+
+## Building and Testing a Small Office / Home Office (SOHO) Network
+### SOHO Network
+<img width="1080" height="650" alt="Note Nov 12, 2025 (2)" src="https://github.com/user-attachments/assets/b0a6b4e3-3931-41a1-b7a1-fce588068960" />
