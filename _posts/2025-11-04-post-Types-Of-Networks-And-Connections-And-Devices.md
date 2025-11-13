@@ -189,4 +189,27 @@ There were no errors.
 
 ## Building and Testing a Small Office / Home Office (SOHO) Network
 ### SOHO Network
+
 <img width="1080" height="650" alt="Note Nov 12, 2025 (2)" src="https://github.com/user-attachments/assets/b0a6b4e3-3931-41a1-b7a1-fce588068960" />
+
+This small office network connects all devices through a central router (192.168.50.1), which manages IP addresses and internet access. The switch (192.168.50.3) distributes wired connections to the two Ubuntu VMs (192.168.50.10 and 192.168.50.11) and the NAS (192.168.50.3) for reliable, high-speed data transfer. The access point connects wirelessly to the router, allowing the phone (using DHCP) to join the network through Wi-Fi. This setup provides both wired and wireless access, ensuring that devices needing stable connections use cables, while mobile devices connect flexibly through Wi-Fi.
+
+### Testing in Ubuntu
+
+Computer A - in Ubuntu:
+
+<img width="724" height="276" alt="image" src="https://github.com/user-attachments/assets/bbdb7946-a618-4f48-b6da-4c0f91fea123" />
+
+Computer B - in MAC terminal: 
+
+<img width="832" height="859" alt="0-3" src="https://github.com/user-attachments/assets/df828aba-7a99-4f69-8639-55bdcfd80e39" />
+
+Computer A successful ping: 
+
+<img width="720" height="326" alt="0-1" src="https://github.com/user-attachments/assets/9ef2ae7b-52cf-41a0-8dcf-a1775ac087fc" />
+
+Computer B successful ping:
+
+<img width="448" height="154" alt="0-2" src="https://github.com/user-attachments/assets/8efeca64-4a90-4e6b-9c1b-4748ad257b77" />
+
+
