@@ -53,36 +53,8 @@ Switching between Shared and Bridged mode changed the virtual machine’s IP add
 
 ---
 
-**Analogy**
-Imagine a group of friends passing notes in a classroom. The way they choose to pass the notes
-— in a circle, in a line, or everyone handing notes to one central person — represents different
-network topologies. Each method affects how quickly messages travel, how easy it is to add
-more friends, and what happens if someone stops passing notes.
-
-How Devices Connect in a Network
-Every network includes devices that either send, receive, or direct data. Here’s how they connect
-and communicate:
-• End Devices: These are the computers, smartphones, printers, and other tools people use.
-They send and receive data.
-• Networking Devices: These control or manage traffic between devices.
-o Switch: Connects multiple devices on the same local network (like in a classroom
-or office).
-o Router: Connects different networks (like your home network to the internet).
-o Access Point: Allows wireless devices to connect using Wi-Fi.
-• Cables or Wireless Connections: The “roads” that data travels along.
-o Examples include Ethernet cables, fiber optic cables, or radio waves (for Wi-Fi).
-
-
-
-
-
-• Use different colors for cables, devices, and labels.
-• Ensure text is legible and aligned.
-• Organize each topology on its own section of the page.
-• Your diagrams should look professional and technical, not rough sketches.
-
-
 **Reflection**
+
 A star topology would be the easiest to set up for a business because all devices connect to a central switch or hub. This makes it simple to add or remove devices and easy to manage. A mesh topology is the most reliable if a connection fails because every device is connected to multiple other devices. If one cable or connection fails, the data can still travel through another path. The most expensive topology is the mesh topology because every device is connected to every other device, requiring more cables and hardware than other topologies. I think our school uses a hybrid or star topology, because many computers in different rooms probably connect back to central switches and servers, making it easier to manage and repair. The physical layout of a topology affects speed and reliability because shorter and more direct connections allow data to travel faster, while more intricate layouts make it easier to avoid collisions and reduce delays.
 
 ---
