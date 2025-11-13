@@ -27,7 +27,6 @@ In Bridged mode the **internal** IP address was: 10.32.1.32/23
 
 <img width="727" height="286" alt="Screenshot 2025-11-05 at 10 27 23 AM" src="https://github.com/user-attachments/assets/00ec1032-0528-4c1c-a11e-1d5266cde0a0" />
 
-
 **External** (public) IP address: 
 
 <img width="1178" height="338" alt="shared-mode0  " src="https://github.com/user-attachments/assets/1bedb508-60c0-4cc4-9f2e-7c86d550285a" />
@@ -47,24 +46,10 @@ When switched to Bridged mode, the internal IP address changes because the virtu
 | Notes              | Both private IP Addresses| Same |
 
 
-Write a short paragraph (5–7 sentences) beneath your table addressing the following:
-• Which mode made your VM appear as its own device on the local network?
-• Which mode provided a safer, more controlled environment?
-• How does NAT help manage limited IPv4 addresses and improve security?
-• What did you learn about how data travels from a device to the internet?
+Bridged mode made the virtual machine appear as its own device on the local network because it received an IP address directly from the network, just like a physical computer. Shared (NAT) mode provided a safer and more controlled environment by keeping the VM behind the host computer and isolating it from other devices. NAT helps manage limited IPv4 addresses by allowing many private devices to share a single public IP, while also improving security by hiding internal devices from the outside world. This experiment showed that data from a device first travels through the local network using a private IP, then passes through a router or host system before reaching the internet with a public IP. It also demonstrated that network modes change how visible a device is and how its traffic is routed.
 
-Step 1: Add Screenshots
-Take screenshots of the following and insert them into your digital portfolio:
-• The output of ip a in Shared (NAT) mode
-• The output of ip a in Bridged mode
-• The WhatIsMyIPAddress.com page results for both modes
-Step 2: Reflection Writing
-Write a short reflection (1 paragraph, 5–8 sentences) below your screenshots that answers these:
-• How did your IP addresses change between Shared and Bridged mode?
-• What did this experiment teach you about how local and public networks communicate?
-• Why might IT professionals use different network configurations for home, business, or
-lab environments?
-• Which mode do you think is best for classroom use, and why?
+
+Switching between Shared and Bridged mode changed the virtual machine’s IP addresses by giving it a private, isolated address in Shared (NAT) mode and a full, separate address in Bridged mode. This experiment shows that devices can either hide behind a single public IP or act as independent machines on a local network, depending on how they are connected. It also highlights how local networks use private IP addresses internally while sharing one public IP when reaching the internet. IT professionals choose different configurations because home networks value simplicity and safety, business networks often require full device visibility, and lab environments need flexibility for testing. For classroom use, Shared mode is generally the best because it is safer, easier to manage, and prevents students’ virtual machines from interfering with the wider network.
 
 ---
 
