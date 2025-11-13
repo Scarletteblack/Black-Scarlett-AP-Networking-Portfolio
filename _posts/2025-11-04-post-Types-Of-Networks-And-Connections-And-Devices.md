@@ -27,6 +27,7 @@ In Bridged mode the **internal** IP address was: 10.32.1.32/23
 
 <img width="727" height="286" alt="Screenshot 2025-11-05 at 10 27 23 AM" src="https://github.com/user-attachments/assets/00ec1032-0528-4c1c-a11e-1d5266cde0a0" />
 
+
 **External** (public) IP address: 
 
 <img width="1178" height="338" alt="shared-mode0  " src="https://github.com/user-attachments/assets/1bedb508-60c0-4cc4-9f2e-7c86d550285a" />
