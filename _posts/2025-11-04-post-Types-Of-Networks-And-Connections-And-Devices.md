@@ -18,7 +18,7 @@ In Shared mode the **internal** IP address was: 192.168.64.2/24
 
 #### Reflection - Shared Mode
 
-Internal and external IP addresses are different because the internal IP belongs to your local network, while the external IP is the address the internet sees. The internal (private) IP is used only inside the home or virtual network, and the external (public) IP is assigned by the ISP. A virtual machine uses NAT because it lets the VM access the internet through the host’s IP while staying secure and hidden behind it. Shared mode makes it easier to connect multiple VMs because it puts them on the same virtual network, giving each one its own private IP so they can communicate with each other while still sharing the host’s internet connection.
+Internal and external IP addresses differ because the internal IP address belongs to your local network, while the external IP is the address the internet sees. The internal (private) IP address is used only within the home or virtual network, and the external (public) IP address is assigned by the ISP. A virtual machine uses NAT because it lets the VM access the internet through the host’s IP while staying secure and hidden behind it. Shared mode makes it easier to connect multiple VMs because it puts them on the same virtual network, giving each one its own private IP so they can communicate with each other while still sharing the host’s internet connection.
 
 --- 
 ### Bridged Mode
