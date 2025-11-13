@@ -9,35 +9,32 @@ last_modified_at: 2025-11-04T22:20:30-22:35:00
 ## Topography Activity
 ### Shared Mode 
 In Shared mode the **internal** IP address was: 192.168.64.2/24
+
 <img width="719" height="356" alt="Image 11-5-25 at 10 25 AM" src="https://github.com/user-attachments/assets/3b97b973-2472-4cf0-bae1-aae3f429f0c6" />
 
 **External** (public) IP address: 
+
 <img width="1178" height="338" alt="shared-mode0  " src="https://github.com/user-attachments/assets/1bedb508-60c0-4cc4-9f2e-7c86d550285a" />
 
 #### Reflection - Shared Mode
-1. Are your internal and external IP addresses the same or different?
-2. Which IP belongs to your local network?
-3. Which IP belongs to the internet?
-4. Why might a virtual machine use Network Address Translation (NAT) when
-connecting to the internet?
-5. How does Shared mode make it easier to connect multiple virtual machines on one
-computer?
+
+Internal and external IP addresses are different because the internal IP belongs to your local network, while the external IP is the address the internet sees. The internal (private) IP is used only inside the home or virtual network, and the external (public) IP is assigned by the ISP. A virtual machine uses NAT because it lets the VM access the internet through the host’s IP while staying secure and hidden behind it. Shared mode makes it easier to connect multiple VMs because it puts them on the same virtual network, giving each one its own private IP so they can communicate with each other while still sharing the host’s internet connection.
+
 --- 
 ### Bridged Mode
 
 In Bridged mode the **internal** IP address was: 10.32.1.32/23
+
 <img width="727" height="286" alt="Screenshot 2025-11-05 at 10 27 23 AM" src="https://github.com/user-attachments/assets/00ec1032-0528-4c1c-a11e-1d5266cde0a0" />
 
 **External** (public) IP address: 
+
 <img width="1178" height="338" alt="shared-mode0  " src="https://github.com/user-attachments/assets/1bedb508-60c0-4cc4-9f2e-7c86d550285a" />
 
 #### Reflection - Bridged Mode
-1. How did your internal IP address change when you switched to Bridged mode?
-2. Did your external IP address change or remain the same?
-3. In Bridged mode, does your virtual machine act more like a separate computer or a
-computer behind another device?
-4. Why might an organization choose Bridged mode instead of Shared (NAT) mode?
-5. What security or management challenges could come with using Bridged mode?
+
+When switched to Bridged mode, the internal IP address changes because the virtual machine receives its own IP directly from the same network as the physical computer. The external IP address remains the same, since both the VM and the host still access the internet through the same router. In Bridged mode, the VM behaves like a completely separate computer on the network rather than a device hidden behind another one. Organizations choose Bridged mode when they want virtual machines to function as independent systems—useful for servers, testing environments, or situations where other devices on the network need to reach the VM directly. However, Bridged mode can introduce security and management challenges because each VM becomes visible on the network, requires its own firewall rules, and increases the number of devices that must be monitored and protected.
+
 ---
 
 ### Shared Mode VS Bridged Mode
