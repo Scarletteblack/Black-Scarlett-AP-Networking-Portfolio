@@ -6,6 +6,24 @@ last_modified_at: 2025-11-04T22:20:30-22:35:00
 
 # Design and Planning
 
+* labeled OSI/TCP-IP layer diagram,
+* color-coded network topology sketches (star, bus, ring, mesh, hybrid),
+
+---
+
+| Topography Type | Description | Sketch |
+| :------------------- | :----------: | ----------: |
+| Star Topology |  • One central switch or hub in the middle • All computers connect to that central point • Example label: “Central Switch” in the middle with arrows to each “Computer" • Common use: Office networks and home Wi-Fi routers.|![startopology](https://github.com/user-attachments/assets/5fc69c1d-425a-489b-875a-5d6360d44894)|
+| Bus Topography | • A single straight line (“backbone cable”) with all computers branching off • Add short perpendicular lines for each device • Common use: Early Ethernet networks (now outdated)| ![bus](https://github.com/user-attachments/assets/a3989fbb-b8a5-4be4-b035-fcddace16a5c) |
+| Ring Topography |• Devices form a circle with connections between neighbors • Data travels one way (or both in dual-ring) •Common use: Some legacy fiber networks and token ring systems |![ring](https://github.com/user-attachments/assets/62981fbe-6765-48b2-8e76-baeba741365e)|
+| Mesh Topography |• Every device connects to multiple others (use 4–5 devices for clarity) • Show redundancy — if one path breaks, another can still carry data • Common use: Data centers and IoT or wireless mesh networks | ![mesh](https://github.com/user-attachments/assets/6187b53c-c3c8-4697-89fd-387c2bbf66e8) |
+| Hybrid Topography |• Combine two or more types (for example, multiple Star networks connected in a Bus layout) • Common use: Large organizations with multiple departments or floors | <img width="471" height="637" alt="Note Nov 6, 2025" src="https://github.com/user-attachments/assets/bb8ce3fc-47df-4d4a-aa51-94b84571fd17" />
+
+
+---
+*  SOHO network plan with IP addressing.
+*  Layer 1–3 relationships before implementation.
+
 ## Topography Activity
 ### Shared Mode 
 In Shared mode the **internal** IP address was: 192.168.64.2/24
@@ -55,20 +73,8 @@ Switching between Shared and Bridged mode changed the virtual machine’s IP add
 
 **Reflection**
 
-A star topology would be the easiest to set up for a business because all devices connect to a central switch or hub. This makes it simple to add or remove devices and easy to manage. A mesh topology is the most reliable if a connection fails because every device is connected to multiple other devices. If one cable or connection fails, the data can still travel through another path. The most expensive topology is the mesh topology because every device is connected to every other device, requiring more cables and hardware than other topologies. I think our school uses a hybrid or star topology, because many computers in different rooms probably connect back to central switches and servers, making it easier to manage and repair. The physical layout of a topology affects speed and reliability because shorter and more direct connections allow data to travel faster, while more intricate layouts make it easier to avoid collisions and reduce delays.
+A star topology would be the easiest to set up for a business because all devices connect to a central switch or hub. This makes it simple to add or remove devices and easy to manage. A mesh topology is the most reliable if a connection fails because every device is connected to multiple other devices. If one cable or connection fails, the data can still travel through another path. The most expensive topology is the mesh topology because every device is connected to every other device, requiring more cables and hardware than other topologies. Our school uses a hybrid or star topology, because many computers in different rooms are probably connected back to central switches and servers, making it easier to manage and repair. The physical layout of a topology affects speed and reliability because shorter and more direct connections allow data to travel faster, while more intricate layouts make it easier to avoid collisions and reduce delays.
 
----
-
-| Topography Type | Description | Sketch |
-| :------------------- | :----------: | ----------: |
-| Star Topology |  • One central switch or hub in the middle • All computers connect to that central point • Example label: “Central Switch” in the middle with arrows to each “Computer" • Common use: Office networks and home Wi-Fi routers.|![startopology](https://github.com/user-attachments/assets/5fc69c1d-425a-489b-875a-5d6360d44894)|
-| Bus Topography | • A single straight line (“backbone cable”) with all computers branching off • Add short perpendicular lines for each device • Common use: Early Ethernet networks (now outdated)| ![bus](https://github.com/user-attachments/assets/a3989fbb-b8a5-4be4-b035-fcddace16a5c) |
-| Ring Topography |• Devices form a circle with connections between neighbors • Data travels one way (or both in dual-ring) •Common use: Some legacy fiber networks and token ring systems |![ring](https://github.com/user-attachments/assets/62981fbe-6765-48b2-8e76-baeba741365e)|
-| Mesh Topography |• Every device connects to multiple others (use 4–5 devices for clarity) • Show redundancy — if one path breaks, another can still carry data • Common use: Data centers and IoT or wireless mesh networks | ![mesh](https://github.com/user-attachments/assets/6187b53c-c3c8-4697-89fd-387c2bbf66e8) |
-| Hybrid Topography |• Combine two or more types (for example, multiple Star networks connected in a Bus layout) • Common use: Large organizations with multiple departments or floors | <img width="471" height="637" alt="Note Nov 6, 2025" src="https://github.com/user-attachments/assets/bb8ce3fc-47df-4d4a-aa51-94b84571fd17" />
-
-
----
 
 ## Cable Constructing and Testing
 
