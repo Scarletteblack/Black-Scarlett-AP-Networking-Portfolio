@@ -170,6 +170,7 @@ Computer B successful ping:
 **Firewall**
 
 <img width="501" height="162" alt="Screenshot 2025-11-14 at 8 20 49 AM" src="https://github.com/user-attachments/assets/4197996f-8c76-4229-a72c-d20e4bacd5c9" />
+
 * Firewalls protect from malware
 
 ### Creating a new VM 
