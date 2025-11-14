@@ -167,4 +167,22 @@ Computer B successful ping:
 
 <img width="448" height="154" alt="0-2" src="https://github.com/user-attachments/assets/8efeca64-4a90-4e6b-9c1b-4748ad257b77" />
 
+**Firewall**
+
+<img width="501" height="162" alt="Screenshot 2025-11-14 at 8 20 49 AM" src="https://github.com/user-attachments/assets/4197996f-8c76-4229-a72c-d20e4bacd5c9" />
+* Firewalls pertect from malware
+
+### Creating a new VM 
+
+<img width="635" height="149" alt="Screenshot 2025-11-14 at 8 41 56 AM" src="https://github.com/user-attachments/assets/46120607-15c7-4e03-beac-34fef5e42bf2" />
+
+<img width="587" height="333" alt="Screenshot 2025-11-14 at 8 48 21 AM" src="https://github.com/user-attachments/assets/5d2a5132-4b35-444e-b277-d1cf22753e87" />
+
+<img width="560" height="463" alt="Screenshot 2025-11-14 at 8 51 13 AM" src="https://github.com/user-attachments/assets/85aa22a8-44be-479e-8de9-c2bbb977e5ee" />
+two sentences summarizing what you
+learned about how data travels through networks.
+
+### Running a Simple Web Server
+
+<img width="524" height="78" alt="Screenshot 2025-11-14 at 8 54 53 AM" src="https://github.com/user-attachments/assets/fc7862b0-b7b7-4756-9a86-c24c34427d24" />
 
