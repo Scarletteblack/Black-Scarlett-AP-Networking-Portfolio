@@ -170,7 +170,7 @@ Computer B successful ping:
 **Firewall**
 
 <img width="501" height="162" alt="Screenshot 2025-11-14 at 8 20 49 AM" src="https://github.com/user-attachments/assets/4197996f-8c76-4229-a72c-d20e4bacd5c9" />
-* Firewalls pertect from malware
+* Firewalls protect from malware
 
 ### Creating a new VM 
 
@@ -179,10 +179,12 @@ Computer B successful ping:
 <img width="587" height="333" alt="Screenshot 2025-11-14 at 8 48 21 AM" src="https://github.com/user-attachments/assets/5d2a5132-4b35-444e-b277-d1cf22753e87" />
 
 <img width="560" height="463" alt="Screenshot 2025-11-14 at 8 51 13 AM" src="https://github.com/user-attachments/assets/85aa22a8-44be-479e-8de9-c2bbb977e5ee" />
-two sentences summarizing what you
-learned about how data travels through networks.
+
+The traceroute results show that data travels through several routers, or hops, before reaching its destination. Each hop represents a different device or network along the path, showing how data moves step-by-step across the internet
 
 ### Running a Simple Web Server
 
 <img width="524" height="78" alt="Screenshot 2025-11-14 at 8 54 53 AM" src="https://github.com/user-attachments/assets/fc7862b0-b7b7-4756-9a86-c24c34427d24" />
+<img width="562" height="280" alt="Image 11-14-25 at 8 55 AM" src="https://github.com/user-attachments/assets/5c947654-70c5-4651-a359-266a4037b582" />
 
+One system transferring files to another, as seen above, using HTTP, illustrates how the Application Layer works.
