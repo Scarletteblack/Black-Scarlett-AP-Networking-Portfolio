@@ -57,7 +57,7 @@ plugins:
 
 author:
   name   : "Scarlett Black"
-  avatar : "/assets/images/ScarlettheadshotAPNET-portfolio.png"
+  avatar : ""
   bio    : "I am a senior at Charlotte Latin School and will be pursuing Biomedical Engineering in College."
   links:
     - label: "Website"
