@@ -130,7 +130,10 @@ The same process is repeated for the other side of the cable; both finished side
 ### Stripping Demonstration Video
 
 
-https://github.com/user-attachments/assets/7d07dfa0-3824-4669-8e8e-b77c44917ee9
+<video width="600" controls>
+  <source src="/Users/ScarlettLatin/Documents/GitHub/Black-Scarlett-AP-Networking-Portfolio/assets/TypesofNetworks&ConnectionsandDevices/wirestripping.mov" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 
 ### Testing the Cable
@@ -138,8 +141,10 @@ https://github.com/user-attachments/assets/7d07dfa0-3824-4669-8e8e-b77c44917ee9
 
 ### Cable Testing Demonstration
 
-
-https://github.com/user-attachments/assets/05d62f59-e839-4beb-871b-ac4b507c4040
+<video width="600" controls>
+  <source src="/Users/ScarlettLatin/Documents/GitHub/Black-Scarlett-AP-Networking-Portfolio/assets/TypesofNetworks&ConnectionsandDevices/testing.mov" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 
 ### T568A Cable 
