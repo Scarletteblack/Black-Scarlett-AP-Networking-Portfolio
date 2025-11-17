@@ -133,7 +133,6 @@ The same process is repeated for the other side of the cable; both finished side
 
 <video width="600" controls>
   <source src="/Users/ScarlettLatin/Documents/GitHub/Black-Scarlett-AP-Networking-Portfolio/assets/TypesofNetworks&ConnectionsandDevices/wirestripping.mov" type="video/mp4">
-  Your browser does not support the video tag.
 </video>
 
 
