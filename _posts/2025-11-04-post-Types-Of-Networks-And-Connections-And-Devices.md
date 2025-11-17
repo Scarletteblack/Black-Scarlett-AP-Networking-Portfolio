@@ -129,26 +129,14 @@ The same process is repeated for the other side of the cable; both finished side
 
 ### Stripping Demonstration Video
 
-<iframe src="[https://drive.google.com/file/d/FILE_ID/preview](https://drive.google.com/file/d/1e_8v9lP_s--rfC-YFA83I0ytnJkdTFJc/view?usp=share_link)" width="640" height="480"></iframe>
-
-<video width="600" controls>
-  <source src="/Users/ScarlettLatin/Documents/GitHub/Black-Scarlett-AP-Networking-Portfolio/assets/TypesofNetworks&ConnectionsandDevices/wirestripping.mov" type="video/mp4">
-</video>
-
+[Wire Stripping](https://drive.google.com/file/d/1e_8v9lP_s--rfC-YFA83I0ytnJkdTFJc/view?usp=share_link)
 
 ### Testing the Cable
 ![workingpic](https://github.com/user-attachments/assets/f45be748-e0d1-4dd7-8a9e-c1d6d5942150)
 
 ### Cable Testing Demonstration
 
-
-<iframe src="https://drive.google.com/file/d/1XDUyFymgEXAsIMPh_VD-orNSZli0Z7eJ/view?usp=share_link" width="640" height="480"></iframe>
-
-<video width="600" controls>
-  <source src="/Users/ScarlettLatin/Documents/GitHub/Black-Scarlett-AP-Networking-Portfolio/assets/TypesofNetworks&ConnectionsandDevices/testing.mov" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
-
+[Cable Testing](https://drive.google.com/file/d/1XDUyFymgEXAsIMPh_VD-orNSZli0Z7eJ/view?usp=share_link)
 
 ### T568A Cable 
 
