@@ -6,11 +6,6 @@ last_modified_at: 2025-11-04T22:20:30-22:35:00
 
 # Design and Planning
 
-* labeled OSI/TCP-IP layer diagram,
-* color-coded network topology sketches (star, bus, ring, mesh, hybrid),
-
----
-
 | Topography Type | Description | Sketch |
 | :------------------- | :----------: | ----------: |
 | Star Topology |  • One central switch or hub in the middle • All computers connect to that central point • Example label: “Central Switch” in the middle with arrows to each “Computer" • Common use: Office networks and home Wi-Fi routers.|![startopology](https://github.com/user-attachments/assets/5fc69c1d-425a-489b-875a-5d6360d44894)|
@@ -19,10 +14,38 @@ last_modified_at: 2025-11-04T22:20:30-22:35:00
 | Mesh Topography |• Every device connects to multiple others (use 4–5 devices for clarity) • Show redundancy — if one path breaks, another can still carry data • Common use: Data centers and IoT or wireless mesh networks | ![mesh](https://github.com/user-attachments/assets/6187b53c-c3c8-4697-89fd-387c2bbf66e8) |
 | Hybrid Topography |• Combine two or more types (for example, multiple Star networks connected in a Bus layout) • Common use: Large organizations with multiple departments or floors | <img width="471" height="637" alt="Note Nov 6, 2025" src="https://github.com/user-attachments/assets/bb8ce3fc-47df-4d4a-aa51-94b84571fd17" />
 
+---
+
+## OSI & TCP/IP — Layers 1 and 2
+<img width="723" height="127" alt="Screenshot 2025-11-11 at 1 27 56 PM" src="https://github.com/user-attachments/assets/4b462f49-aa73-4e66-b09d-57b9bdeb8543" />
+
+<img width="424" height="329" alt="Screenshot 2025-11-11 at 1 29 12 PM" src="https://github.com/user-attachments/assets/b461a58a-8c8a-4af9-bd34-2802586bb524" />
+
+<img width="722" height="268" alt="Screenshot 2025-11-11 at 1 33 29 PM" src="https://github.com/user-attachments/assets/5b24bde7-aa04-4419-a1d8-49f85bf71f1c" />
+RX packets: 239846
+TX packets: 35940
+There were no errors.
+
+
+<img width="457" height="326" alt="Screenshot 2025-11-11 at 1 39 01 PM" src="https://github.com/user-attachments/assets/55ba9454-89f0-49bd-802f-9ae00b48ba0e" />
+* Speed (Mb/s): Unknown
+* Duplex: Unknown
+* Link detected: Yes
+
+<img width="728" height="276" alt="Screenshot 2025-11-11 at 1 57 44 PM" src="https://github.com/user-attachments/assets/22a78311-d1fa-42d6-ab80-a005beb1a4bc" />
+* MAC Address: 18:57:03.221977* Destination MAC Address: 1a:63:23:39:a4:2c
+* Protocols used: (like ARP, IP, or ICMP)
+
+## Building and Testing a Small Office / Home Office (SOHO) Network
+### SOHO Network
+
+<img width="1080" height="650" alt="Note Nov 12, 2025 (2)" src="https://github.com/user-attachments/assets/b0a6b4e3-3931-41a1-b7a1-fce588068960" />
+
+This small office network connects all devices through a central router (192.168.50.1), which manages IP addresses and internet access. The switch (192.168.50.3) distributes wired connections to the two Ubuntu VMs (192.168.50.10 and 192.168.50.11) and the NAS (192.168.50.3) for reliable, high-speed data transfer. The access point connects wirelessly to the router, allowing the phone (using DHCP) to join the network through Wi-Fi. This setup provides both wired and wireless access, ensuring that devices needing stable connections use cables, while mobile devices connect flexibly through Wi-Fi.
 
 ---
-*  SOHO network plan with IP addressing.
-*  Layer 1–3 relationships before implementation.
+
+# Technical Development
 
 ## Topography Activity
 ### Shared Mode 
@@ -63,6 +86,7 @@ When switched to Bridged mode, the internal IP address changes because the virtu
 | Bridged              |  10.32.1.32/23     |  173.95.44.210    |
 | Notes              | Both private IP Addresses| Same |
 
+--- 
 
 Bridged mode made the virtual machine appear as its own device on the local network because it received an IP address directly from the network, just like a physical computer. Shared (NAT) mode provided a safer and more controlled environment by keeping the VM behind the host computer and isolating it from other devices. NAT helps manage limited IPv4 addresses by allowing many private devices to share a single public IP, while also improving security by hiding internal devices from the outside world. This experiment showed that data from a device first travels through the local network using a private IP, then passes through a router or host system before reaching the internet with a public IP. It also demonstrated that network modes change how visible a device is and how its traffic is routed.
 
@@ -105,10 +129,14 @@ The same process is repeated for the other side of the cable; both finished side
 
 ### Stripping Demonstration Video
 
+[Wire Stripping](https://drive.google.com/file/d/1e_8v9lP_s--rfC-YFA83I0ytnJkdTFJc/view?usp=share_link)
+
 ### Testing the Cable
 ![workingpic](https://github.com/user-attachments/assets/f45be748-e0d1-4dd7-8a9e-c1d6d5942150)
 
 ### Cable Testing Demonstration
+
+[Cable Testing](https://drive.google.com/file/d/1XDUyFymgEXAsIMPh_VD-orNSZli0Z7eJ/view?usp=share_link)
 
 ### T568A Cable 
 
@@ -128,33 +156,7 @@ The most challenging step in building the cable was inserting the wires into the
 
 ---
 
-## OSI & TCP/IP — Layers 1 and 2
-<img width="723" height="127" alt="Screenshot 2025-11-11 at 1 27 56 PM" src="https://github.com/user-attachments/assets/4b462f49-aa73-4e66-b09d-57b9bdeb8543" />
-
-<img width="424" height="329" alt="Screenshot 2025-11-11 at 1 29 12 PM" src="https://github.com/user-attachments/assets/b461a58a-8c8a-4af9-bd34-2802586bb524" />
-
-<img width="722" height="268" alt="Screenshot 2025-11-11 at 1 33 29 PM" src="https://github.com/user-attachments/assets/5b24bde7-aa04-4419-a1d8-49f85bf71f1c" />
-RX packets: 239846
-TX packets: 35940
-There were no errors.
-
-
-<img width="457" height="326" alt="Screenshot 2025-11-11 at 1 39 01 PM" src="https://github.com/user-attachments/assets/55ba9454-89f0-49bd-802f-9ae00b48ba0e" />
-* Speed (Mb/s): Unknown
-* Duplex: Unknown
-* Link detected: Yes
-
-<img width="728" height="276" alt="Screenshot 2025-11-11 at 1 57 44 PM" src="https://github.com/user-attachments/assets/22a78311-d1fa-42d6-ab80-a005beb1a4bc" />
-* MAC Address: 18:57:03.221977* Destination MAC Address: 1a:63:23:39:a4:2c
-* Protocols used: (like ARP, IP, or ICMP)
-
-## Building and Testing a Small Office / Home Office (SOHO) Network
-### SOHO Network
-
-<img width="1080" height="650" alt="Note Nov 12, 2025 (2)" src="https://github.com/user-attachments/assets/b0a6b4e3-3931-41a1-b7a1-fce588068960" />
-
-This small office network connects all devices through a central router (192.168.50.1), which manages IP addresses and internet access. The switch (192.168.50.3) distributes wired connections to the two Ubuntu VMs (192.168.50.10 and 192.168.50.11) and the NAS (192.168.50.3) for reliable, high-speed data transfer. The access point connects wirelessly to the router, allowing the phone (using DHCP) to join the network through Wi-Fi. This setup provides both wired and wireless access, ensuring that devices needing stable connections use cables, while mobile devices connect flexibly through Wi-Fi.
-
+# Testing & Evaluation 
 ### Testing in Ubuntu
 
 Computer A - in Ubuntu:
@@ -195,3 +197,9 @@ The traceroute results show that data travels through several routers, or hops, 
 <img width="562" height="280" alt="Image 11-14-25 at 8 55 AM" src="https://github.com/user-attachments/assets/5c947654-70c5-4651-a359-266a4037b582" />
 
 One system transferring files to another, as seen above, using HTTP, illustrates how the Application Layer works.
+
+--- 
+
+# Reflection
+
+These projects teach how networks function from the physical wire level up through virtual machines and SOHO networks. Focusing on how the OSI layers work together, especially Layers 1–3, and how both physical cables and IP addressing affect connectivity, allowed for a deeper understanding of the concepts. Building and testing cables reinforced how important correct wiring is to network performance. Comparing Shared and Bridged modes showed how NAT, private IPs, and public IPs determine how devices interact with the other networks. Creating a SOHO network connected the concepts by combining routers, switches, VMs, wireless clients, and services like traceroute and web servers. Overall, this project taught how data moves through a network and how to troubleshoot connections.
