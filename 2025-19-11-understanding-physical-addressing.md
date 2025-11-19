@@ -21,3 +21,20 @@ different
 | 04:1A:04:55:66:77       | 04:1A:04             |   WaveIP     |       Physical Vendor            |                           
 | 00:50:56:AA:BB:CC       | 00:50:56             |   VMware, Inc.      |     Physical Vendor      |                           
 | 52:54:00:12:34:56       | 52:54:00             |   Not Found - Virtual Machine     |    Virtual Vendor                      |                       
+
+
+
+### Connecting the Physical and Digital: Interpreting MAC Address Structure
+
+**On Ubuntu VM**
+
+MAC address: 32:9e:41:5a:ae:94
+• OUI: 32:9e:41
+• Device Identifier: 5a:ae:94
+
+
+**On MAC Terminal**
+
+MAC address: 14:98:77:6f:58:9d
+• OUI: 14:98:77
+• Device Identifier: 6f:58:9d
