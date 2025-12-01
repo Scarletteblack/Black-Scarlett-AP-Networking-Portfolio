@@ -38,3 +38,12 @@ MAC address: 32:9e:41:5a:ae:94
 MAC address: 14:98:77:6f:58:9d
 • OUI: 14:98:77
 • Device Identifier: 6f:58:9d
+
+
+
+## Understanding Logical Addressing 
+
+<img width="644" height="288" alt="Screenshot 2025-12-01 at 1 39 47 PM" src="https://github.com/user-attachments/assets/e403454f-108f-48ba-aba9-880ee28d4387" />
+
+
+
