@@ -53,6 +53,13 @@ Dynamic vs. Static Addressing & When to Use Each
 
 Addressing: Physical and Logical
 
+### Ubuntu VM
+
+<img width="733" height="345" alt="Screenshot 2025-12-02 at 2 53 15 PM" src="https://github.com/user-attachments/assets/7308c6fb-c928-4da3-bc43-9f83cbed09ea" />
+
+<img width="531" height="168" alt="Screenshot 2025-12-02 at 2 54 06 PM" src="https://github.com/user-attachments/assets/be7bf655-9393-463c-be8e-d86d23c4204f" />
+
+
 ### Linux 
 <img width="649" height="288" alt="Screenshot 2025-12-02 at 2 27 00 PM" src="https://github.com/user-attachments/assets/effb3d14-0f9d-49e9-9577-b2e3389c5154" />
 
