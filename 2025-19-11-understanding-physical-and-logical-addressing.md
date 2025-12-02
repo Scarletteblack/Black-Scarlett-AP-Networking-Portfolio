@@ -47,3 +47,22 @@ MAC address: 14:98:77:6f:58:9d
 
 
 
+
+## 3 
+Dynamic vs. Static Addressing & When to Use Each
+
+Addressing: Physical and Logical
+
+### Linux 
+<img width="649" height="288" alt="Screenshot 2025-12-02 at 2 27 00 PM" src="https://github.com/user-attachments/assets/effb3d14-0f9d-49e9-9577-b2e3389c5154" />
+
+<img width="556" height="258" alt="Screenshot 2025-12-02 at 2 33 41 PM" src="https://github.com/user-attachments/assets/4de11aae-6c86-42c5-af59-24924e2cbe2e" />
+* Putting sudo after the first command - result: ran successfully
+
+<img width="628" height="311" alt="Screenshot 2025-12-02 at 2 30 31 PM" src="https://github.com/user-attachments/assets/c6f32475-b2b4-43ab-be6b-56e5b5d37aad" />
+
+<img width="611" height="171" alt="Screenshot 2025-12-02 at 2 31 05 PM" src="https://github.com/user-attachments/assets/8b3abbc7-db19-46d7-8b9f-b420dae747cc" />
+
+<img width="642" height="378" alt="Screenshot 2025-12-02 at 2 41 38 PM" src="https://github.com/user-attachments/assets/17228ea7-87bb-48c8-b76e-fa74aa1cadc2" />
+
+The VM uses network manager and netplan 
