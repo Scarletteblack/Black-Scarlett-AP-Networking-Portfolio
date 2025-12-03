@@ -11,34 +11,23 @@ The ethernet cable was plugged into both MACs and the connection was checked to 
 
 **Both Partners VMs:**
 
-<img width="639" height="356" alt="unnamed-11" src="https://github.com/user-attachments/assets/d0063a3d-5307-4f8e-9239-67a85d884e72" />
-<img width="647" height="327" alt="unnamed-7" src="https://github.com/user-attachments/assets/35c63945-6d7e-49ff-bd08-6f579d1c97d8" />
+<img width="644" height="365" alt="516960731-66861367-47ca-45fa-a1b2-e18e679554ca" src="https://github.com/user-attachments/assets/72d1ea85-66c1-4ff5-bf5b-abcf909cfc36" />
+<img width="639" height="356" alt="unnamed-11" src="https://github.com/user-attachments/assets/4d6e614b-eabc-45ec-9b8c-3fe514a171f3" />
+
 
 ---
 
-## PART 2 — Data Link Layer Check (Layer 2)
-To communicate directly, both VMs must be on the same Layer 2 network.
-1. Compare the MAC addresses on each VM:
-• They should be different.
-• If identical: the VMs are using duplicated virtual NICs → communication will
-fail.
+## Checking  Layer 2 -The Data Link Layer
 
-2. Try to ping each other using MAC broadcast behavior:
-• Find your partner’s IP address (you will fix this in the next part).
-• Try:
-ping <partner_IP>
+The two VMs were on the same network in order to communicate directly; however, the two VMs have different MAC addresses. Using the **ping** command and inserting the other VM's IP, the reachability of the other MAC was tested. If the ping was successful and the packet was able to reach the other MAC, it would have shown the time it took the packet to travel between the two. However, the ping failed and both partners got the message **Destination Host Unreachable**. This is evident that Layer 2 cannot find the partner’s MAC address and thus cannot send any packets through the data link. 
 
-3. If you get:
-Destination Host Unreachable
-that usually means Layer 2 cannot find the partner’s MAC address.
-Digital Portfolio Evidence #2
-Screenshot your ping attempt AND write one sentence explaining what Layer 2 behavior you
-observed.
-<img width="638" height="235" alt="Screenshot 2025-11-18 at 3 12 40 PM" src="https://github.com/user-attachments/assets/1e9b43e5-49cc-4362-9a99-7ea6c97905f4" />
 
-Explanation 
+**Both partners' VM pings**
 
-The ping resulted in “Destination Host Unreachable,” which shows that Layer 2 was unable to discover the partner computer’s MAC address and therefore could not forward any frames across the link.
+<img width="1074" height="440" alt="unnamed" src="https://github.com/user-attachments/assets/7c679641-284c-4e2d-bc5e-ded8fc444c45" />
+<img width="641" height="236" alt="516961369-8b1cdc4c-8ea0-432d-80ac-67f4adfdc1ad" src="https://github.com/user-attachments/assets/1a99164a-f2de-40f8-921c-76bc390c0d52" />
+
+---
 
 ## PART 3 — Network Layer Check (Layer 3: IP Addressing)
 Now you must determine whether the issue comes from IP configuration.
