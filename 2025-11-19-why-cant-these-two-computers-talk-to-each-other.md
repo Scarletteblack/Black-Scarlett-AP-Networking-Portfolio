@@ -3,22 +3,18 @@
 ## Planning and Design
 Working in pairs, partners figured out why two computers connected directly with an Ethernet cable cannot communicate. Both computers are running Ubuntu virtual machines and are connected with a working Ethernet cable. The main layers that could have issues are the physical layer, data link layer, and the network layer. The most likely scenario is that there is an issue in the data link layer or the network layer. 
 
-
-
-
+---
 
 ## Checking Layer 1 - The Physical Layer
 
-The ethernet cable was plugged into both MACs and the connection checked to be firm and secure. In each Ubuntu VM Terminal **ip a** was used to find the MAC address where it says **link/ether <MAC address>** by **enp0s1**
+The ethernet cable was plugged into both MACs and the connection was checked to be firm and secure. In each Ubuntu VM Terminal **ip a** was used to find the MAC address where it says **link/ether <MAC address>** by **enp0s1**. Then, looking next to the enp0s1 tag, the interface showed UP, meaning the ethernet cable allowed for a stable connection, the NICs and enabled and the Ubuntu VM is recognizing the connection. If the interface displayed DOWN, that would have indicated that the physical layer is not active. Because the issue is not physical, it means the issue is happening in the data link or network layer.
 
-If the interface shows state DOWN, that means Layer 1 (physical) is not active.
+**Both Partners VMs:**
 
-Both Partners VMs: 
+<img width="639" height="356" alt="unnamed-11" src="https://github.com/user-attachments/assets/d0063a3d-5307-4f8e-9239-67a85d884e72" />
+<img width="647" height="327" alt="unnamed-7" src="https://github.com/user-attachments/assets/35c63945-6d7e-49ff-bd08-6f579d1c97d8" />
 
-
-Both partners' VMs displayed UP by the 
-
-At Layer 1, both Ethernet interfaces show state UP, which confirms that the physical link between the machines is active. This means the Ethernet cable is functioning, the NICs are enabled, and Ubuntu recognizes a valid electrical connection. Since the physical layer is operational, the communication problem must be occurring at Layer 2 or Layer 3.
+---
 
 ## PART 2 — Data Link Layer Check (Layer 2)
 To communicate directly, both VMs must be on the same Layer 2 network.
