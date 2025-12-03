@@ -26,7 +26,7 @@ title: Scarlett Black Digital Portfolio
 
 - [Data Movement and Types of Networks](2025-10-22-post-Data-Movement-and-Types-of-Networks.md)
 - [Types of Networks and Connections and Devices](docs/2025-11-04-post-Types-Of-Networks-And-Connections-And-Devices.md)
-- [Why Can't These Two Computers Talk to Each Other?](2025-19-11-understanding-physical-and-logical-addressing.md)
+- [Why Can't These Two Computers Talk to Each Other?](2025-11-19-why-cant-these-two-computers-talk-to-each-other.md)
 
 
 
