@@ -1,47 +1,22 @@
 # Why Can't These Two Computers Talk to Each Other?
 
-## Scenario
-Your job today is to work with a partner to figure out why two computers connected directly
-with an Ethernet cable cannot communicate.
-Both computers are currently running Ubuntu virtual machines.
-Both computers are connected with a working Ethernet cable.
-Yet—no matter what the teacher tries—they still cannot ping each other.
-Your challenge is to diagnose the problem step-by-step, collect evidence, and explain why
-Layer 1, Layer 2, and Layer 3 are (or are not) functioning.
-You will document all findings in your digital portfolio.
-This is meant to simulate a real networking troubleshooting ticket.
-
-## Learning Goals
-By the end of this activity, you should be able to:
-1. Examine networking behavior at OSI Layers 1, 2, and 3.
-2. Diagnose why two devices on a network cannot communicate.
-3. Check physical connections, MAC addresses, and IP addressing.
-4. Explain how switches, routers, and virtual networks impact direct device-to-device
-communication.
-5. Use ip a, ping, and network reasoning to justify your conclusion.
+## Planning and Design
+Working in pairs, partners figured out why two computers connected directly with an Ethernet cable cannot communicate. Both computers are running Ubuntu virtual machines and are connected with a working Ethernet cable. The main layers that could have issues are the physical layer, data link layer, and the network layer. The most likely scenario is that there is an issue in the data link layer or the network layer. 
 
 
-## PART 1 — Physical Layer Check (Layer 1)
-Time: 5 minutes
-1. With your partner, confirm that the Ethernet cable is:
-• firmly plugged into both Mac desktops
-• the correct type (straight-through or crossover; pre-made cables will be straight-
-through)
 
-2. In Ubuntu on each VM, open Terminal and type:
-ip a
-3. Scroll and locate the wired interface, usually enp0s1.
-4. Look for:
-state UP
-link/ether <MAC address>
+
+
+## Checking Layer 1 - The Physical Layer
+
+The ethernet cable was plugged into both MACs and the connection checked to be firm and secure. In each Ubuntu VM Terminal **ip a** was used to find the MAC address where it says **link/ether <MAC address>** by **enp0s1**
+
 If the interface shows state DOWN, that means Layer 1 (physical) is not active.
 
-Digital Portfolio Evidence #1
-Take a screenshot of ip a from both VMs, showing the wired interface status.
-<img width="647" height="330" alt="Screenshot 2025-11-18 at 3 10 49 PM" src="https://github.com/user-attachments/assets/20324670-1f1d-4b3a-bf04-7b4c840d9189" />
-<img width="638" height="391" alt="Screenshot 2025-11-18 at 3 11 46 PM" src="https://github.com/user-attachments/assets/99b08360-8e42-4ca1-ba54-3216d90c6ec3" />
+Both Partners VMs: 
 
-Explanation 
+
+Both partners' VMs displayed UP by the 
 
 At Layer 1, both Ethernet interfaces show state UP, which confirms that the physical link between the machines is active. This means the Ethernet cable is functioning, the NICs are enabled, and Ubuntu recognizes a valid electrical connection. Since the physical layer is operational, the communication problem must be occurring at Layer 2 or Layer 3.
 
