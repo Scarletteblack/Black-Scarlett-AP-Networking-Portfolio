@@ -78,7 +78,8 @@ The VM uses network manager and netplan
 
 ## 4 
 
-<img width="668" height="512" alt="Screenshot 2025-12-04 at 8 36 38 AM" src="https://github.com/user-attachments/assets/41cbcaea-1b5f-4858-888a-7e96f706f5e4" />
+<img width="331" height="287" alt="Image 12-4-25 at 8 24 AM" src="https://github.com/user-attachments/assets/756b6bcc-07c5-41a4-80da-105ab00ebd44" />
+
 
 <img width="648" height="363" alt="Screenshot 2025-12-04 at 8 39 23 AM" src="https://github.com/user-attachments/assets/b53b40cf-eb0f-4fc3-820a-1befe9e5daee" />
 
