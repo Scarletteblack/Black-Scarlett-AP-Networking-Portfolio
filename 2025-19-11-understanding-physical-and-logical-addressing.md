@@ -73,3 +73,18 @@ Addressing: Physical and Logical
 <img width="642" height="378" alt="Screenshot 2025-12-02 at 2 41 38 PM" src="https://github.com/user-attachments/assets/17228ea7-87bb-48c8-b76e-fa74aa1cadc2" />
 
 The VM uses network manager and netplan 
+
+
+
+## 4 
+
+<img width="668" height="512" alt="Screenshot 2025-12-04 at 8 36 38 AM" src="https://github.com/user-attachments/assets/41cbcaea-1b5f-4858-888a-7e96f706f5e4" />
+
+<img width="648" height="363" alt="Screenshot 2025-12-04 at 8 39 23 AM" src="https://github.com/user-attachments/assets/b53b40cf-eb0f-4fc3-820a-1befe9e5daee" />
+
+
+<img width="635" height="63" alt="Screenshot 2025-12-04 at 8 48 36 AM" src="https://github.com/user-attachments/assets/bcb70201-6380-43a1-9ac4-acbd8d60185c" />
+
+
+<img width="530" height="185" alt="Screenshot 2025-12-04 at 8 49 11 AM" src="https://github.com/user-attachments/assets/06d1a957-b077-4834-a965-881224986d8f" />
+
