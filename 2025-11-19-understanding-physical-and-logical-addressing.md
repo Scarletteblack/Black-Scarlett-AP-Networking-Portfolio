@@ -26,20 +26,24 @@ A NIC showing its PCIe connector, Ethernet port, main chip area, and printed MAC
 * Used for communication inside a local network (Layer 2)
 * Written in hexadecimal 
 * Identifies the specific hardware of the device
+
 **Logical Address (IP Address)**
 * Assigned by a network and can change depending on where the device connects
 * Used for communication between networks and across the internet (Layer 3)
 * Written in IPv4 or IPv6 format
 * Helps routers send data to the correct destination
 * Identifies the location of a device on a network
+
 **Both**
 * Used to identify devices on a network
 * Work together so data can move locally and globally
 * Are required for sending and receiving packets
 
 ### IPv4 vs. IPv6
+
 **IPv4**
 IPv4 is the older version of the Internet Protocol that uses 32-bit addresses—numbers. It allows about 4 billion unique addresses, which isn’t enough for the number of devices.
+
 **IPv6**
 IPv6 is the newer version of the Internet Protocol that uses 128-bit addresses—longer, hex-based numbers. It was created because of the limited IPv4 addresses. IPv6 includes improvements such as better routing efficiency and built-in security features.
 
