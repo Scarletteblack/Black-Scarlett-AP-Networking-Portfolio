@@ -1,73 +1,33 @@
 # Why Can't These Two Computers Talk to Each Other?
 
-## Scenario
-Your job today is to work with a partner to figure out why two computers connected directly
-with an Ethernet cable cannot communicate.
-Both computers are currently running Ubuntu virtual machines.
-Both computers are connected with a working Ethernet cable.
-Yet—no matter what the teacher tries—they still cannot ping each other.
-Your challenge is to diagnose the problem step-by-step, collect evidence, and explain why
-Layer 1, Layer 2, and Layer 3 are (or are not) functioning.
-You will document all findings in your digital portfolio.
-This is meant to simulate a real networking troubleshooting ticket.
+## Planning and Design
+Working in pairs, partners figured out why two computers connected directly with an Ethernet cable cannot communicate. Both computers are running Ubuntu virtual machines and are connected with a working Ethernet cable. The main layers that could have issues are the physical layer, data link layer, and the network layer. The most likely scenario is that there is an issue in the data link layer or the network layer. 
 
-## Learning Goals
-By the end of this activity, you should be able to:
-1. Examine networking behavior at OSI Layers 1, 2, and 3.
-2. Diagnose why two devices on a network cannot communicate.
-3. Check physical connections, MAC addresses, and IP addressing.
-4. Explain how switches, routers, and virtual networks impact direct device-to-device
-communication.
-5. Use ip a, ping, and network reasoning to justify your conclusion.
+---
+
+## Checking Layer 1 - The Physical Layer
+
+The ethernet cable was plugged into both MACs and the connection was checked to be firm and secure. In each Ubuntu VM Terminal **ip a** was used to find the MAC address where it says **link/ether <MAC address>** by **enp0s1**. Then, looking next to the enp0s1 tag, the interface showed UP, meaning the ethernet cable allowed for a stable connection, the NICs and enabled and the Ubuntu VM is recognizing the connection. If the interface displayed DOWN, that would have indicated that the physical layer is not active. Because the issue is not physical, it means the issue is happening in the data link or network layer.
+
+**Both Partners VMs:**
+
+<img width="644" height="365" alt="516960731-66861367-47ca-45fa-a1b2-e18e679554ca" src="https://github.com/user-attachments/assets/72d1ea85-66c1-4ff5-bf5b-abcf909cfc36" />
+<img width="639" height="356" alt="unnamed-11" src="https://github.com/user-attachments/assets/4d6e614b-eabc-45ec-9b8c-3fe514a171f3" />
 
 
-## PART 1 — Physical Layer Check (Layer 1)
-Time: 5 minutes
-1. With your partner, confirm that the Ethernet cable is:
-• firmly plugged into both Mac desktops
-• the correct type (straight-through or crossover; pre-made cables will be straight-
-through)
+---
 
-2. In Ubuntu on each VM, open Terminal and type:
-ip a
-3. Scroll and locate the wired interface, usually enp0s1.
-4. Look for:
-state UP
-link/ether <MAC address>
-If the interface shows state DOWN, that means Layer 1 (physical) is not active.
+## Checking  Layer 2 -The Data Link Layer
 
-Digital Portfolio Evidence #1
-Take a screenshot of ip a from both VMs, showing the wired interface status.
-<img width="647" height="330" alt="Screenshot 2025-11-18 at 3 10 49 PM" src="https://github.com/user-attachments/assets/20324670-1f1d-4b3a-bf04-7b4c840d9189" />
-<img width="638" height="391" alt="Screenshot 2025-11-18 at 3 11 46 PM" src="https://github.com/user-attachments/assets/99b08360-8e42-4ca1-ba54-3216d90c6ec3" />
+The two VMs were on the same network in order to communicate directly; however, the two VMs have different MAC addresses. Using the **ping** command and inserting the other VM's IP, the reachability of the other MAC was tested. If the ping was successful and the packet was able to reach the other MAC, it would have shown the time it took the packet to travel between the two. However, the ping failed and both partners got the message **Destination Host Unreachable**. This is evident that Layer 2 cannot find the partner’s MAC address and thus cannot send any packets through the data link. 
 
-Explanation 
 
-At Layer 1, both Ethernet interfaces show state UP, which confirms that the physical link between the machines is active. This means the Ethernet cable is functioning, the NICs are enabled, and Ubuntu recognizes a valid electrical connection. Since the physical layer is operational, the communication problem must be occurring at Layer 2 or Layer 3.
+**Both partners' VM pings**
 
-## PART 2 — Data Link Layer Check (Layer 2)
-To communicate directly, both VMs must be on the same Layer 2 network.
-1. Compare the MAC addresses on each VM:
-• They should be different.
-• If identical: the VMs are using duplicated virtual NICs → communication will
-fail.
+<img width="1074" height="440" alt="unnamed" src="https://github.com/user-attachments/assets/7c679641-284c-4e2d-bc5e-ded8fc444c45" />
+<img width="641" height="236" alt="516961369-8b1cdc4c-8ea0-432d-80ac-67f4adfdc1ad" src="https://github.com/user-attachments/assets/1a99164a-f2de-40f8-921c-76bc390c0d52" />
 
-2. Try to ping each other using MAC broadcast behavior:
-• Find your partner’s IP address (you will fix this in the next part).
-• Try:
-ping <partner_IP>
-
-3. If you get:
-Destination Host Unreachable
-that usually means Layer 2 cannot find the partner’s MAC address.
-Digital Portfolio Evidence #2
-Screenshot your ping attempt AND write one sentence explaining what Layer 2 behavior you
-observed.
-<img width="638" height="235" alt="Screenshot 2025-11-18 at 3 12 40 PM" src="https://github.com/user-attachments/assets/1e9b43e5-49cc-4362-9a99-7ea6c97905f4" />
-
-Explanation 
-
-The ping resulted in “Destination Host Unreachable,” which shows that Layer 2 was unable to discover the partner computer’s MAC address and therefore could not forward any frames across the link.
+---
 
 ## PART 3 — Network Layer Check (Layer 3: IP Addressing)
 Now you must determine whether the issue comes from IP configuration.
