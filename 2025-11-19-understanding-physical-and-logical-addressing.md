@@ -5,19 +5,43 @@
 
 A MAC address is a unique identifier in a device’s Network Interface Card (NIC). It is considered a physical address because it is  directly connected to the hardware of the NIC. Instead of changing from network to network, the MAC stays the same no matter where the device goes. This allows devices on the same local network to identify each other at the data-link layer. A MAC address identifies the device on a local network, while an IP address identifies a device across the entire internet.
 
-**Image A**
 
 ![IMG_2457](https://github.com/user-attachments/assets/637f2536-a098-4538-9445-fe319051444d)
+A NIC showing the Ethernet port, main controller chip, and PCIe connector.
 
-**Image B**
 
 ![IMG_2458](https://github.com/user-attachments/assets/31825deb-0540-48f6-9159-e10e172b9d69)
+A NIC showing its PCIe connector, Ethernet port, main chip area, and printed MAC address label.
 
 * The Ethernet port (RJ-45 jack) is where the network cable plugs in
 * The PCIe connector is connected to the motherboard, providing power and allowing data transfer
 * The Controller chip is the IC that handles network processing
 * The MAC address label is the printed sticker with the MAC value
 
+
+### Physical vs. Logical Address Comparison** 
+**Physical Address (MAC Address)**
+* Set by the manufacturer and stored in the NIC hardware
+* Stays the same no matter what network the device joins
+* Used for communication inside a local network (Layer 2)
+* Written in hexadecimal 
+* Identifies the specific hardware of the device
+**Logical Address (IP Address)**
+* Assigned by a network and can change depending on where the device connects
+* Used for communication between networks and across the internet (Layer 3)
+* Written in IPv4 or IPv6 format
+* Helps routers send data to the correct destination
+* Identifies the location of a device on a network
+**Both**
+* Used to identify devices on a network
+* Work together so data can move locally and globally
+* Are required for sending and receiving packets
+
+### IPv4 vs. IPv6
+**IPv4**
+IPv4 is the older version of the Internet Protocol that uses 32-bit addresses—numbers. It allows about 4 billion unique addresses, which isn’t enough for the number of devices.
+**IPv6**
+IPv6 is the newer version of the Internet Protocol that uses 128-bit addresses—longer, hex-based numbers. It was created because of the limited IPv4 addresses. IPv6 includes improvements such as better routing efficiency and built-in security features.
 
 
 
