@@ -130,38 +130,66 @@ We need IP addresses in addition to MAC addresses because MACs only identify dev
 ### Ubuntu VM
 
 <img width="733" height="345" alt="Screenshot 2025-12-02 at 2 53 15 PM" src="https://github.com/user-attachments/assets/7308c6fb-c928-4da3-bc43-9f83cbed09ea" />
+
 IPv4 and IPv6 addresses currently assigned to VM #1 using ip addr show. Shows whether the IP is dynamic or static.
 
 <img width="531" height="168" alt="Screenshot 2025-12-02 at 2 54 06 PM" src="https://github.com/user-attachments/assets/be7bf655-9393-463c-be8e-d86d23c4204f" />
 
-
+VM #1 Netplan configuration file showing DHCP settings (dhcp4: / dhcp6:)
 
 ### Linux 
 <img width="649" height="288" alt="Screenshot 2025-12-02 at 2 27 00 PM" src="https://github.com/user-attachments/assets/effb3d14-0f9d-49e9-9577-b2e3389c5154" />
 
+IPv4 and IPv6 addresses currently assigned to VM #2 using ip addr show. Shows whether the IP is dynamic or static.
+
 <img width="556" height="258" alt="Screenshot 2025-12-02 at 2 33 41 PM" src="https://github.com/user-attachments/assets/4de11aae-6c86-42c5-af59-24924e2cbe2e" />
+
+VM #2 network configuration showing the method used (Netplan, NetworkManager, or interfaces) and the DHCP status
 * Putting sudo after the first command - result: ran successfully
 
-<img width="628" height="311" alt="Screenshot 2025-12-02 at 2 30 31 PM" src="https://github.com/user-attachments/assets/c6f32475-b2b4-43ab-be6b-56e5b5d37aad" />
-
-<img width="611" height="171" alt="Screenshot 2025-12-02 at 2 31 05 PM" src="https://github.com/user-attachments/assets/8b3abbc7-db19-46d7-8b9f-b420dae747cc" />
 
 <img width="642" height="378" alt="Screenshot 2025-12-02 at 2 41 38 PM" src="https://github.com/user-attachments/assets/17228ea7-87bb-48c8-b76e-fa74aa1cadc2" />
 
-The VM uses network manager and netplan 
+The VM uses Network Manager and Netplan.
 
 
+**Static vs. Dynamic Addressing**
 
-## 4 
+Dynamic addressing is a method where a device automatically receives an IP address from a DHCP server when it connects to a network. These addresses are lease-based, meaning they are temporary and can change over time, which makes this method highly scalable and efficient for networks with many devices that frequently join or leave, such as laptops, smartphones, and guest devices. In contrast, static addressing involves manually assigning an IP address to a device, which remains the same unless it is manually changed. This provides predictability and reliability, which is essential for critical devices like servers, printers, routers, and security cameras that need to be consistently reachable. Networks need both methods because dynamic addressing simplifies management for everyday devices, while static addressing ensures important devices remain accessible at a fixed location. Overall, dynamic addressing is best for end-user devices that require flexibility, and static addressing is ideal for devices that provide essential services or require secure, consistent access.
+
+
+**Scenario Analysis Table**
+
+| Device | Static or Dynamic? | Justification (2 sentences) |
+|--------|------------------|-----------------------------|
+| School web server | STATIC | The web server must always be reachable by students and staff, so a consistent IP address is required. Changing its address could break access to hosted websites and services. |
+| Classroom printer | STATIC | All users need to reliably find the printer on the network, so a fixed IP ensures it can always be located. This prevents printing errors caused by changing addresses. |
+| Student laptops | DYNAMIC | Laptops frequently join and leave the network, so dynamic addressing allows them to receive IPs automatically without manual setup. This makes network management easier for administrators. |
+| Security cameras | STATIC | Cameras need a permanent IP so monitoring systems and security software can consistently access them. Changing addresses could disrupt video feeds or remote management. |
+| Teacher workstation | DYNAMIC | If the workstation moves between classrooms or is not providing network services for others, dynamic addressing allows flexible network access. It simplifies setup and reduces manual configuration. |
+
+**Comparison of VMs**
+
+VM #1 uses Netplan for its network configuration, with dhcp4: true indicating that its IPv4 address is assigned dynamically, and a similar line may exist for IPv6 if it is also dynamic. VM #2 also uses Netplan but may integrate with NetworkManager, which is common in desktop-oriented Linux systems, allowing for flexible, user-friendly network management. Both VMs use similar syntax for DHCP configuration, but file names, additional settings, or the presence of NetworkManager can differ, reflecting differences in system setup and intended use. While VM #1 relies solely on Netplan, VM #2’s combination with NetworkManager shows how some systems prioritize dynamic connections for easier management. These differences occur because Linux distributions vary in how they handle networking based on whether the system is server-focused, desktop-focused, or intended for multiple users. Overall, the IP addresses on both VMs are dynamically assigned, but the methods and tools used to manage them differ, demonstrating how Linux networking can be configured in multiple ways depending on the environment and purpose.
+
+## Configuring and Verifying IP Addresses on a Linux VM
 
 <img width="331" height="287" alt="Image 12-4-25 at 8 24 AM" src="https://github.com/user-attachments/assets/756b6bcc-07c5-41a4-80da-105ab00ebd44" />
-
+* Edited YAML File
 
 <img width="648" height="363" alt="Screenshot 2025-12-04 at 8 39 23 AM" src="https://github.com/user-attachments/assets/b53b40cf-eb0f-4fc3-820a-1befe9e5daee" />
-
+* shows the static IP assigned to your interface
 
 <img width="635" height="63" alt="Screenshot 2025-12-04 at 8 48 36 AM" src="https://github.com/user-attachments/assets/bcb70201-6380-43a1-9ac4-acbd8d60185c" />
-
+* shows the default route pointing to the gateway
 
 <img width="530" height="185" alt="Screenshot 2025-12-04 at 8 49 11 AM" src="https://github.com/user-attachments/assets/06d1a957-b077-4834-a965-881224986d8f" />
+* verifies external connectivity
 
+**Explination**
+
+Physical addressing uses MAC addresses, which are unique identifiers burned into a device’s network interface card. These addresses allow devices to recognize each other on the local network, but they cannot route traffic beyond that network. IP addresses provide logical addressing, allowing devices to communicate across multiple networks, such as the internet. While DHCP can automatically assign IP addresses (dynamic IPs), static IPs are manually set and remain constant, which is useful for servers, printers, or other devices that need a consistent network location. IP addresses are necessary in addition to MAC addresses because routers use IPs to determine where to send data across different networks. Without IPs, devices could only communicate locally and not reach external networks. Using a static IP ensures predictable network behavior, whereas dynamic IPs make network management easier for devices that do not require fixed addresses.
+
+**Reflection**
+
+The most challenging part of the IP configuration was getting the YAML indentation exactly correct, because even a single extra space or a tab would cause Netplan to fail. I learned that YAML is extremely syntax-sensitive, and small mistakes can prevent the network from working, which reinforced the importance of careful editing. I also discovered how critical precise IP settings are for routing and connectivity, since the gateway and DNS must be correct for the system to communicate properly. When my configuration didn’t work at first, I troubleshooted by checking for typos, fixing indentation, and verifying the interface name, which helped me successfully apply the static IP.
