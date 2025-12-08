@@ -48,29 +48,38 @@ IP 1
 
 IP 2
 
-Explanation Paragraph
+**Explanation**
 
 Although both virtual machines show very similar IP addresses, they are not part of the same Layer 3 network. UTM assigns each VM to its own isolated host-only network, complete with a separate virtual switch and its own DHCP server. This makes the IPs appear related, but the machines are actually in different broadcast domains and cannot receive each other’s ARP messages. Since ARP cannot operate across two distinct virtual switches, the VMs are unable to communicate at Layer 3 despite having matching IP ranges. Therefore, Layer 3 connectivity is not possible in this setup.
 
 ## Making it Work
 
+<img width="1288" height="404" alt="unnamed-10" src="https://github.com/user-attachments/assets/fa65f93b-bcf4-4196-b663-154ce03e1f8d" />
+
+Changing VM 1 to bridged mode
+
+<img width="1652" height="684" alt="unnamed-12" src="https://github.com/user-attachments/assets/3c1d4817-3368-489b-8124-3ca8a59d5df7" />
+
+<img width="1052" height="530" alt="unnamed-13" src="https://github.com/user-attachments/assets/80f2d8fd-7ef1-4c52-89a3-32dc2206adf9" />
+
+Successful ping on VM 1
+
+<img width="711" height="210" alt="unnamed-5" src="https://github.com/user-attachments/assets/e0b82156-768a-44b8-b693-dc0bf6e53f34" />
+
+Changing VM 2 to bridged mode
+
+<img width="647" height="327" alt="unnamed-15" src="https://github.com/user-attachments/assets/15a28482-64b3-4baf-95c5-f957191bf11d" />
 
 
 
-## HOMEWORK PART 5 — Final Reflection Paragraph
-Using what you learned about:
-• Layer 1 (physical link)
-• Layer 2 (MAC addressing & broadcast domain)
-• Layer 3 (IP networks, subnets)
-• Virtual networking inside UTM
-Write a well-structured reflection paragraph answering:
-1. Why couldn’t the two computers communicate even though they were connected with a
-working Ethernet cable?
-2. Which OSI layer(s) caused the failure?
-3. Why does UTM prevent two VMs from communicating directly in Host-Only mode?
-4. What configuration change would allow communication between the two computers?
-5. In a real SOHO network, how do routers and switches prevent similar issues?
+<img width="613" height="230" alt="unnamed-14" src="https://github.com/user-attachments/assets/0f75861a-7b48-4927-bf20-b18b84c48416" />
 
-Final Reflection Paragraph
+Successful ping on VM 2
 
-Even though the two computers were connected by a working Ethernet cable, they still could not communicate because UTM placed each VM into a different virtual Layer 2 broadcast domain and a separate Layer 3 network—even though the IP addresses looked similar. The failure occurred mainly at Layer 2 (MAC discovery/ARP) and Layer 3 (separate IP networks/subnets) because ARP packets never reached the other machine’s virtual switch. UTM’s Host-Only mode isolates VMs for security, so they cannot talk directly unless they are explicitly configured to share the same virtual network adapter. To allow communication, both VMs would need to be placed on the same bridged adapter or the same internal network so they share the same Layer 2 segment. In a real SOHO network, switches keep devices in the same broadcast domain while routers properly route traffic between different Layer 3 networks, preventing this kind of accidental isolation.
+
+The VMs needed to be placed in bridged mode rather than shared mode so they could exchange Layer 2 frames over the same virtual network. After switching to bridged mode, static IP addresses had to be assigned using nmcli, because two computers connected directly do not have access to any DHCP server that could automatically provide network configuration.
+
+
+## Reflection 
+
+Even though the two computers were linked with a functioning Ethernet cable at Layer 1, communication failed because the systems were placed in separate virtual Layer 2 broadcast domains within UTM. Each VM was assigned to its own isolated virtual switch and DHCP service, so ARP messages could not reach the other machine. Since no MAC resolution was possible, Layer 2 communication broke down, which also prevented any Layer 3 exchange between the two different IP networks. UTM enforces this separation in Host-Only mode to provide sandboxing, security, and controlled traffic flow between virtual machines. To allow communication, both VMs would need to be attached to the same virtual network—such as a shared Host-Only interface, a bridged adapter, or a custom virtual LAN created inside UTM. In real SOHO networks, switches maintain a shared Layer 2 broadcast domain for devices that should communicate locally, while routers connect different IP subnets and forward traffic only when networks are properly configured.
