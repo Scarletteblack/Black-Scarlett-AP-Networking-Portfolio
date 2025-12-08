@@ -25,11 +25,16 @@ The two VMs were on the same network in order to communicate directly; however, 
 **Both partners' VM pings**
 
 <img width="1074" height="440" alt="unnamed" src="https://github.com/user-attachments/assets/7c679641-284c-4e2d-bc5e-ded8fc444c45" />
+
+VM #1 ping unsuccessful 
+
 <img width="641" height="236" alt="516961369-8b1cdc4c-8ea0-432d-80ac-67f4adfdc1ad" src="https://github.com/user-attachments/assets/1a99164a-f2de-40f8-921c-76bc390c0d52" />
+
+VM #2 ping unsuccessful 
 
 ---
 
-## PART 3 — Network Layer Check (Layer 3: IP Addressing)
+## Network Layer Check (Layer 3: IP Addressing)
 Now you must determine whether the issue comes from IP configuration.
 Direct connections only work if:
 Both computers are on the same subnet, for example:
