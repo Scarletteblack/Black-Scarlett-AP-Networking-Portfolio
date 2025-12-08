@@ -34,5 +34,5 @@ title: Scarlett Black Digital Portfolio
 
 # Engineering Portfolio
 
-- [Engineering Digital Portfolio](https://scarletteblack.github.io/Scarlett-Black-Honors-Engineering-Portfolio/))
+- [Engineering Digital Portfolio](https://scarletteblack.github.io/Scarlett-Black-Honors-Engineering-Portfolio/)
 
