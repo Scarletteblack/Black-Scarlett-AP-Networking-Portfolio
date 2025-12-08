@@ -19,34 +19,6 @@ A NIC showing its PCIe connector, Ethernet port, main chip area, and printed MAC
 * The MAC address label is the printed sticker with the MAC value
 
 
-### Physical vs. Logical Address Comparison** 
-**Physical Address (MAC Address)**
-* Set by the manufacturer and stored in the NIC hardware
-* Stays the same no matter what network the device joins
-* Used for communication inside a local network (Layer 2)
-* Written in hexadecimal 
-* Identifies the specific hardware of the device
-
-**Logical Address (IP Address)**
-* Assigned by a network and can change depending on where the device connects
-* Used for communication between networks and across the internet (Layer 3)
-* Written in IPv4 or IPv6 format
-* Helps routers send data to the correct destination
-* Identifies the location of a device on a network
-
-**Both**
-* Used to identify devices on a network
-* Work together so data can move locally and globally
-* Are required for sending and receiving packets
-
-### IPv4 vs. IPv6
-
-**IPv4**
-IPv4 is the older version of the Internet Protocol that uses 32-bit addresses—numbers. It allows about 4 billion unique addresses, which isn’t enough for the number of devices.
-
-**IPv6**
-IPv6 is the newer version of the Internet Protocol that uses 128-bit addresses—longer, hex-based numbers. It was created because of the limited IPv4 addresses. IPv6 includes improvements such as better routing efficiency and built-in security features.
-
 ### Understanding MAC Address Structure
 
 | Full MAC Address        | OUI (first 3 pairs) | Vendor / Company Name | Type of Vendor (physical, virtual, or both) | 
@@ -96,8 +68,7 @@ The MAC address on the physical NIC is attached directly to the hardware. In the
 MAC addresses operate at OSI Layer 2, where Ethernet handles local delivery of frames. They never leave the local network because routers strip off the Layer 2 frame and only forward the Layer 3 packet to the next network. When a router sends the packet out another interface, it creates a new Ethernet frame with new source and destination MAC addresses appropriate for the next hop.
 
 ## Understanding Logical Addressing 
-
-<img width="644" height="288" alt="Screenshot 2025-12-01 at 1 39 47 PM" src="https://github.com/user-attachments/assets/e403454f-108f-48ba-aba9-880ee28d4387" />
+<img width="641" height="285" alt="Screenshot 2025-12-07 at 11 33 24 PM" src="https://github.com/user-attachments/assets/38d0cbce-3475-4f5e-b90d-4a9086340bb5" />
 
 IPv4 and IPv6
 
@@ -129,20 +100,40 @@ IPv4 is the older version of the Internet Protocol that uses 32-bit addresses—
 **IPv6**
 IPv6 is the newer version of the Internet Protocol that uses 128-bit addresses—longer, hex-based numbers. It was created because of the limited IPv4 addresses. IPv6 includes improvements such as better routing efficiency and built-in security features.
 
+**Automatic IPv6 link-local Address**
+
+An IPv6 link-local address is a special type of IPv6 address that is only valid on the local network segment and is used for communication between devices on the same link. It always begins with fe80:: because that prefix is reserved by the IPv6 standard specifically for link-local addressing. These addresses support essential local functions such as neighbor discovery, router discovery, and local device-to-device communication. They do not require DHCP or any outside configuration because they are generated automatically using the device’s interface information and built-in IPv6 rules. Every IPv6-enabled device creates a link-local address by default so it can participate in local network operations even if no router, DHCP server, or global IPv6 network is available.
+
+**IPv6 and the Future of Networking**
+
+IPv4 is no longer sufficient because its 32-bit address space can only support about 4.3 billion unique addresses, which is far too limited for today’s huge number of devices. IPv6 solves this exhaustion by using 128-bit addresses, providing an almost unlimited supply that can support global growth for decades. Beyond just more addresses, IPv6 introduces improvements like more efficient routing, built-in security features, and better support for mobile devices. However, since the entire internet still relies heavily on IPv4, networks must support both IPv4 and IPv6 during the transition so older systems remain reachable while newer systems can take advantage of IPv6. This dual-stack approach ensures compatibility and smooth communication across all networks.
+
+**IPv4 vs IPv6 Comparison Table**
+
+| Feature | IPv4 (in my own words) | IPv6 (in my own words) |
+|---------|------------------------|------------------------|
+| Address length | Uses 32 bits, which is enough for a few billion unique addresses. | Uses 128 bits, giving an extremely large number of possible addresses. |
+| Notation | Written as four decimal numbers separated by dots (like 192.168.1.10). | Written in hexadecimal with groups separated by colons (like fe80::1). |
+| Approximate capacity | Can handle around 4.3 billion total addresses. | Has so many addresses that we basically won’t run out. |
+| Example (mine or given) | Example: 10.0.0.25 or your VM’s IPv4 address. | Example: fe80::xxxx:xxxx:xxxx:xxxx or a global IPv6 address. |
+| Where I see it used | Common on home networks, Wi-Fi routers, and older systems. | Used on newer devices, link-local communication, and modern internet services. |
+
+**Logical Addressing**
+
+We need IP addresses in addition to MAC addresses because MACs only identify devices on a local network, while IP addresses provide a global location that allows devices to communicate across multiple networks. IP addresses work like a mailing address, letting data know where to go beyond the local LAN so it can reach the correct device anywhere in the world. Routers use the network portion of an IP address to determine the best path to forward packets toward their destination, effectively connecting different networks together. Without IP addresses, a computer could only talk to devices directly on the same local network, and internet communication would be impossible. For example, when I browse a website, my computer uses its IP address so routers can send requests and responses back and forth between my home network and the website’s server, even though they are thousands of miles apart. This combination of MAC and IP addresses ensures that data reaches the correct device both locally and globally. Overall, IP addressing is essential for scalable, worldwide communication.
 
 
+## Dynamic vs. Static Addressing & When to Use Each 
 
-
-## 3 
-Dynamic vs. Static Addressing & When to Use Each
-
-Addressing: Physical and Logical
+**Addressing: Physical and Logical**
 
 ### Ubuntu VM
 
 <img width="733" height="345" alt="Screenshot 2025-12-02 at 2 53 15 PM" src="https://github.com/user-attachments/assets/7308c6fb-c928-4da3-bc43-9f83cbed09ea" />
+IPv4 and IPv6 addresses currently assigned to VM #1 using ip addr show. Shows whether the IP is dynamic or static.
 
 <img width="531" height="168" alt="Screenshot 2025-12-02 at 2 54 06 PM" src="https://github.com/user-attachments/assets/be7bf655-9393-463c-be8e-d86d23c4204f" />
+
 
 
 ### Linux 
