@@ -16,12 +16,12 @@
 
 ## LAN Threat Scenario Rotation
 
-| Scenario Letter | Symptoms (summary) | Your Hypothesis | Your Justification (evidence) |
+| Scenario Letter | Symptoms |  Hypothesis |  Justification  |
 |-----------------|-----------------|----------------|-------------------------------|
-| A | | | |
-| B | | | |
-| C | | | |
-| D | | | |
+| A | Default gateway does not match router| there is an issue with the DHCP server| |
+| B | Switch CPU spikes and thousands of MACs appear on one port| | |
+| C | Receives network settings from an unknown DHCP source | | |
+| D | New device appears inside the broadcast domain and communicates broadly| | |
 | E | | | |
 
 **Reflection (5–7 sentences):**  
