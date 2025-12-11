@@ -31,8 +31,12 @@
 
 ## Task A — LAN Observation
 
-**Screenshot:**  
-*(Insert screenshot here.)*
+<img width="648" height="372" alt="Screenshot 2025-12-11 at 2 52 31 PM" src="https://github.com/user-attachments/assets/cb288b3a-82f6-43e8-8933-0558086fd9ab" />
+
+
+NEEDS ARP -A
+
+<img width="638" height="112" alt="Screenshot 2025-12-11 at 2 53 00 PM" src="https://github.com/user-attachments/assets/0f37a601-61fa-450a-bf2e-37c845503741" />
 
 **Reflection (2–3 sentences):**  
 How could an attacker misuse this information?  
