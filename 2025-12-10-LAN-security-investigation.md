@@ -18,11 +18,11 @@
 
 | Scenario Letter | Symptoms |  Hypothesis |  Justification  |
 |-----------------|-----------------|----------------|-------------------------------|
-| A | Default gateway does not match router| there is an issue with the DHCP server| |
-| B | Switch CPU spikes and thousands of MACs appear on one port| | |
-| C | Receives network settings from an unknown DHCP source | | |
-| D | New device appears inside the broadcast domain and communicates broadly| | |
-| E | | | |
+| A | Default gateway does not match router| there is an issue with the DHCP server| connectivity issues and network behavior changes|
+| B | Switch CPU spikes and thousands of MACs appear on one port| MAC flooding attack | Multiple MACs show up on one port and switch CPU spikes|
+| C | Receives network settings from an unknown DHCP source | misconfigured router|Unknown DHCP source and conectivity issues |
+| D | New device appears inside the broadcast domain and communicates broadly| Administrative issue | communicate broadly and new devices appearing|
+| E | A host reaches internal systems it should not access| security policy bypass | Fire walls and other encryptions are not working|
 
 **Reflection (5–7 sentences):**  
 *(Discuss confidence, difficulty, group discussion insights, and patterns noticed.)*
