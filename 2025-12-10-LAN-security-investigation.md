@@ -35,9 +35,20 @@
 
 All commands on the Ubuntu VM
 
+identify:
+• Your subnet
+• Your default gateway
+• Any visible hosts your device is aware of
+• Any ARP or neighbor table entries
+• Any patterns that suggest how your device learns about others on the LAN
+
 **Reflection (2–3 sentences):**  
-How could an attacker misuse this information?  
-*(Explain using your VM outputs.)*
+“How could an attacker misuse this information?”
+Think about:
+• What the attacker could learn
+• How this information might help them impersonate a device
+• How it might help them redirect or intercept traffic
+Be specific—use the data from your VM as evidence.
 
 ---
 
@@ -112,3 +123,8 @@ How could an attacker misuse this information?
 ### Part 3 — Final Reflection (3–4 sentences)
 
 *(Which internal LAN threat is most difficult to detect and why? Include VM evidence, scenario patterns, and normal LAN behavior that can hide malicious activity.)*
+
+
+
+
+# Connecting Networks in Packet Tracer
