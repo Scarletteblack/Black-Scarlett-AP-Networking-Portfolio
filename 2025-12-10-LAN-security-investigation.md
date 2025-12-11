@@ -78,7 +78,44 @@ Be specific—use the data from your VM as evidence.
 *(Which VM the attacker would impersonate and why.)*
 
 **Summary (3–4 sentences):**  
-*(Explain how the threat exploits normal LAN behavior.)*
+*(Explain how the threat exploits normal LAN behavior.)
+
+<img width="635" height="60" alt="Screenshot 2025-12-11 at 3 21 16 PM" src="https://github.com/user-attachments/assets/ca81a135-a83b-4951-a55d-ff9d91364bc7" />
+
+ip route show
+✔ What an attacker could exploit
+
+Lists the default route (192.168.64.1), kernel routes, and the local subnet.
+
+Confirms gateway function and network topology.
+
+💀 Why is this valuable to an attacker?
+
+Allows an attacker to learn the network layout, including where traffic leaves the subnet.
+
+The gateway IP becomes the primary target for traffic interception or rogue gateway attacks.
+
+
+
+<img width="634" height="40" alt="Screenshot 2025-12-11 at 3 22 12 PM" src="https://github.com/user-attachments/assets/5476dc4c-eede-4959-bad5-f787c61186f5" />
+
+
+arp -a
+✔ What an attacker could exploit
+
+ARP table entry: Gateway 192.168.64.1 → MAC 16:98:77:f6:18:64.
+
+This directly shows the default router’s MAC–IP mapping.
+
+💀 Why is this valuable to an attacker?
+
+An attacker could spoof the gateway MAC to perform MITM attacks (ARP poisoning).
+
+Knowing the gateway MAC gives an attacker a precise target for impersonation or traffic manipulation.
+
+
+
+
 
 ---
 
