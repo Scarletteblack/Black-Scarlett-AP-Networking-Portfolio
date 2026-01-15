@@ -2,11 +2,15 @@
 
 ## Common Security Controls in a LAN
 ### LAN Threat Scenario Rotation
-| Scenario Letter | Symptoms (summary) | Your Hypothesis (what’s happening) | Your Justification (why you think that,<br>your evidence) |
+| Scenario Letter | Symptoms | Your Hypothesis (what’s happening) | Your Justification (why you think that,<br>your evidence) |
 |-----------------|-----------------------|----------------------------------------|-------------------------------------------------------------|
-|   A |                       |                                        |                                                             |
-|                 |                       |                                        |                                                             |
-|                 |                       |                                        |                                                             |
+|   A - Wrong Gateway |  The gateway received does not match the router.      |         Because the switch altered its broadcast domain, the device was forced to switch  to a different network segment.              |         The device had to switch because the change in broadcast address would prevent communication unless the device switches to the new network segment.                |
+|       B - MAC Flooding         |                       |                                        |                                                             |
+|         C - Unexpected DHCP Source       |                       |                                        |                                                             |
+|         D - Unknown Device      |                       |                                        |                                                             |
+|    E - Unauthorized Movement       |                       |                                        |                                                             |
+
+
 
 
 ---
