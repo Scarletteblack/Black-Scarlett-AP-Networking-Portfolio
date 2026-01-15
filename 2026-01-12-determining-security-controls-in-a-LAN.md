@@ -1,14 +1,15 @@
 # Determining Security Controls In A LAN
 
 ## Common Security Controls in a LAN
-### LAN Threat Scenario Rotation
+### LAN Security Investigation
+
 | Scenario Letter | Symptoms |  Hypothesis  |  Justification |
 |-----------------|-----------------------|----------------------------------------|-------------------------------------------------------------|
 |   A  |  Default gateway does not match router    |   There is an issue with the DHCP server   |     Connectivity issues and network behavior changes |
 |       B       |   Switch CPU spikes and thousands of MACs appear on one port     |       MAC Flooding Attack    |        Multiple MACs show up on one port and switch CPU spikes   |
 |    C     |       Receives network settings from an unknown DHCP source   |    Misconfigured Router  |    Unknown DHCP source and conectivity issues        |
 |    D   |    New device appears inside the broadcast domain and communicates broadly        |      Administrative Issue       |  Communicate broadly and new devices appearing     |
-|    E - Unauthorized Movement   |  A host reaches internal systems it should not access |Security Policy Bypass|   Fire walls and other encryptions are not working |
+|    E  |  A host reaches internal systems it should not access |Security Policy Bypass|   Fire walls and other encryptions are not working |
 
 
 
