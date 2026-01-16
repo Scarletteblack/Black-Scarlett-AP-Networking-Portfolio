@@ -40,3 +40,38 @@ Your response should:
 Which threat scenario from today felt the most realistic, and why?
 • What surprised you about how much information a normal device can see inside a
 switched LAN?
+
+
+### From Observations to Decisions
+
+#### Definitions
+
+
+- Threat &rarr;
+- Vulnerability &rarr;
+- Control &rarr;
+- Prevent vs. Mitigate &rarr;
+
+
+#### Visualizing Switch Security with Packet Tracer
+
+| Senario | Evidence | Explination |
+|-----------------|------------------------------------|--------------------------------------------------------|
+| A - Flat Network (No Security Controls |                                    |         What this network allows by default
+• Why this design assumes trust between devices
+• How this could create security risk                                               |
+| B - VLAN Segmentation (Visual Separation)|                   |                                    |        How VLANs change what devices can see
+• Why VLANs reduce broadcast visibility
+• Why VLANs alone do not enforce full security                                                |
+| C - Port Security (Limiting Physical Access)|                                    |    • How port security relates to physical access
+• What type of risk it helps mitigate
+• What it cannot protect against on its own |
+| D - Conceptual View of DHCP Snooping, DAI, and ACLs|                                    |        • Which devices should be trusted?
+• Which devices should be restricted?
+• Where should the switch enforce rules?      |
+
+
+| VM Evidence |Vulnerability | Control | Why This Control
+Mitigates Risk |
+|---------|--------------------|----------------------------------------|---------------------------------------------|
+|        |             |                                               |   
