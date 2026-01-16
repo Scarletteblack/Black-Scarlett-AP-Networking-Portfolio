@@ -1,7 +1,8 @@
 # Determining Security Controls In A LAN
 
-## Common Security Controls in a LAN
-### LAN Security Investigation
+## LAN Security Investigation
+
+
 
 | Scenario Letter | Symptoms |  Hypothesis  |  Justification |
 |-----------------|-----------------------|----------------------------------------|-------------------------------------------------------------|
