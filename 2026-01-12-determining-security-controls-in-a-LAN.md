@@ -64,9 +64,65 @@ vulnerability–control mappings,
 
 VLAN redesign, 
 
-and physical security plan.
+### Physical Security Controls for Network Devices and Physical Spaces
+
+#### Enterprise Physical Threats Analysis
+
+In a pharmaceutical research facility, there could be several physical vulnerabilities that pose serious threats. Unrestricted access to research laboratories would allow unauthorized individuals into sensitive areas, leaving the company's intellectual property exposed and allowing for contamination. Drug storage areas are often inadequately secured, making controlled substances and experimental compounds vulnerable to theft or diversion. Poor separation between public, administrative, and research spaces increases the chance of people entering areas that they do not have the authority to be in. After-hours access may be weakly monitored, enabling potential tampering or removal of materials when there is less security. Critical environmental systems, such as cleanroom controls, lack sufficient protection, putting experiments and drugs that need to be climate-controlled at risk. Lastly, data centers are not always secured properly, allowing for cyber attacks as the data is vulnerable.
 
 
+#### Physical Security Plan - Pharmaceutical Research Facility
+
+- Describe a layered physical security strategy that includes all five categories:
+- Required Categories (Must All Be Addressed)
+1. Environmental Controls
+• Temperature, humidity, air quality, fire suppression
+2. Access Control
+• Badges, biometrics, mantraps, zoning
+3. Surveillance and Detection
+• Cameras, monitoring rooms, alarms, logging
+4. Hardware Security
+• Locked racks, secured network closets, port protection
+5. Personnel and Procedures
+• Visitor handling, escort policies, access reviews, training
+
+For each category:
+• Describe specific controls
+• Explain how they protect research, data, and network infrastructure
+• Reference ideas or examples seen in the videos
+
+
+#### Diagram: 
+<img width="646" height="363" alt="Screenshot 2026-01-16 at 11 16 18 PM" src="https://github.com/user-attachments/assets/cc085847-1d32-4f8c-ab6c-2c239ccbf41f" />
+
+**Key:**
+* Grey areas - buildings
+* Yellow outlines - monotered public areas
+* Red outlines - high security area
+* Bold red outline - very high security area
+* Dark grey paths - secured walkways that restrict movement between rooms.
+  
+
+
+#### Risk Justification and Priority Controls
+
+Write 1–2 paragraphs explaining:
+• Which physical controls are the highest priority and why
+• How these controls reduce the likelihood and impact of:
+o Theft
+o Sabotage
+o Data compromise
+o Regulatory violations
+• How physical security supports technical controls, such as:
+o Network segmentation
+o Access control lists
+o Monitoring systems
+
+Write this as if addressing executive leadership at the company.
+
+
+
+---
 
 
 ### LAN Security Investigation
@@ -87,11 +143,6 @@ The MAC Flooding Attack was the easiest conclusion to come to and the one that t
 
 ---
 
-### VM Threat Evidence
-
-TO BE COMPLETED ON TUESDAY
-
----
 
 ### Appropriate Security Controls/Common Vulnerabilities Within Simple LAN
 #### Linux:
@@ -148,67 +199,7 @@ VLAN segmentation, DHCP Snooping, Dynamic ARP Inspection, ACLs).
 
 ---
 
-### Physical Security Controls for Network Devices and Physical Spaces
 
-#### Enterprise Physical Threats Analysis
-
-- Six physical vulnerabilities relevant to a pharmaceutical research environment. Each vulnerability must be written as a clear weakness, not a solution.
-- Each vulnerability should include: What the vulnerability is, Where it exists in the facility, Why it presents serious risk in this industry
-
-#### Physical Security Plan - Pharmaceutical Research Facility
-
-- Describe a layered physical security strategy that includes all five categories:
-- Required Categories (Must All Be Addressed)
-1. Environmental Controls
-• Temperature, humidity, air quality, fire suppression
-2. Access Control
-• Badges, biometrics, mantraps, zoning
-3. Surveillance and Detection
-• Cameras, monitoring rooms, alarms, logging
-4. Hardware Security
-• Locked racks, secured network closets, port protection
-5. Personnel and Procedures
-• Visitor handling, escort policies, access reviews, training
-
-For each category:
-• Describe specific controls
-• Explain how they protect research, data, and network infrastructure
-• Reference ideas or examples seen in the videos
-
-
-#### Diagram: 
-requirements: 
-• Facility perimeter
-• Entry points
-• Security zones (public, restricted, highly restricted)
-• Data center and network spaces
-• Labs and clean rooms
-• Monitoring and control areas
-
-Diagram Requirements:
-• Clearly labeled layers of security
-• Icons or symbols for:
-o Cameras
-o Access control points
-o Locked areas
-o Environmental protections
-• Arrows or boundaries showing restricted movement
-
-#### Risk Justification and Priority Controls
-
-Write 1–2 paragraphs explaining:
-• Which physical controls are the highest priority and why
-• How these controls reduce the likelihood and impact of:
-o Theft
-o Sabotage
-o Data compromise
-o Regulatory violations
-• How physical security supports technical controls, such as:
-o Network segmentation
-o Access control lists
-o Monitoring systems
-
-Write this as if addressing executive leadership at the company.
 
 ---
 
