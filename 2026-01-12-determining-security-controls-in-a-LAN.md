@@ -58,11 +58,7 @@ Internal trust is the assumption that devices and users inside a network are saf
 
 TO BE COMPLETED ON TUESDAY
 
----
-
-vulnerability–control mappings, 
-
-VLAN redesign, 
+----
 
 ### Physical Security Controls for Network Devices and Physical Spaces
 
@@ -92,10 +88,7 @@ In a pharmaceutical research environment, the highest priority physical controls
 
 ---
 
-
 ### LAN Security Investigation
-
-
 
 | Scenario Letter | Symptoms |  Hypothesis  |  Justification |
 |-----------------|-----------------------|----------------------------------------|-------------------------------------------------------------|
@@ -110,6 +103,8 @@ In a pharmaceutical research environment, the highest priority physical controls
 The MAC Flooding Attack was the easiest conclusion to come to and the one that the group felt most confident in initially. This is due to the straightforward and very evident symptoms regarding MAC Flooding Attacks. Scenario C was the most difficult to identify, as initially the group was not thinking about the router, but instead the rogue device. Talking over the initial conclusions with another group solidified both groups' answers, ensuring everyone was confident regarding the scenarios. General patterns include abnormal network behavior, detection after the attacks have occurred, and a lack of security where the attacks are occurring. 
 
 ---
+
+## Testing, Observation & Risk Evaluation
 
 
 ### Appropriate Security Controls/Common Vulnerabilities Within Simple LAN
@@ -128,7 +123,7 @@ The MAC Flooding Attack was the easiest conclusion to come to and the one that t
 4. Why was Bridged mode required for this lab to work?
 5. Include evidence from commands used
 
-#### LAN Attack Path Diagram (Homework) 
+#### LAN Attack Path Diagram 
 
 1. The Devices Involved
 • VM #1 (workstation)
@@ -170,6 +165,7 @@ VLAN segmentation, DHCP Snooping, Dynamic ARP Inspection, ACLs).
 
 
 ---
+## Professional Integration 
 
 ### [Switched LAN Security Controls Report](https://docs.google.com/document/d/e/2PACX-1vQnK0U0c5t3UXuoHlh1Vlx0YkpLQGElYG0Mjka2JinEu0iKzmfN7vlz6MFYnahnNF1-qFzcKMkvWVVW/pub)
 
