@@ -2,11 +2,6 @@
 
 ## Planning & Conceptual Understanding 
 
-Clear evidence of planning and conceptual understanding. Portfolio includes
-notes or explanations distinguishing threats, vulnerabilities, and controls;
-demonstrates understanding of flat LAN risk, internal trust, and physical vs
-technical security.
-
 #### Security Controls
 
 ##### Port Security
@@ -27,37 +22,6 @@ technical security.
 ##### DHCP Snooping
 
 **DHCP Snooping** designates ports as trusted or untrusted and blocks unauthorized devices on the network. A DHCP Snooping table is used to record valid MAC addresses as well as devices that are not allowed on the network. This prevents attackers from assigning malicious IP configurations that enable traffic interception.
-
-##### Dynamic ARP Inspection (DAI)
-Type: Control
-Definition: DAI validates ARP messages against trusted DHCP Snooping data before allowing them on the LAN.
-Prevents/Impact: It blocks ARP spoofing attacks that could redirect or intercept network traffic.
-
-b. ARP Validation
-Type: Control
-Definition: ARP validation checks whether ARP messages match known, legitimate IP–MAC bindings.
-Prevents/Impact: It prevents forged ARP replies from reaching other devices.
-
-
-
-##### Access Control Lists (ACLs) on Switches
-Type: Control
-Definition: ACLs are rule sets that permit or deny traffic based on defined criteria such as IPs and ports.
-Prevents/Impact: They restrict lateral movement within the LAN, limiting attacker access even after compromise.
-a. Restricting East–West Traffic
-Type: Control
-Definition: Restricting east–west traffic limits communication between internal devices or VLANs.
-Prevents/Impact: It prevents unauthorized access between internal systems, such as students reaching servers.
-b. Traffic Inspection Rules
-Type: Control
-Definition: ACL rules inspect traffic based on source, destination, protocol, and port number.
-Prevents/Impact: They enforce precise network security policies controlling who can communicate.
-c. ACLs vs. Firewalls
-Type: Control (Conceptual Comparison)
-Definition: ACLs control internal LAN traffic, while firewalls typically filter traffic between networks.
-Prevents/Impact: ACLs reduce internal attack spread where perimeter firewalls provide no protection.
-
-
 
 
 #### Threats 
@@ -86,6 +50,23 @@ Internal trust is the assumption that devices and users inside a network are saf
 **Physical security** protects the tangible components of a network, such as servers, switches, and wiring, with locked doors, security guards, and cameras. **Technical security** protects the network and its data through software and hardware controls, such as firewalls, ACLs, VLANs, and encryption, preventing unauthorized access to the network.
 
 ---
+
+
+## Technical & Security Development 
+
+### VM-Based Evidence
+
+TO BE COMPLETED ON TUESDAY
+
+---
+
+vulnerability–control mappings, 
+
+VLAN redesign, 
+
+and physical security plan.
+
+
 
 
 ### LAN Security Investigation
