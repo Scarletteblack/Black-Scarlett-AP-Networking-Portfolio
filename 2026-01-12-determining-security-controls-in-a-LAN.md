@@ -12,7 +12,6 @@
 
 **Violation Modes** define how a switch responds when a port security rule is broken. It limits damage by blocking traffic, alerting administrators, or disabling compromised ports.
 
-
 ##### VLAN Segmentation
 
 **Limiting Broadcast Domains** ensures broadcast traffic is separated into various and specific VLANs. This reduces unnecessary and unwanted traffic, restricting how much information devices can observe.
@@ -24,17 +23,18 @@
 **DHCP Snooping** designates ports as trusted or untrusted and blocks unauthorized devices on the network. A DHCP Snooping table is used to record valid MAC addresses as well as devices that are not allowed on the network. This prevents attackers from assigning malicious IP configurations that enable traffic interception.
 
 
-#### Threats 
+#### Five Common Internal LAN Threats
 
-**Rogue DHCP Server** is an unauthorized device that distributes incorrect IP settings to devices. It can enable man-in-the-middle attacks by redirecting traffic through a gateway that the attacker controls.
+**ARP Spoofing** is when a device pretends to be another by sending false ARP replies, exploiting the fact that LAN devices accept ARP messages without verifying identity. This can redirect traffic or intercept sensitive data.
 
+**MAC Flooding** occurs when an attacker floods a switch with fake MAC addresses, overloading its table. Switches trust MAC learning on each port by default, which can force the switch into a vulnerable “fail-open” mode.
 
-**ARP-Based Attacks** manipulate ARP messages to intercept or redirect traffic. These attacks can lead to session hijacking, data theft, and man-in-the-middle attacks.
+**Rogue DHCP Server** is when an unauthorized device provides IP addresses to clients. LAN devices automatically accept DHCP offers, which can allow attackers to control network configuration, redirect traffic, or launch man-in-the-middle attacks.
 
+**Unauthorized Plug-In Device** occurs when an unknown device connects to the network through an open port. Because LAN ports often allow devices to join without authentication, this can provide attackers with direct access to sensitive systems or introduce malware.
 
-#### Vulnerabilities 
+**Lateral Movement** is an attacker moving from one internal system to another within the LAN. Internal devices often trust each other by default, making it easier for attackers to escalate privileges and access sensitive data across the network.
 
-ARP Trust Weakness occurs because ARP lacks built-in authentication and blindly trusts received ARP replies. This vulnerability allows attackers to tamper with ARP tables and impersonate other devices.
 
 
 #### Risks Involving Flat LANs 
