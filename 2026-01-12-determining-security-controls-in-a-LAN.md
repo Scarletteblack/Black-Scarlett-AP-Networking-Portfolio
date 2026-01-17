@@ -68,29 +68,12 @@ VLAN redesign,
 
 #### Enterprise Physical Threats Analysis
 
-In a pharmaceutical research facility, there could be several physical vulnerabilities that pose serious threats. Unrestricted access to research laboratories would allow unauthorized individuals into sensitive areas, leaving the company's intellectual property exposed and allowing for contamination. Drug storage areas are often inadequately secured, making controlled substances and experimental compounds vulnerable to theft or diversion. Poor separation between public, administrative, and research spaces increases the chance of people entering areas that they do not have the authority to be in. After-hours access may be weakly monitored, enabling potential tampering or removal of materials when there is less security. Critical environmental systems, such as cleanroom controls, lack sufficient protection, putting experiments and drugs that need to be climate-controlled at risk. Lastly, data centers are not always secured properly, allowing for cyber attacks as the data is vulnerable.
+In a pharmaceutical research facility, there could be several physical vulnerabilities that pose serious threats. Unrestricted access to research laboratories would allow unauthorized individuals into sensitive areas, leaving the company's intellectual property exposed and allowing for contamination. Drug storage areas are often inadequately secured, making controlled substances and experimental compounds vulnerable to theft or diversion. Poor separation between public, administrative, and research spaces increases the chance of people entering areas that they do not have the authority to be in. After-hours access may be weakly monitored, enabling potential tampering or removal of materials when there is less security. Critical environmental systems, such as cleanroom controls, lack sufficient protection, putting experiments and drugs that need to be climate-controlled at risk. Lastly, data centers are not always secured properly, meaning that the systems can be accessed easily.
 
 
 #### Physical Security Plan - Pharmaceutical Research Facility
 
-- Describe a layered physical security strategy that includes all five categories:
-- Required Categories (Must All Be Addressed)
-1. Environmental Controls
-• Temperature, humidity, air quality, fire suppression
-2. Access Control
-• Badges, biometrics, mantraps, zoning
-3. Surveillance and Detection
-• Cameras, monitoring rooms, alarms, logging
-4. Hardware Security
-• Locked racks, secured network closets, port protection
-5. Personnel and Procedures
-• Visitor handling, escort policies, access reviews, training
-
-For each category:
-• Describe specific controls
-• Explain how they protect research, data, and network infrastructure
-• Reference ideas or examples seen in the videos
-
+A layered physical security strategy in a pharmaceutical research facility includes environmental controls, access control, surveillance, hardware security, and personnel procedures. Environmental systems maintain strict temperature, humidity, and air quality while using fire suppression to protect labs, experiments, and network equipment. Access is restricted through badges, biometrics, and zoning, ensuring only authorized personnel can enter labs, clean rooms, and server rooms. Surveillance cameras, motion detectors, alarms, and security personnel work to monitor all areas and prevent any unauthorized movement. Hardware is secured by using locks, badges, and port protection to prevent tampering with equipment and data. Personnel procedures include gated entry, visitor escorts, and regular staff trainings to reinforce security, reduce insider risk, and ensure compliance. By combining all of these security policies, research materials, sensitive data, and network infrastructure will be more secure. 
 
 #### Diagram: 
 <img width="646" height="363" alt="Screenshot 2026-01-16 at 11 16 18 PM" src="https://github.com/user-attachments/assets/cc085847-1d32-4f8c-ab6c-2c239ccbf41f" />
@@ -101,26 +84,11 @@ For each category:
 * Red outlines - high security area
 * Bold red outline - very high security area
 * Dark grey paths - secured walkways that restrict movement between rooms.
-  
 
 
 #### Risk Justification and Priority Controls
 
-Write 1–2 paragraphs explaining:
-• Which physical controls are the highest priority and why
-• How these controls reduce the likelihood and impact of:
-o Theft
-o Sabotage
-o Data compromise
-o Regulatory violations
-• How physical security supports technical controls, such as:
-o Network segmentation
-o Access control lists
-o Monitoring systems
-
-Write this as if addressing executive leadership at the company.
-
-
+In a pharmaceutical research environment, the highest priority physical controls are access control, environmental monitoring, and surveillance. Restricting entry to labs, clean rooms, and data centers with badges and biometrics ensures only authorized personnel have access to sensitive materials. Environmental monitoring and fire suppression prevent accidental or deliberate damage to samples and equipment, mitigating the risk of sabotage to servers, products, or research evidence. Surveillance, such as cameras and alarms, provides detection of unauthorized activity, reducing the likelihood and impact of theft and sabotage as well as regulatory violations. These physical controls also reinforce technical measures, such as network segmentation, access control lists, and monitoring systems, by limiting physical access to critical systems and enabling quick detection of incidents. These controls make up a layered defense that protects intellectual property, ensures data integrity, and maintains regulatory compliance.
 
 ---
 
