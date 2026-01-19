@@ -123,34 +123,9 @@ The MAC Flooding Attack was the easiest conclusion to come to and the one that t
 4. Why was Bridged mode required for this lab to work?
 5. Include evidence from commands used
 
-#### LAN Attack Path Diagram 
+#### LAN Attack Path Diagram - Unauthorized Plug-In Device
 
-1. The Devices Involved
-• VM #1 (workstation)
-• VM #2 (server-like device)
-• The switch
-• The default gateway or router
-
-2. One Internal LAN Threat
-Choose one of the following to illustrate:
-• ARP Spoofing
-• MAC Flooding
-• Rogue DHCP Server
-• Unauthorized Plug-In Device
-• Lateral Movement
-
-3. A Sequence of Events
-Use arrows or numbered steps to show how the attack unfolds. Include at least three to five
-steps that show:
-• What the attacker sends
-• How the switch responds
-• How victim devices are affected
-• Where the LAN’s trust assumptions fail
-
-
-4. Annotations
-Label each major component and step with brief, clear explanations.
-Your diagram should make sense to someone who did not complete the lab.
+<img width="732" height="406" alt="Screenshot 2026-01-19 at 3 45 07 PM" src="https://github.com/user-attachments/assets/5c6028cf-f335-4d62-b2cd-ecad6c32ae51" />
 
 
 paragraph reflection
