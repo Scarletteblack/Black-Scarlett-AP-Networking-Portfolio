@@ -125,7 +125,7 @@ The MAC Flooding Attack was the easiest conclusion to come to and the one that t
 
 #### LAN Attack Path Diagram - Unauthorized Plug-In Device
 
-<img width="732" height="406" alt="Screenshot 2026-01-19 at 3 45 07 PM" src="https://github.com/user-attachments/assets/5c6028cf-f335-4d62-b2cd-ecad6c32ae51" />
+<img alt="Screenshot 2026-01-19 at 3 45 07 PM" src="https://github.com/user-attachments/assets/5c6028cf-f335-4d62-b2cd-ecad6c32ae51" />
 
 
 paragraph reflection
