@@ -94,4 +94,9 @@ Important Rules
 • Focus on what is possible, not what is ideal
 You are reasoning from assumptions and evidence — just as a real network administrator must.
 
+<img alt="Screenshot 2026-01-20 at 2 02 12 PM" src="https://github.com/user-attachments/assets/4ee14fab-081a-4b22-803a-3e6fe2c06c58" />
 
+**Students &rarr; Server**
+**Students &rarr; Teachers**
+**Students &rarr; Administration**
+**Teachers &rarr; Servers**
