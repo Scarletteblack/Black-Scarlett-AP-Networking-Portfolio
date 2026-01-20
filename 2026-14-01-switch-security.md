@@ -47,31 +47,51 @@ switched LAN?
 #### Definitions
 
 
-- Threat &rarr;
-- Vulnerability &rarr;
-- Control &rarr;
-- Prevent vs. Mitigate &rarr;
+- Threat &rarr; any potential event, action, or circumstance—intentional or unintentional—that has the potential to cause harm to a network, system, or data
+- Vulnerability &rarr; a flaw, weakness, or loophole in a system, application, network, or even its security procedures, which a threat actor (like a hacker) can exploit to gain unauthorized access, disrupt operations, or steal data
+- Control &rarr; refers to managing network traffic, security, and resources, often through Access Control (who/what connects, Network Access Control - NAC), Controlled Access Protocols (how devices share the medium, avoiding collisions like Polling/Token Passing), and Network Control (regulating data flow for efficiency/reliability
+- Prevent vs. Mitigate &rarr; Prevent: Actions taken to decrease the likelihood that a security incident or network disruption will occur, Mitigate: Actions taken to minimize the impact or reduce the damage of a security threat that has already occurred or cannot be fully prevented
 
 
 #### Visualizing Switch Security with Packet Tracer
 
 | Senario | Evidence | Explination |
 |-----------------|------------------------------------|--------------------------------------------------------|
-| A - Flat Network (No Security Controls |                                    |         What this network allows by default
-• Why this design assumes trust between devices
-• How this could create security risk                                               |
-| B - VLAN Segmentation (Visual Separation)|                   |                                    |        How VLANs change what devices can see
-• Why VLANs reduce broadcast visibility
-• Why VLANs alone do not enforce full security                                                |
-| C - Port Security (Limiting Physical Access)|                                    |    • How port security relates to physical access
-• What type of risk it helps mitigate
-• What it cannot protect against on its own |
-| D - Conceptual View of DHCP Snooping, DAI, and ACLs|                                    |        • Which devices should be trusted?
-• Which devices should be restricted?
-• Where should the switch enforce rules?      |
+| A - Flat Network (No Security Controls |                                    | What this network allows by default? Why this design assumes trust between devices? How this could create security risk?                                               |
+| B - VLAN Segmentation (Visual Separation)|                   |                                    |  How VLANs change what devices can see? Why VLANs reduce broadcast visibility? VLANs alone do not enforce full security?                                                |
+| C - Port Security (Limiting Physical Access)|                                    | How port security relates to physical access? What type of risk it helps mitigate? What it cannot protect against on its own |
+| D - Conceptual View of DHCP Snooping, DAI, and ACLs|                                    | Which devices should be trusted? Which devices should be restricted? Where should the switch enforce rules?      |
 
 
 | VM Evidence |Vulnerability | Control | Why This Control
 Mitigates Risk |
 |---------|--------------------|----------------------------------------|---------------------------------------------|
 |        |             |                                               |   
+
+## Task C - Mini-Threat Simulation
+
+The attacker already has access to the network after the teacher opens the phishing email while connected to school network. In this situation, the network traffic itself is most directly targetted.
+
+1. What must the attacker already know or discover?
+2. Which device is most directly targeted?
+Choose one and explain why:
+• Another end device
+• A server
+• The switch
+• Network traffic itself
+3. What would legitimate users likely notice (if anything)?
+Be realistic — many attacks are quiet.
+
+4. Which of your virtual machines best resembles the attacker’s perspective?
+Choose one:
+• Ubuntu Desktop VM
+• Linux Server VM
+Explain your choice based on visibility and access, not labels.
+Important Rules
+• Do not name specific attacks
+• Do not propose fixes yet
+• Do not assume perfect security
+• Focus on what is possible, not what is ideal
+You are reasoning from assumptions and evidence — just as a real network administrator must.
+
+
