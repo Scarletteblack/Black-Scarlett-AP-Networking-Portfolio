@@ -135,13 +135,8 @@ The ARP reveals the IP to MAC address mappings of other devices on the LAN. ARP 
 
 
 #### Reflection:
-Why this attack succeed when no internal security controls are present
-• Which security control introduced in today’s reading would stop this attack
-• How that control prevents the attack from progressing
-Your explanation should connect directly to concepts from today’s reading (Port Security,
-VLAN segmentation, DHCP Snooping, Dynamic ARP Inspection, ACLs).
 
-This attack succeeds due to the switch's trust in any device that is physically plugged in. This means that the switch treats all devices as legitimate endpoints that can communicate freely with other devices, send DHCP requests, and impact broadcast traffic. Due to the lack of security checks, physical access gives devices full access to the network, which allows the attacker to spoof MAC or ARP information
+This attack succeeds due to the switch's trust in any device that is physically plugged in. This means that the switch treats all devices as legitimate endpoints that can communicate freely with other devices, send DHCP requests, and impact broadcast traffic. Due to the lack of security checks, physical access gives devices full access to the network, which allows the attacker to spoof MAC or ARP information and tamper with the local network. Port security would help mitigate the risk of this attack because it would restrict which MAC addresses are permitted on a switch port and block the port when unauthorized devices attempt to access it. If the port security was bypassed, VLAN segmentation would prevent the rogue device from communicating with restricted devices, DHCP snooping would prevent rogue DHCP responses anda stop attacks from progressing in the LAN.
 
 ---
 
@@ -150,8 +145,5 @@ This attack succeeds due to the switch's trust in any device that is physically 
 
 ### [Switched LAN Security Controls Report](https://docs.google.com/document/d/e/2PACX-1vQnK0U0c5t3UXuoHlh1Vlx0YkpLQGElYG0Mjka2JinEu0iKzmfN7vlz6MFYnahnNF1-qFzcKMkvWVVW/pub)
 
-https://docs.google.com/document/d/e/2PACX-1vQnK0U0c5t3UXuoHlh1Vlx0YkpLQGElYG0Mjka2JinEu0iKzmfN7vlz6MFYnahnNF1-qFzcKMkvWVVW/pub
-
-<iframe src="https://docs.google.com/document/d/e/2PACX-1vQnK0U0c5t3UXuoHlh1Vlx0YkpLQGElYG0Mjka2JinEu0iKzmfN7vlz6MFYnahnNF1-qFzcKMkvWVVW/pub?embedded=true"></iframe>
 
  ---
