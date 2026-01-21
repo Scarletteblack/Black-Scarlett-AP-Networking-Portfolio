@@ -2,9 +2,11 @@
 
 ## Planning & Conceptual Understanding 
 
-#### Security Controls
+---
 
-##### Port Security
+### Security Controls
+
+#### Port Security
 
 **Limiting MAC Addresses** is a form of port security that allows only a specific number of approved devices to connect, blocking any others. This mitigates the risk of attackers plugging in a rogue device and accessing the network without authorization.
 
@@ -12,18 +14,18 @@
 
 **Violation Modes** define how a switch responds when a port security rule is broken. It limits damage by blocking traffic, alerting administrators, or disabling compromised ports.
 
-##### VLAN Segmentation
+#### VLAN Segmentation
 
 **Limiting Broadcast Domains** ensures broadcast traffic is separated into various and specific VLANs. This reduces unnecessary and unwanted traffic, restricting how much information devices can observe.
 
 **Isolating Sensitive Systems** ensures that critical devices are in separate VLANs with controlled access. This prevents attackers from easily reaching sensitive systems after compromising a less secure device.
 
-##### DHCP Snooping
+#### DHCP Snooping
 
 **DHCP Snooping** designates ports as trusted or untrusted and blocks unauthorized devices on the network. A DHCP Snooping table is used to record valid MAC addresses as well as devices that are not allowed on the network. This prevents attackers from assigning malicious IP configurations that enable traffic interception.
 
 
-#### Five Common Internal LAN Threats
+### Five Common Internal LAN Threats
 
 **ARP Spoofing** is when a device pretends to be another by sending false ARP replies, exploiting the fact that LAN devices accept ARP messages without verifying identity. This can redirect traffic or intercept sensitive data.
 
@@ -37,15 +39,15 @@
 
 
 
-#### Risks Involving Flat LANs 
+### Risks Involving Flat LANs 
 
 Flat LANs pose significant security risks because all devices share the same broadcast domain, allowing attackers to easily see, intercept, or manipulate traffic from any other device. Additionally, one compromised device can spread laterally across the network, since there is no segmentation to isolate various systems.
 
-#### Internal Trust 
+### Internal Trust 
 
 Internal trust is the assumption that devices and users inside a network are safe and behave correctly without malicious intent. Its risk is that if this trust is misplaced, compromised devices or insider threats can freely access and exploit the network.
 
-#### Physical vs Technical Security
+### Physical vs Technical Security
 
 **Physical security** protects the tangible components of a network, such as servers, switches, and wiring, with locked doors, security guards, and cameras. **Technical security** protects the network and its data through software and hardware controls, such as firewalls, ACLs, VLANs, and encryption, preventing unauthorized access to the network.
 
@@ -72,7 +74,7 @@ In a pharmaceutical research facility, there could be several physical vulnerabi
 A layered physical security strategy in a pharmaceutical research facility includes environmental controls, access control, surveillance, hardware security, and personnel procedures. Environmental systems maintain strict temperature, humidity, and air quality while using fire suppression to protect labs, experiments, and network equipment. Access is restricted through badges, biometrics, and zoning, ensuring only authorized personnel can enter labs, clean rooms, and server rooms. Surveillance cameras, motion detectors, alarms, and security personnel work to monitor all areas and prevent any unauthorized movement. Hardware is secured by using locks, badges, and port protection to prevent tampering with equipment and data. Personnel procedures include gated entry, visitor escorts, and regular staff trainings to reinforce security, reduce insider risk, and ensure compliance. By combining all of these security policies, research materials, sensitive data, and network infrastructure will be more secure. 
 
 #### Diagram: 
-<img width="646" height="363" alt="Screenshot 2026-01-16 at 11 16 18 PM" src="https://github.com/user-attachments/assets/cc085847-1d32-4f8c-ab6c-2c239ccbf41f" />
+<img alt="Screenshot 2026-01-16 at 11 16 18 PM" src="https://github.com/user-attachments/assets/cc085847-1d32-4f8c-ab6c-2c239ccbf41f" />
 
 **Key:**
 * Grey areas - buildings
@@ -108,40 +110,48 @@ The MAC Flooding Attack was the easiest conclusion to come to and the one that t
 
 
 ### Appropriate Security Controls/Common Vulnerabilities Within Simple LAN
-#### Linux:
+
+The photo below displays the output of the **ip addr** and **ip route** commands, which is information about the network interface and the route the data takes.
+
 <img width="852" height="348" alt="ipaddrroute" src="https://github.com/user-attachments/assets/f3038865-9ef0-4078-9e8e-7a6356e57955" />
+
+
+The **sudo tcpdump -i enp0s1 arp** shows the various ip addresses of devices on the network. This command displays the lack of a VLAN and how accessible this data is to attain.
 <img width="1162" height="520" alt="sudotcpdump" src="https://github.com/user-attachments/assets/1449bc34-d13e-4308-a92b-66ac6cdbc2fa" />
 
-#### Ubuntu:
+The **sudo arping -c 5 -I enp0s1 10.12.17.123** command allows the first VM to be pinged from a different VM on the network, highlighting once again the unsegmented LAN. 
 <img width="1380" height="514" alt="sudoarping" src="https://github.com/user-attachments/assets/663f2016-3222-4d67-a052-07408d0d6794" />
 
 #### Reflection: 
 
-1. What information does ARP reveal about devices on a LAN?
-2. Why does ARP assume devices are trustworthy?
-3. How does this make ARP vulnerable to spoofing?
-4. Why was Bridged mode required for this lab to work?
-5. Include evidence from commands used
+The ARP reveals the IP to MAC address mappings of other devices on the LAN. ARP assumes devices are trustworthy because it accepts replies without authentication and bases its trust on the idea that all devices operating on the idea that all devices connected to the network are trustworthy. This lack of authentication makes the ARP vulnerable to spoofing, as a rogue device can send a fake ARP reply to associate its own MAC address with another device's IP address. Additionally, this lab required bridged mode so the two VMs would be on the same layer but have different IP addresses. 
 
-#### LAN Attack Path Diagram - Unauthorized Plug-In Device
+---
+
+
+### LAN Attack Path Diagram - Unauthorized Plug-In Device
 
 <img alt="Screenshot 2026-01-19 at 3 45 07 PM" src="https://github.com/user-attachments/assets/5c6028cf-f335-4d62-b2cd-ecad6c32ae51" />
 
 
-paragraph reflection
-Why this attack succeeds when no internal security controls are present
+#### Reflection:
+Why this attack succeed when no internal security controls are present
 • Which security control introduced in today’s reading would stop this attack
 • How that control prevents the attack from progressing
 Your explanation should connect directly to concepts from today’s reading (Port Security,
 VLAN segmentation, DHCP Snooping, Dynamic ARP Inspection, ACLs).
 
----
-
-
+This attack succeeds due to the switch's trust in any device that is physically plugged in. This means that the switch treats all devices as legitimate endpoints that can communicate freely with other devices, send DHCP requests, and impact broadcast traffic. Due to the lack of security checks, physical access gives devices full access to the network, which allows the attacker to spoof MAC or ARP information
 
 ---
+
+
 ## Professional Integration 
 
 ### [Switched LAN Security Controls Report](https://docs.google.com/document/d/e/2PACX-1vQnK0U0c5t3UXuoHlh1Vlx0YkpLQGElYG0Mjka2JinEu0iKzmfN7vlz6MFYnahnNF1-qFzcKMkvWVVW/pub)
+
+https://docs.google.com/document/d/e/2PACX-1vQnK0U0c5t3UXuoHlh1Vlx0YkpLQGElYG0Mjka2JinEu0iKzmfN7vlz6MFYnahnNF1-qFzcKMkvWVVW/pub
+
+<iframe src="https://docs.google.com/document/d/e/2PACX-1vQnK0U0c5t3UXuoHlh1Vlx0YkpLQGElYG0Mjka2JinEu0iKzmfN7vlz6MFYnahnNF1-qFzcKMkvWVVW/pub?embedded=true"></iframe>
 
  ---
