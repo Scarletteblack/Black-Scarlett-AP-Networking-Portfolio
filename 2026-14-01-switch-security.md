@@ -53,7 +53,7 @@ switched LAN?
 - Prevent vs. Mitigate &rarr; Prevent: Actions taken to decrease the likelihood that a security incident or network disruption will occur, Mitigate: Actions taken to minimize the impact or reduce the damage of a security threat that has already occurred or cannot be fully prevented
 
 
-#### Visualizing Switch Security with Packet Tracer
+### Visualizing Switch Security with Packet Tracer
 
 | Senario | Evidence | Explination |
 |-----------------|------------------------------------|--------------------------------------------------------|
@@ -70,7 +70,7 @@ Mitigates Risk |
 
 ## Task C - Mini-Threat Simulation
 
-The attacker already has access to the network after the teacher opens the phishing email while connected to school network. In this situation, the network traffic itself is most directly targetted.
+The attacker already has access to the network after the teacher opens the phishing email while connected to the school network. In this situation, the network traffic itself is most directly targeted.
 
 1. What must the attacker already know or discover?
 2. Which device is most directly targeted?
@@ -94,9 +94,65 @@ Important Rules
 • Focus on what is possible, not what is ideal
 You are reasoning from assumptions and evidence — just as a real network administrator must.
 
-<img alt="Screenshot 2026-01-20 at 2 02 12 PM" src="https://github.com/user-attachments/assets/4ee14fab-081a-4b22-803a-3e6fe2c06c58" />
+
+<img width="795" height="446" alt="Screenshot 2026-01-20 at 2 02 12 PM" src="https://github.com/user-attachments/assets/396c155a-0f29-4f11-9e1b-771ad8b153c7" />
+
+### Define Trust and Restrictions
 
 **Students &rarr; Server**
+
 **Students &rarr; Teachers**
+
 **Students &rarr; Administration**
+
 **Teachers &rarr; Servers**
+
+**Administration &rarr; Servers**
+
+
+Answer in 2–3 sentences on your digital portfolio:
+• Which VLAN(s) should be considered least trusted?
+• Which VLAN(s) require the most protection?
+• Where should the switch be most strict?
+
+### Control Layering
+
+Write one short paragraph explaining:
+• Why VLANs alone do not fully secure your design
+• Why DHCP Snooping is necessary in addition to VLANs
+• Why Dynamic ARP Inspection (DAI) depends on DHCP Snooping
+• Why ACLs are still needed after segmentation
+Don’t forget, use the word mitigate, not prevent.
+
+## Professional Security Rationale
+
+You have designed a VLAN-based switched LAN and made intentional decisions about trust,
+visibility, and communication. Now, you will step back from the diagram and explain your
+reasoning the way a network professional would.
+
+justify why controls must work together and to recognize what risks still remain.
+
+### Control Interaction and Dependency
+
+Explain how layered switch security controls work together in your design.
+Your explanation must address:
+• Why VLAN segmentation and DHCP Snooping must be used together to mitigate
+internal risk
+• Why Dynamic ARP Inspection (DAI) depend on DHCP Snooping to function correctly
+• Why Access Control Lists (ACLs) are still required even after VLAN segmentation is in
+place
+Use:
+• Precise security language
+• The word “mitigate”, not prevent
+• Realistic assumptions about trust and misconfiguration
+
+### Residual Risk and Detection Limits
+
+Even well-designed networks are not perfectly secure.
+Reflect on the following:
+Which internal LAN threat would be hardest for a network administrator to detect — and
+why?
+Your reflection must:
+• Reference evidence from your virtual machines
+• Describe relevant switch behavior
+• Address trust assumptions inside a switched network
