@@ -63,8 +63,7 @@ switched LAN?
 | D - Conceptual View of DHCP Snooping, DAI, and ACLs|                                    | Which devices should be trusted? Which devices should be restricted? Where should the switch enforce rules?      |
 
 
-| VM Evidence |Vulnerability | Control | Why This Control
-Mitigates Risk |
+| VM Evidence |Vulnerability | Control | Why This Control Mitigates Risk |
 |---------|--------------------|----------------------------------------|---------------------------------------------|
 |        |             |                                               |   
 
