@@ -58,7 +58,13 @@ Internal trust is the assumption that devices and users inside a network are saf
 
 ## VM-Based Evidence
 
-TO BE COMPLETED ON TUESDAY
+
+<img width="1460" height="548" alt="evidencedbased1" src="https://github.com/user-attachments/assets/76a43e04-f2a6-4368-934d-70f2b843574f" />
+
+<img width="1458" height="266" alt="eb2" src="https://github.com/user-attachments/assets/c5b1cbda-6dd8-414d-bee8-1aa51ca1cb92" />
+
+
+<img width="1454" height="216" alt="eb3" src="https://github.com/user-attachments/assets/d4f99764-903f-451d-83a6-9612b06b9f0a" />
 
 ----
 
