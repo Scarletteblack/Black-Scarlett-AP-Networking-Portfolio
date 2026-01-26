@@ -66,6 +66,8 @@ Internal trust is the assumption that devices and users inside a network are saf
 
 <img width="1454" height="216" alt="eb3" src="https://github.com/user-attachments/assets/d4f99764-903f-451d-83a6-9612b06b9f0a" />
 
+The network's subnet is 120/20 and the default gateway is 10.12.16.1 as found in the commands above . Reachable hosts such as 192.168.64.1 and a route for data packets to take is also shown. 
+
 ----
 
 ## Physical Security Controls for Network Devices and Physical Spaces
