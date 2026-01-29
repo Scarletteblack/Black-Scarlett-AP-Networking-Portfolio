@@ -65,7 +65,7 @@ switched LAN?
 
 | VM Evidence |Vulnerability | Control | Why This Control Mitigates Risk |
 |---------|--------------------|----------------------------------------|---------------------------------------------|
-|      <img width="577" height="374" alt="aandb" src="https://github.com/userattachments/assets/8984ffc7-0c81-4dcb-8e3b-d5fe6b6f84c1" />   |             |                                               |   
+|      |             |                                               |   
 |     |             |                                               |   
 |        |             |                                               |   
 |        |             |                                               |   
