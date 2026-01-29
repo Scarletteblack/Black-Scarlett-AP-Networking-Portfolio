@@ -11,7 +11,7 @@ switched LAN?
 
 ### Scenario Assessment
 
-| Scenario | Symptoms (summary) | Your Hypothesis (what you think is happening) | Your Justification (evidence and reasoning) |
+| Scenario | Symptoms| Your Hypothesis (what you think is happening) | Your Justification (evidence and reasoning) |
 |---------|--------------------|-----------------------------------------------|---------------------------------------------|
 |    A     |      Several devices report connectivity/speed issues despite being connected to the switch. The default gateway is different from what was expected.              |                                               |                                             |
 |    B    |     A switch begins to display increased CPU usage, resulting in the network performance becoming inconsistent. The switch logs reveal that hundreds of MAC addresses are appearing on a single switch port over a short window.                |                                               |                                             |
