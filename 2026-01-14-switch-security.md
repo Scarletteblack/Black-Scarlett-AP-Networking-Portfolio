@@ -2,6 +2,8 @@
 
 ## Common LAN Threats & Why Switches Are Vulnerable
 
+Inside a LAN the easiest device to 
+
 Which device inside a LAN do you believe would be the easiest for an attacker to
 compromise, and why?
 • Does being “inside” the network make a device safer or more dangerous than being
