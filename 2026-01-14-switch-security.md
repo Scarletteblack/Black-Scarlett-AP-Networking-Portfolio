@@ -1,8 +1,17 @@
 # Switch Security
 
+# Design and Planning
+
+## Definitions
+- Threat &rarr; any potential issue that has the potential to cause harm to a network, system, or data
+- Vulnerability &rarr; weakness in a system/network which can be exploited
+- Control &rarr; refers to managing network traffic, security, and resources, all helping to protect against threats
+- Prevent vs. Mitigate &rarr; Prevent: eliminate the possibility of a security incident or network disruption, Mitigate: minimizing the impact and likelyhood of a security threat 
+
+
 ## Common LAN Threats & Why Switches Are Vulnerable
 
-Inside a LAN the easiest device to 
+Inside a LAN, the easiest device to 
 
 Which device inside a LAN do you believe would be the easiest for an attacker to
 compromise, and why?
@@ -45,14 +54,6 @@ switched LAN?
 
 
 ### From Observations to Decisions
-
-#### Definitions
-
-
-- Threat &rarr; any potential event, action, or circumstance—intentional or unintentional—that has the potential to cause harm to a network, system, or data
-- Vulnerability &rarr; a flaw, weakness, or loophole in a system, application, network, or even its security procedures, which a threat actor (like a hacker) can exploit to gain unauthorized access, disrupt operations, or steal data
-- Control &rarr; refers to managing network traffic, security, and resources, often through Access Control (who/what connects, Network Access Control - NAC), Controlled Access Protocols (how devices share the medium, avoiding collisions like Polling/Token Passing), and Network Control (regulating data flow for efficiency/reliability
-- Prevent vs. Mitigate &rarr; Prevent: Actions taken to decrease the likelihood that a security incident or network disruption will occur, Mitigate: Actions taken to minimize the impact or reduce the damage of a security threat that has already occurred or cannot be fully prevented
 
 
 ### Visualizing Switch Security with Packet Tracer
