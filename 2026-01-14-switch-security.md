@@ -22,13 +22,13 @@ switched LAN?
 
 ### Scenario Assessment
 
-| Scenario | Symptoms| Your Hypothesis (what you think is happening) | Your Justification (evidence and reasoning) |
+| Scenario | Symptoms|  Hypothesis  |  Justification  |
 |---------|--------------------|-----------------------------------------------|---------------------------------------------|
-|    A     |      Several devices report connectivity/speed issues despite being connected to the switch. The default gateway is different from what was expected.              |                                               |                                             |
-|    B    |     A switch begins to display increased CPU usage, resulting in the network performance becoming inconsistent. The switch logs reveal that hundreds of MAC addresses are appearing on a single switch port over a short window.                |                                               |                                             |
-|    C    |          The switch is assigning IP addresses to devices but placing them in the wrong subnet. Some users report being unable to access the internet, while others experience DNS issues.           |                                               |                                             |
-|    D    |        An unregistered device appears on the LAN and is communicating with other hosts. The device was never approved to be on the LAN, and logs show that activity began from a wall jack in a public, lightly monitored area.              |                                               |                                             |
-|    E   |         A student workstation is recorded communicating with internal systems that should not be accessible to students. No firewall alerts were triggered, and traffic appears to be internal           |                                               |                                             |
+|    A     |      Several devices report connectivity/speed issues despite being connected to the switch. The default gateway is different from what was expected.              |      APR Spoofing     |  A rogue device is acting as the default gateway and therefore other devices on the network are experiencing latency issues and the gateway address would be different from expected   |
+|    B    |     A switch begins to display increased CPU usage, resulting in the network performance becoming inconsistent. The switch logs reveal that hundreds of MAC addresses are appearing on a single switch port over a short window.                |   MAC Flooding Attack     |  The CPU is overload with fake MAC addresses slowing down the whole network  |
+|    C    |          The switch is assigning IP addresses to devices but placing them in the wrong subnet. Some users report being unable to access the internet, while others experience DNS issues.           |   DHCP Issue |   The DHCP is assigning incorrect IP configurations to some devices revealing that while the officail DHCP seems to be functioning normally, there is some inconsistancy  |
+|    D    |        An unregistered device appears on the LAN and is communicating with other hosts. The device was never approved to be on the LAN, and logs show that activity began from a wall jack in a public, lightly monitored area.              |     Unauthorized Plug-In     | There is a lack of port security and therefore plugged in devices are implicity trusted and given access to the network  |
+|    E   |  A student workstation is recorded communicating with internal systems that should not be accessible to students. No firewall alerts were triggered, and traffic appears to be internal   |      VLAN Misconfiguration   |    The VLAN responsible for the segmentation between student devices and other internal systems did not function properly   |
 
 
 ### VM Evidence
