@@ -30,31 +30,21 @@ switched LAN?
 |    D    |        An unregistered device appears on the LAN and is communicating with other hosts. The device was never approved to be on the LAN, and logs show that activity began from a wall jack in a public, lightly monitored area.              |     Unauthorized Plug-In     | There is a lack of port security and therefore plugged in devices are implicity trusted and given access to the network  |
 |    E   |  A student workstation is recorded communicating with internal systems that should not be accessible to students. No firewall alerts were triggered, and traffic appears to be internal   |      VLAN Misconfiguration   |    The VLAN responsible for the segmentation between student devices and other internal systems did not function properly   |
 
+---
 
 ### VM Evidence
 
 <img width="1378" height="510" alt="arping" src="https://github.com/user-attachments/assets/9763e3a4-d3b9-41cd-ab91-7fcc789bcebe" />
 <img width="650" height="310" alt="tcpdump" src="https://github.com/user-attachments/assets/90ab0051-0f8e-496c-a941-fde16b11276c" />
 
-
-Written Reflection (2–3 sentences)
-Respond to the following question:
-How could an attacker misuse this information?
-Your response should:
-• Refer directly to what is visible in your screenshot(s)
-• Explain why this information is valuable, not just what it shows
+An attacker could missuse this information as ARP requests and replies are open and reveal active IPs and hostnames with associated MAC addresses. For instance, the IP 10.12.17.123 responds consistently and numerous hostnames appear in the **tcpdump arp** comand. This vulnerability allows attackers to view live hosts and target speciffic devices for various attacks, exploiting the trusting nature of this LAN.
 
 --- 
 
-### Reflection
 
-Which threat scenario from today felt the most realistic, and why?
-• What surprised you about how much information a normal device can see inside a
-switched LAN?
-
+# Technical Development
 
 ### From Observations to Decisions
-
 
 ### Visualizing Switch Security with Packet Tracer
 
@@ -68,10 +58,13 @@ switched LAN?
 
 | VM Evidence |Vulnerability | Control | Why This Control Mitigates Risk |
 |---------|--------------------|----------------------------------------|---------------------------------------------|
-|      |             |                                               |   
-|     |             |                                               |   
-|        |             |                                               |   
-|        |             |                                               |   
+|  <img alt="aandb" src="https://github.com/user-attachments/assets/cb148cb3-c870-4ace-bee6-508857ec0fc6" />  |     Flat Network        |  Adding separiations to the network | This separations prevents unuthorised device communication |
+|  <img width="504" height="217" alt="10" src="https://github.com/user-attachments/assets/4ab254d1-1556-4a2f-b2ae-664b269af779" />
+   |  No Network Segmentation  |  Adding VLANs to the Network |   The addition of separation would ensure that devices do not have access to the full network   |   
+|   <img width="667" height="540" alt="unnamed-1" src="https://github.com/user-attachments/assets/28fd1666-f108-4309-8ef1-b3474cd5f492" />
+     | Lack of Joining Restrictions |   Adding Port Security |   The addition of port security midigates the risk of rogue devices joining the network   | 
+|    <img width="719" height="720" alt="unnamed" src="https://github.com/user-attachments/assets/625d3ef0-b945-436d-bdb0-7c95a0b950c1" />
+    | Unrestricted Network  |  Adding an ACL |   This would ensure that only allowed devices (baseed on IP addresses) could access sensitive material  |   
 
 ## Task C - Mini-Threat Simulation
 
