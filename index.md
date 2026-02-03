@@ -29,7 +29,7 @@ title: Scarlett Black Digital Portfolio
 - [Why Can't These Two Computers Talk to Each Other?](2025-11-19-why-cant-these-two-computers-talk-to-each-other.md)
 - [Understanding Physical and Logical Addressing](2025-11-19-understanding-physical-and-logical-addressing.md)
 - [Determining Security Controls in a LAN](2026-01-12-determining-security-controls-in-a-LAN.md)
-- [Switch Security](2026-14-01-switch-security.md)
+- [Switch Security](2026-01-14-switch-security.md)
 
 
 
