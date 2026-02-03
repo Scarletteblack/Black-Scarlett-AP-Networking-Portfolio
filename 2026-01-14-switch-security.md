@@ -59,12 +59,9 @@ An attacker could missuse this information as ARP requests and replies are open 
 | VM Evidence |Vulnerability | Control | Why This Control Mitigates Risk |
 |---------|--------------------|----------------------------------------|---------------------------------------------|
 |  <img alt="aandb" src="https://github.com/user-attachments/assets/cb148cb3-c870-4ace-bee6-508857ec0fc6" />  |     Flat Network        |  Adding separiations to the network | This separations prevents unuthorised device communication |
-|  <img width="504" height="217" alt="10" src="https://github.com/user-attachments/assets/4ab254d1-1556-4a2f-b2ae-664b269af779" />
-   |  No Network Segmentation  |  Adding VLANs to the Network |   The addition of separation would ensure that devices do not have access to the full network   |   
-|   <img width="667" height="540" alt="unnamed-1" src="https://github.com/user-attachments/assets/28fd1666-f108-4309-8ef1-b3474cd5f492" />
-     | Lack of Joining Restrictions |   Adding Port Security |   The addition of port security midigates the risk of rogue devices joining the network   | 
-|    <img width="719" height="720" alt="unnamed" src="https://github.com/user-attachments/assets/625d3ef0-b945-436d-bdb0-7c95a0b950c1" />
-    | Unrestricted Network  |  Adding an ACL |   This would ensure that only allowed devices (baseed on IP addresses) could access sensitive material  |   
+|  <img width="504" height="217" alt="10" src="https://github.com/user-attachments/assets/4ab254d1-1556-4a2f-b2ae-664b269af779" />   |  No Network Segmentation  |  Adding VLANs to the Network |   The addition of separation would ensure that devices do not have access to the full network   |   
+|   <img width="667" height="540" alt="unnamed-1" src="https://github.com/user-attachments/assets/28fd1666-f108-4309-8ef1-b3474cd5f492" />  | Lack of Joining Restrictions |   Adding Port Security |   The addition of port security midigates the risk of rogue devices joining the network   | 
+|    <img width="719" height="720" alt="unnamed" src="https://github.com/user-attachments/assets/625d3ef0-b945-436d-bdb0-7c95a0b950c1" /> | Unrestricted Network  |  Adding an ACL |   This would ensure that only allowed devices (baseed on IP addresses) could access sensitive material  |   
 
 ## Task C - Mini-Threat Simulation
 
