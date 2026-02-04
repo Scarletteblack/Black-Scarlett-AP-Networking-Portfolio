@@ -77,20 +77,9 @@ Student VLANs and Guest VLANs should be trusted least as there are the most stud
 
 ## Professional Security Rationale
 
-You have designed a VLAN-based switched LAN and made intentional decisions about trust,
-visibility, and communication. Now, you will step back from the diagram and explain your
-reasoning the way a network professional would.
+VLANs are the primary layer of security, logically isolating traffic. Segmentation prevents unauthorized lateral movements within a network, however, it cannot prevent insider threats or port security vulnerabilities. 
 
-justify why controls must work together and to recognize what risks still remain.
+# Reflection
 
+Lateral movement tends to be the hardest internal threat to detect.
 
-### Residual Risk and Detection Limits
-
-Even well-designed networks are not perfectly secure.
-Reflect on the following:
-Which internal LAN threat would be hardest for a network administrator to detect — and
-why?
-Your reflection must:
-• Reference evidence from your virtual machines
-• Describe relevant switch behavior
-• Address trust assumptions inside a switched network
