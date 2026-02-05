@@ -18,9 +18,9 @@ Inside a LAN, endpoint devices would be the easiest to compromise as they often 
 | Scenario | Symptoms|  Hypothesis  |  Justification  |
 |---------|--------------------|-----------------------------------------------|---------------------------------------------|
 |    A     |      Several devices report connectivity/speed issues despite being connected to the switch. The default gateway is different from what was expected.              |      APR Spoofing     |  A rogue device is acting as the default gateway and therefore other devices on the network are experiencing latency issues and the gateway address would be different from expected   |
-|    B    |     A switch begins to display increased CPU usage, resulting in the network performance becoming inconsistent. The switch logs reveal that hundreds of MAC addresses are appearing on a single switch port over a short window.                |   MAC Flooding Attack     |  The CPU is overload with fake MAC addresses slowing down the whole network  |
-|    C    |          The switch is assigning IP addresses to devices but placing them in the wrong subnet. Some users report being unable to access the internet, while others experience DNS issues.           |   DHCP Issue |   The DHCP is assigning incorrect IP configurations to some devices revealing that while the officail DHCP seems to be functioning normally, there is some inconsistancy  |
-|    D    |        An unregistered device appears on the LAN and is communicating with other hosts. The device was never approved to be on the LAN, and logs show that activity began from a wall jack in a public, lightly monitored area.              |     Unauthorized Plug-In     | There is a lack of port security and therefore plugged in devices are implicity trusted and given access to the network  |
+|    B    |     A switch begins to display increased CPU usage, resulting in the network performance becoming inconsistent. The switch logs reveal that hundreds of MAC addresses are appearing on a single switch port over a short window.                |   MAC Flooding Attack     |  The CPU is overloaded with fake MAC addresses, slowing down the whole network  |
+|    C    |          The switch is assigning IP addresses to devices but placing them in the wrong subnet. Some users report being unable to access the internet, while others experience DNS issues.           |   DHCP Issue |   The DHCP is assigning incorrect IP configurations to some devices, revealing that while the official DHCP seems to be functioning normally, there is some inconsistency
+|    D    |        An unregistered device appears on the LAN and is communicating with other hosts. The device was never approved to be on the LAN, and logs show that activity began from a wall jack in a public, lightly monitored area.              |     Unauthorized Plug-In     | There is a lack of port security, and therefore plugged-in devices are implicitly trusted and given access to the network  |
 |    E   |  A student workstation is recorded communicating with internal systems that should not be accessible to students. No firewall alerts were triggered, and traffic appears to be internal   |      VLAN Misconfiguration   |    The VLAN responsible for the segmentation between student devices and other internal systems did not function properly   |
 
 ---
@@ -30,7 +30,7 @@ Inside a LAN, endpoint devices would be the easiest to compromise as they often 
 <img width="1378" height="510" alt="arping" src="https://github.com/user-attachments/assets/9763e3a4-d3b9-41cd-ab91-7fcc789bcebe" />
 <img width="650" height="310" alt="tcpdump" src="https://github.com/user-attachments/assets/90ab0051-0f8e-496c-a941-fde16b11276c" />
 
-An attacker could missuse this information as ARP requests and replies are open and reveal active IPs and hostnames with associated MAC addresses. For instance, the IP 10.12.17.123 responds consistently and numerous hostnames appear in the **tcpdump arp** comand. This vulnerability allows attackers to view live hosts and target speciffic devices for various attacks, exploiting the trusting nature of this LAN.
+An attacker could misuse this information as ARP requests and replies are open and reveal active IPs and hostnames with associated MAC addresses. For instance, the IP 10.12.17.123 responds consistently and numerous hostnames appear in the **tcpdump arp** command. This vulnerability allows attackers to view live hosts and target specific devices for various attacks, exploiting the trusting nature of this LAN.
 
 --- 
 
@@ -45,8 +45,8 @@ An attacker could missuse this information as ARP requests and replies are open 
 |---------|--------------------|----------------------------------------|---------------------------------------------|
 |  <img alt="aandb" src="https://github.com/user-attachments/assets/cb148cb3-c870-4ace-bee6-508857ec0fc6" />  |     Flat Network        |  Adding separiations to the network | This separations prevents unuthorised device communication |
 |  <img width="504" height="217" alt="10" src="https://github.com/user-attachments/assets/4ab254d1-1556-4a2f-b2ae-664b269af779" />   |  No Network Segmentation  |  Adding VLANs to the Network |   The addition of separation would ensure that devices do not have access to the full network   |   
-|   <img width="667" height="540" alt="unnamed-1" src="https://github.com/user-attachments/assets/28fd1666-f108-4309-8ef1-b3474cd5f492" />  | Lack of Joining Restrictions |   Adding Port Security |   The addition of port security midigates the risk of rogue devices joining the network   | 
-|    <img width="719" height="720" alt="unnamed" src="https://github.com/user-attachments/assets/625d3ef0-b945-436d-bdb0-7c95a0b950c1" /> | Unrestricted Network  |  Adding an ACL |   This would ensure that only allowed devices (baseed on IP addresses) could access sensitive material  |   
+|   <img width="667" height="540" alt="unnamed-1" src="https://github.com/user-attachments/assets/28fd1666-f108-4309-8ef1-b3474cd5f492" />  | Lack of Joining Restrictions |   Adding Port Security |   The addition of port security mitigates the risk of rogue devices joining the network   | 
+|    <img width="719" height="720" alt="unnamed" src="https://github.com/user-attachments/assets/625d3ef0-b945-436d-bdb0-7c95a0b950c1" /> | Unrestricted Network  |  Adding an ACL |   This would ensure that only allowed devices (based on IP addresses) could access sensitive material  |   
 
 
 # Testing and Evaluation
@@ -61,23 +61,23 @@ The attacker would need to discover the network information, like IP address, de
 
 ### Define Trust and Restrictions
 
-**Students &rarr; Server** - Restricted: Sensitive data on the servers should not be accessable to students, however, speciffic student records on the servers should be accessable to indivisual students. 
+**Students &rarr; Server** - Restricted: Sensitive data on the servers should not be accessible to students; however, specific student records on the servers should be accessible to individual students. 
 
-**Students &rarr; Teachers** - Restricted: Access should be restricted to protect teachers files and other sensitive data, however, monitered pathways of communication should be accessible to students.
+**Students &rarr; Teachers** - Restricted: Access should be restricted to protect teachers' files and other sensitive data; however, monitored pathways of communication should be accessible to students.
 
-**Students &rarr; Administration** - Denied: There is no reason that students need to comunicate directly with Administrative workstations and if there are extrenuation sercumstances in which a student might need to, they should go through monitered chanels with an advisor or counciler. 
+**Students &rarr; Administration** - Denied: There is no reason that students need to communicate directly with Administrative workstations, and if there are extenuating circumstances in which a student might need to, they should go through monitored channels with an advisor or counselor. 
 
-**Teachers &rarr; Servers** - Restricted: Teachers require access to update information stored on the servers such as grades, incedents, and notes, though they do not need full access as personal student information should not be made avalible to teachers unless deamed neccessary. 
+**Teachers &rarr; Servers** - Restricted: Teachers require access to update information stored on the servers, such as grades, incidents, and notes, though they do not need full access, as personal student information should not be made available to teachers unless deemed necessary. 
 
 **Administration &rarr; Servers** - Restricted: While administrators need more access to the servers, unrestricted access is not a good idea in order to keep all sensitive data safe. 
 
-Student VLANs and Guest VLANs should be trusted least as there are the most students thus the highest volume of devices and often lack security. Server VLANs should be the most secured as they contain private and sensitive data for everyone at the school. The switch should be strictest at the access layer where devices are connecting in order to ensure that unauthorized devices don't join the network.
+Student VLANs and Guest VLANs should be trusted least, as there are the most students, thus the highest volume of devices, and often lack security. Server VLANs should be the most secure as they contain private and sensitive data for everyone at the school. The switch should be strictest at the access layer, where devices are connecting, in order to ensure that unauthorized devices don't join the network.
 
 
 
 ## Professional Security Rationale
 
-VLANs are the primary layer of security, logically isolating traffic. Segmentation prevents unauthorized lateral movements within a network, however, it cannot prevent insider threats or port security vulnerabilities. 
+VLANs are the primary layer of security, logically isolating traffic. Segmentation prevents unauthorized lateral movements within a network; however, it cannot prevent insider threats or port security vulnerabilities. 
 
 # Reflection
 
