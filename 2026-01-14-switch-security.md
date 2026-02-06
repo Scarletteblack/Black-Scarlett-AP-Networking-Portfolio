@@ -81,5 +81,5 @@ VLANs are the primary layer of security, logically isolating traffic. Segmentati
 
 # Reflection
 
-Lateral movement tends to be the hardest internal threat to detect.
+This unit was very informative on security regarding switches and VLANs. The lesson also acted as a refresher on attacks and vulnerabilities. Additionally, it taught about access and when authorization is neccessary. In packet tracer, VLANs were set up and tested with firewalls to see success. 
 
