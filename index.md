@@ -30,6 +30,7 @@ title: Scarlett Black Digital Portfolio
 - [Understanding Physical and Logical Addressing](2025-11-19-understanding-physical-and-logical-addressing.md)
 - [Determining Security Controls in a LAN](2026-01-12-determining-security-controls-in-a-LAN.md)
 - [Switch Security](2026-01-14-switch-security.md)
+- [Routing](2026-02-19-routing.md)
 
 
 
