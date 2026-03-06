@@ -115,3 +115,8 @@ Note: IP exists on layer 3 of the OSI model. TCP and UDP exist on layer 4 of the
 
 <img width="712" height="153" alt="Screenshot 2026-03-06 at 8 26 21 AM" src="https://github.com/user-attachments/assets/d255505a-ad1a-4d25-bd90-6afb79b016c8" />
 
+Which process is using port 22 (if visible)?
+• If port 22 does not appear, what does that suggest?
+• What is the difference between:
+o A port existing
+o A port listening
