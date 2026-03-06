@@ -120,3 +120,9 @@ Which process is using port 22 (if visible)?
 • What is the difference between:
 o A port existing
 o A port listening
+
+<img width="717" height="149" alt="Screenshot 2026-03-06 at 8 30 31 AM" src="https://github.com/user-attachments/assets/4a904729-a9db-42a6-b2d1-750d7122e712" />
+
+- Status: UNCONN means that the status is unconnected
+
+- 
