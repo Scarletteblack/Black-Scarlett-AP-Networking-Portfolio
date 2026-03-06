@@ -125,4 +125,21 @@ o A port listening
 
 - Status: UNCONN means that the status is unconnected
 
-- 
+**Live TCP vs UDP Experiment**
+
+Terminal A: 
+
+<img width="257" height="56" alt="Screenshot 2026-03-06 at 8 39 38 AM" src="https://github.com/user-attachments/assets/5934d877-01ab-4ca1-bfae-34e26b10a437" />
+
+Terminal C: 
+
+<img width="713" height="168" alt="Screenshot 2026-03-06 at 8 40 51 AM" src="https://github.com/user-attachments/assets/4809a4c2-1f3f-4269-a981-ec6e7edd0575" />
+
+Terminal B: 
+
+<img width="319" height="23" alt="Screenshot 2026-03-06 at 8 43 10 AM" src="https://github.com/user-attachments/assets/925b82f3-f56d-4969-b197-36358b88f579" />
+
+Terminal C: 
+
+<img width="715" height="73" alt="Screenshot 2026-03-06 at 8 43 39 AM" src="https://github.com/user-attachments/assets/03fe07d4-beb1-4142-91c5-1a4e5cab5dce" />
+
