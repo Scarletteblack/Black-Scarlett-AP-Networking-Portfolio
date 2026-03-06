@@ -147,3 +147,14 @@ What evidence shows LISTEN?
 • What evidence shows ESTAB?
 • What changed between ss -tln and ss -tn?
 • Why does this prove TCP is connection-oriented?
+
+After ending the session and running ss -tn again there was nothing to read: 
+
+<img width="712" height="40" alt="Screenshot 2026-03-06 at 8 50 59 AM" src="https://github.com/user-attachments/assets/ad18b475-5d48-44d5-995b-f0a754328b11" />
+
+
+**UDP Experiment**
+
+Terminal A: 
+
+
