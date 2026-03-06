@@ -109,5 +109,9 @@ Note: IP exists on layer 3 of the OSI model. TCP and UDP exist on layer 4 of the
 4. Which protocol do you believe consumes more overhead? Why?
 
 
+**View Listening TCP Ports**
 
+<img width="710" height="150" alt="Screenshot 2026-03-06 at 8 24 22 AM" src="https://github.com/user-attachments/assets/cfcbde2c-e7e1-4317-8564-038d00836e73" />
+
+<img width="712" height="153" alt="Screenshot 2026-03-06 at 8 26 21 AM" src="https://github.com/user-attachments/assets/d255505a-ad1a-4d25-bd90-6afb79b016c8" />
 
