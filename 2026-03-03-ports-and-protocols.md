@@ -143,3 +143,7 @@ Terminal C:
 
 <img width="715" height="73" alt="Screenshot 2026-03-06 at 8 43 39 AM" src="https://github.com/user-attachments/assets/03fe07d4-beb1-4142-91c5-1a4e5cab5dce" />
 
+What evidence shows LISTEN?
+• What evidence shows ESTAB?
+• What changed between ss -tln and ss -tn?
+• Why does this prove TCP is connection-oriented?
