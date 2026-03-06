@@ -94,6 +94,20 @@ Note: IP exists on layer 3 of the OSI model. TCP and UDP exist on layer 4 of the
 1. What is the purpose of the checksum?
 2. If the checksum failed, would the receiver accept the data?
 3. If data were rejected, what would logically happen next?
-
+4. 
 **Observing UDP Behavior**
+
+---
+
+**TCP vs UDP — Comparing Transmission Types**
+**Predict Before Testing**
+
+
+1. What makes TCP “connection-oriented”?
+2. What makes UDP “connectionless”?
+3. If you send data using UDP and it never arrives, what happens?
+4. Which protocol do you believe consumes more overhead? Why?
+
+
+
 
