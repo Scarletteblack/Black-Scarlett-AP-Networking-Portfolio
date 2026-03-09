@@ -157,4 +157,74 @@ After ending the session and running ss -tn again there was nothing to read:
 
 Terminal A: 
 
+---
 
+**Layers 5-7**
+
+<img width="585" height="98" alt="Screenshot 2026-03-09 at 9 21 09 AM" src="https://github.com/user-attachments/assets/18fe805c-fc28-4d1d-8fa3-dc2bccd1c580" />
+
+<img width="726" height="342" alt="Screenshot 2026-03-09 at 9 21 32 AM" src="https://github.com/user-attachments/assets/36aa821a-c77d-4d1f-adb8-c51f1a0b081b" />
+
+
+1. What protocol is being used?
+2. What transport protocol is underneath it?
+3. How do you know?
+4. Which layer is responsible for interpreting “200 OK”?
+Do not define HTTP yet—just describe what you observe.
+
+<img width="696" height="358" alt="Screenshot 2026-03-09 at 9 28 05 AM" src="https://github.com/user-attachments/assets/355253e6-a197-4932-9257-9c64b5cbf915" />
+
+1. What changed?
+2. What additional protocol must now be involved?
+3. Does HTTP itself provide encryption?
+4. Where does encryption logically occur?
+
+<img width="721" height="74" alt="Screenshot 2026-03-09 at 9 30 00 AM" src="https://github.com/user-attachments/assets/8d927771-ff25-46b8-adfe-2109bf7c3de4" />
+
+
+1. What is being exchanged before data transfer?
+2. Is this Layer 4 behavior?
+3. What problem is this solving?
+4. Why must this occur before application data is sent?
+
+
+<img width="721" height="184" alt="Screenshot 2026-03-09 at 9 30 26 AM" src="https://github.com/user-attachments/assets/0f535c6e-ca29-4266-8dde-36675a902f44" />
+
+1. Is the connection still active?
+2. What state is it in?
+3. When does the session end?
+4. Who decides that?
+5. If you log into a website with a username and password:
+• Is that TCP managing your login?
+• Or is that handled at a higher layer?
+
+| Protocol | Layer | Purpose |
+|----------|-------|---------|
+| HTTP | Application Layer | Transfers web pages and resources between a web server and a browser. |
+| HTTPS | Application Layer | Secure version of HTTP that encrypts web traffic using TLS to protect data. |
+| TLS | Transport/Security Layer | Encrypts data to provide secure communication over a network. |
+| DNS | Application Layer | Translates domain names (like example.com) into IP addresses used by computers. |
+| TCP | Transport Layer | Provides reliable, ordered, and error-checked delivery of data between devices. |
+
+
+1. Why does encryption not occur at Layer 3?
+2. Why does TCP not handle user authentication?
+3. Why separate:
+• Transport reliability
+• Encryption
+• Application logic
+4. What would break if all of this were collapsed into one layer?
+
+---
+
+B. Write a structured paragraph explaining:
+• What role Layer 5 plays in managing communication state
+• What role Layer 6 plays in formatting and encryption
+• What role Layer 7 plays in application behavior
+• Why Layer 4 alone is insufficient
+
+Your explanation must:
+• Reference at least one curl command
+• Reference the TLS handshake observation
+• Distinguish between TCP reliability and TLS encryption
+Avoid vague phrases such as: “Layer 7 is the top layer.”
