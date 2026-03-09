@@ -182,13 +182,15 @@ Do not define HTTP yet—just describe what you observe.
 <img width="721" height="74" alt="Screenshot 2026-03-09 at 9 30 00 AM" src="https://github.com/user-attachments/assets/8d927771-ff25-46b8-adfe-2109bf7c3de4" />
 
 
+
 1. What is being exchanged before data transfer?
 2. Is this Layer 4 behavior?
 3. What problem is this solving?
 4. Why must this occur before application data is sent?
 
+<img width="702" height="131" alt="Screenshot 2026-03-09 at 9 46 07 AM" src="https://github.com/user-attachments/assets/5f6a9e7f-824b-4ca2-b764-6dce058d4eb0" />
 
-<img width="721" height="184" alt="Screenshot 2026-03-09 at 9 30 26 AM" src="https://github.com/user-attachments/assets/0f535c6e-ca29-4266-8dde-36675a902f44" />
+<img alt="Screenshot 2026-03-09 at 9 46 36 AM" src="https://github.com/user-attachments/assets/ddf8dd98-22be-4af5-8829-e139ef66cc0c" />
 
 1. Is the connection still active?
 2. What state is it in?
