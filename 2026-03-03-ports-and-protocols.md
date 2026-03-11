@@ -230,3 +230,55 @@ Your explanation must:
 • Reference the TLS handshake observation
 • Distinguish between TCP reliability and TLS encryption
 Avoid vague phrases such as: “Layer 7 is the top layer.”
+
+
+
+---
+
+No connectivity issues: 
+
+<img width="581" height="166" alt="Screenshot 2026-03-11 at 12 35 15 PM" src="https://github.com/user-attachments/assets/2b820845-f05c-4864-83de-d2c9dd215cd8" />
+
+
+<img width="1020" height="104" alt="Screenshot 2026-03-11 at 12 43 45 PM" src="https://github.com/user-attachments/assets/14fbc158-0ec2-4914-bcb6-255344605d5c" />
+
+
+<img width="1092" height="90" alt="Screenshot 2026-03-11 at 12 46 05 PM" src="https://github.com/user-attachments/assets/da47108a-293e-4977-a40e-c96df4dda0eb" />
+
+1. What changed at the application layer?
+2. What changed at the transport layer?
+3. What port numbers are involved?
+4. What additional protocol appears between HTTP and TCP?
+5. Is TLS replacing TCP — or operating above it?
+Your explanation must trace:
+Application → Encryption → Transport → IP
+
+<img width="420" height="463" alt="Screenshot 2026-03-11 at 12 53 55 PM" src="https://github.com/user-attachments/assets/61aeef90-cecf-4fdb-8054-9b2fad780648" />
+
+1. What port does DNS typically use?
+2. Does it usually use TCP or UDP?
+3. Why does DNS not require guaranteed delivery in most cases?
+4. When might DNS switch to TCP?
+
+<img width="906" height="296" alt="Screenshot 2026-03-11 at 12 56 11 PM" src="https://github.com/user-attachments/assets/e51553d7-cd0e-43e6-bed1-dddb5de16fdc" />
+
+
+<img width="633" height="506" alt="Screenshot 2026-03-11 at 12 59 47 PM" src="https://github.com/user-attachments/assets/66da8919-3829-4c08-b34d-0902cf2f37a6" />
+
+<img width="714" height="76" alt="Screenshot 2026-03-11 at 1 00 03 PM" src="https://github.com/user-attachments/assets/d35ec61b-59c6-4a55-9d94-4ef9d763c784" />
+
+1. What port is SSH using?
+2. What transport protocol is underneath it?
+3. Is this connection encrypted?
+4. What evidence supports your answer?
+5. Which OSI layers are involved in this remote session?
+
+<img width="713" height="75" alt="Screenshot 2026-03-11 at 1 02 41 PM" src="https://github.com/user-attachments/assets/0d9a62e6-8855-4a9f-8aab-12cd2bfac77d" />
+
+
+1. What protocol does SCP rely on?
+2. Does SCP require TCP?
+3. Is the file encrypted?
+4. What would happen if TCP reliability were removed?
+5. Which layers are involved in this transfer?
+Map the stack explicitly.
