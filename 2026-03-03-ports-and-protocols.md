@@ -282,3 +282,9 @@ Application → Encryption → Transport → IP
 4. What would happen if TCP reliability were removed?
 5. Which layers are involved in this transfer?
 Map the stack explicitly.
+
+<img width="563" height="266" alt="Screenshot 2026-03-23 at 1 29 00 PM" src="https://github.com/user-attachments/assets/f12ff49b-f672-453f-8cea-d3828b610b1e" />
+
+<img width="587" height="245" alt="Screenshot 2026-03-23 at 1 30 42 PM" src="https://github.com/user-attachments/assets/70a9ff30-c1b9-4ade-91c1-9841fca102bf" />
+
+<img width="1084" height="106" alt="Screenshot 2026-03-23 at 1 44 20 PM" src="https://github.com/user-attachments/assets/95612553-5d49-4a5e-913f-8782eae24a3c" />
