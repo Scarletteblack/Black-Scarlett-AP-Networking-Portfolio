@@ -9,9 +9,7 @@
 
 <img width="282" height="179" alt="Screenshot 2026-03-03 at 1 29 53 PM" src="https://github.com/user-attachments/assets/773c500d-9f94-4a17-90ad-a24593735ce4" />
 
-PARA - what layer is responsible for this ping, is the ping using tcp or udp, does successful ping prove tcp reliability
-
-Short PARA what are the key differences between TCP and UDP
+Ping operates at the network layer and uses the ICMP, not TCP or UDP. Because ping does not use TCP, a successful ping shows that a device is reachable and responding to ICMP requests, it does not prove TCP reliability or confirm that TCP-based services are functioning correctly. The key difference between TCP and UDP is that TCP is connection-oriented and ensures reliable data delivery. On the other hand, while UDP is connectionless and sends data without guaranteeing delivery. This makes TCP more reliable but slower, while UDP is faster and more efficient but less relaible.
 
 ---
 
@@ -21,12 +19,10 @@ Short PARA what are the key differences between TCP and UDP
 
 <img width="806" height="353" alt="Screenshot 2026-03-03 at 1 42 59 PM" src="https://github.com/user-attachments/assets/fdc2dc29-6a4f-453e-a0e6-16df11225ef0" />
 
-There were six total steps in the packet traveling to PC2 and the acknowlagement that is sent back to PC1. 
-- what flags have apeared, what flags appear in the second
-- what confirms the connection is established
+The six steps described represent the TCP three-way handshake and acknowledgment process. In the first step, the flag appears as PC1 initiates the connection, and in the second step, both flags appear as PC2 responds and acknowledges the request. The final step includes the flag from PC1, confirming the response. The connection is considered established, completing the three-way handshake and allowing data transfer to begin.
+
 
   **Acknowledgement and Ordering**
-
 
 | Packet Location | Acknowlagement Number |
 | -------- | -------- |
@@ -36,10 +32,6 @@ There were six total steps in the packet traveling to PC2 and the acknowlagement
 | Switch| 1 |
 | PC1| 1 |
 
-**TCP Header Feilds**
-
-
----
 
 **ICMP vs TCP vs UDP**
 
@@ -64,10 +56,8 @@ Note: IP exists on layer 3 of the OSI model. TCP and UDP exist on layer 4 of the
 
 ![F4404DA1-836F-41C4-BB88-93BBC2C7C5B6_4_5005_c](https://github.com/user-attachments/assets/d51babb9-af70-47b5-a530-ec84d491f311)
 
-1. What flag appears in the first packet?
-2. What flag(s) appear in the second?
-3. What flag appears in the third?
-4. After which packet does data begin?
+Before any data is sent, three steps occur. First, a packet is sent from PC1 with the **SYN** flag. Next, PC2 responds with a packet containing both **SYN and ACK** flags. Finally, PC1 sends back a packet with the **ACK** flag. The connection is confirmed as established when this final ACK is sent.
+
 
 
 **Investigation 2 — Acknowledgment and Ordering**
