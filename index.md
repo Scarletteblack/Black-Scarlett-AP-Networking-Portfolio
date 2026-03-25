@@ -31,6 +31,7 @@ title: Scarlett Black Digital Portfolio
 - [Determining Security Controls in a LAN](2026-01-12-determining-security-controls-in-a-LAN.md)
 - [Switch Security](2026-01-14-switch-security.md)
 - [Routing](2026-02-19-routing.md)
+- [Ports and Protocols](2026-03-03-ports-and-protocols.md)
 
 
 
