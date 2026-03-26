@@ -14,3 +14,54 @@
 
 <img width="1310" height="244" alt="image" src="https://github.com/user-attachments/assets/6b5b9d66-dadc-487c-b682-39438067a1cb" />
 * Their binary form is such that there is an uninterrupted string of 1s only at the beginning of the string
+
+---
+
+**PC0 --> PC1**
+<img width="285" height="177" alt="Screenshot 2026-03-26 at 8 23 47 AM" src="https://github.com/user-attachments/assets/39dbf787-524f-4fb6-a4b5-a43b759fbfe2" />
+
+**PC0 --> PC2**
+<img width="310" height="169" alt="Screenshot 2026-03-26 at 8 25 08 AM" src="https://github.com/user-attachments/assets/6921fd47-d032-4fdb-8d02-54032145fa72" />
+
+- PC0 to PC1 was sucsessful while PC0 to PC2 failed.
+
+
+After changing the subnet mask of PC2 to 255.255.0.0 the ping from PC0 to PC2 still failed:
+
+<img width="341" height="178" alt="Screenshot 2026-03-26 at 8 27 29 AM" src="https://github.com/user-attachments/assets/7923be78-8ddc-4dc4-8fec-7561b28d755b" />
+
+#### Scenario A:
+
+**PC0 --> PC1**
+
+<img width="275" height="158" alt="Screenshot 2026-03-26 at 8 31 59 AM" src="https://github.com/user-attachments/assets/1c1cf133-8c54-4839-b983-feca73658c31" />
+
+
+**PC0 --> PC2**
+
+<img width="312" height="155" alt="Screenshot 2026-03-26 at 8 32 57 AM" src="https://github.com/user-attachments/assets/64f8c596-5023-4e54-a524-1c7bc0feb1f6" />
+
+**All pings were successful**
+
+#### Scenario B:
+
+Both PCs are on the same network. The first two parts of the subnet mask are the same meaning they are on the same network. 
+
+<img width="642" height="197" alt="Screenshot 2026-03-26 at 8 36 17 AM" src="https://github.com/user-attachments/assets/5cb52ca6-3807-4ae1-bb43-c1f0b13d66d4" />
+
+<img width="631" height="187" alt="Screenshot 2026-03-26 at 8 37 10 AM" src="https://github.com/user-attachments/assets/6e76a654-883a-4324-977f-b8296451d0b3" />
+
+#### Scenario C:
+
+Similar but not the same: 
+
+<img width="638" height="189" alt="Screenshot 2026-03-26 at 8 41 24 AM" src="https://github.com/user-attachments/assets/d070dd9e-5621-4729-a91c-e955aec029a2" />
+
+<img width="637" height="193" alt="Screenshot 2026-03-26 at 8 42 19 AM" src="https://github.com/user-attachments/assets/62585d23-46be-46a4-af16-bc2512757784" />
+
+2. Written ExplanationàWrite your response in one paragraph that answers all of the
+following. Provide screenshots if they can help support your response.
+A: Explain how a device determines whether another device is on the same network.
+B: Describe a situation where two IP addresses look similar but are NOT on the same network.
+C: Describe a situation where two IP addresses look different but ARE on the same network.
+D Why is a router required when devices are on different networks?
