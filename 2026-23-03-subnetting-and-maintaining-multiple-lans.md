@@ -65,3 +65,55 @@ A: Explain how a device determines whether another device is on the same network
 B: Describe a situation where two IP addresses look similar but are NOT on the same network.
 C: Describe a situation where two IP addresses look different but ARE on the same network.
 D Why is a router required when devices are on different networks?
+
+---
+
+# Tecnical Development
+
+
+Scenario B: School Network
+You are designing a network for a school with two different user groups:
+• Teachers (mix of wired desktops and wireless laptops)
+• Students (primarily wireless laptops)
+• Access to shared files
+• Internet access
+
+
+<img width="645" height="470" alt="Screenshot 2026-03-30 at 10 26 26 AM" src="https://github.com/user-attachments/assets/9e5d2f55-945c-4cce-9b63-51f2ff80caac" />
+
+<img width="728" height="521" alt="Screenshot 2026-03-30 at 10 23 10 AM" src="https://github.com/user-attachments/assets/60c5b59f-18fa-4fee-953d-6e14e5f50dc7" />
+
+
+• All devices placed
+• All devices labeled
+• Clean, organized layout
+
+Write at least one well-developed paragraph that explains your design decisions based on
+your assigned scenario.
+Your paragraph must include:
+• Why you selected the specific devices in your network
+• Why certain parts of your network are wired and others are wireless
+• Whether you chose a peer-to-peer or client-server model, and why
+
+<img width="567" height="384" alt="Screenshot 2026-03-30 at 10 31 47 AM" src="https://github.com/user-attachments/assets/0a24e147-5f9d-4822-a766-d6bab741884b" />
+
+--- 
+
+Set ups with two LANs:
+
+<img width="667" height="361" alt="Screenshot 2026-03-30 at 10 43 03 AM" src="https://github.com/user-attachments/assets/318adf77-12d3-4fad-96ab-90e84b2627bc" />
+
+Router after configuring interfaces: 
+
+<img width="316" height="102" alt="Screenshot 2026-03-30 at 10 48 59 AM" src="https://github.com/user-attachments/assets/22578c03-afa6-486f-9fb9-10a4f153e579" />
+
+<img width="343" height="98" alt="Screenshot 2026-03-30 at 10 49 15 AM" src="https://github.com/user-attachments/assets/af792bed-1be2-4440-8d4e-742c95710bf8" />
+
+PC in LAN1:
+
+<img width="635" height="191" alt="Screenshot 2026-03-30 at 10 58 16 AM" src="https://github.com/user-attachments/assets/79727a0c-2fb0-4b11-b56d-c9aa5b2af3e6" />
+
+PC in LAN2:
+
+<img width="643" height="197" alt="Screenshot 2026-03-30 at 10 57 42 AM" src="https://github.com/user-attachments/assets/e15c7ee3-e55f-4afc-bec7-041df0486392" />
+
