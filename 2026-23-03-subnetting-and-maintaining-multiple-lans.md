@@ -117,3 +117,28 @@ PC in LAN2:
 
 <img width="643" height="197" alt="Screenshot 2026-03-30 at 10 57 42 AM" src="https://github.com/user-attachments/assets/e15c7ee3-e55f-4afc-bec7-041df0486392" />
 
+# When Networks Break: Diagnosing and Fixing Problems
+
+Initial set up: 
+
+<img width="774" height="420" alt="Screenshot 2026-03-31 at 12 24 22 PM" src="https://github.com/user-attachments/assets/fa246712-67d2-4568-a517-5f5a1e00e0f0" />
+
+As seen above, the connection between Router 7 and Switch 1 fails. 
+
+Failed ping between Switch 1 and Router 7
+<img width="347" height="76" alt="Screenshot 2026-03-31 at 12 43 48 PM" src="https://github.com/user-attachments/assets/c64bfbd1-1398-4aa2-b9a9-b1be0e9fc0a5" />
+
+On Router 7, the Port Status is not checked ON. 
+<img width="501" height="407" alt="Screenshot 2026-03-31 at 12 41 03 PM" src="https://github.com/user-attachments/assets/41d997f5-0933-4e4d-a8bd-bd505a6e742e" />
+
+
+After turning on the Port: 
+
+<img width="507" height="407" alt="Screenshot 2026-03-31 at 12 45 14 PM" src="https://github.com/user-attachments/assets/6ee72dbf-9e80-4a6c-bf42-724b3eeb8650" />
+
+
+<img width="769" height="431" alt="Screenshot 2026-03-31 at 12 45 37 PM" src="https://github.com/user-attachments/assets/a6b85916-3680-4fa9-80a8-7d9e43bb873a" />
+
+Successful Ping
+
+<img width="278" height="140" alt="Screenshot 2026-03-31 at 12 48 11 PM" src="https://github.com/user-attachments/assets/bfd5b474-fcff-4c50-b9cd-d80bfac2792b" />
