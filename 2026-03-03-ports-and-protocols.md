@@ -1,5 +1,7 @@
 # Ports and Protocols
 
+# Design and Planning
+
 **Initial setup in packet tracer**
 
 <img width="402" height="121" alt="Screenshot 2026-03-03 at 1 28 46 PM" src="https://github.com/user-attachments/assets/11448903-be67-4912-bcc3-e90aa07da861" />
@@ -40,9 +42,7 @@ Note: IP exists on layer 3 of the OSI model. TCP and UDP exist on layer 4 of the
 
 <img alt="Screenshot 2026-03-04 at 2 32 59 PM" src="https://github.com/user-attachments/assets/dd3d6d3f-d406-44f7-a790-1e4dafa92df3" />
 
-1. What layer is responsible for this ping?
-2. Is ping using TCP or UDP?
-3. Does successful ping prove TCP reliability?
+A ping operates on layer 3, the network layer. It uses ICMP to send requests and replies between devices. It does not use TCP or UDP. Instead, it relies on the ICMP. A successful ping does not prove TCP reliability, since TCP includes sequencing, acknowledgments, and retransmission as well.
 
 **Observing TCP Behavior**
 
@@ -69,34 +69,25 @@ Before any data is sent, three steps occur. First, a packet is sent from PC1 wit
 | Switch | 0 | 0 |
 | PC2 | 0 | 0 |
 
-1. Do sequence numbers increase?
-2. Do acknowledgment numbers increase?
-3. Does the sender transmit additional data before receiving acknowledgment?
-4. What does this imply about how TCP ensures delivery?
-
 **Investigation 3 — Header Fields and Error Detection**
 
 <img width="535" height="247" alt="Screenshot 2026-03-04 at 2 55 53 PM" src="https://github.com/user-attachments/assets/084943ad-fc49-4aa5-af13-fbbad6e06f5f" />
 
-- Checksum:
-- Header Length:
+Checksum: 0x0000
 
-1. What is the purpose of the checksum?
-2. If the checksum failed, would the receiver accept the data?
-3. If data were rejected, what would logically happen next?
-4. 
-**Observing UDP Behavior**
+Header Length: 20 bytes 
+
+The checksum is used to detect errors in the TCP header and data during transmission. If the checksum fails, the receiver will not accept the data. Instead, the data is discarded, and the sender will retransmit the missing data after not receiving an acknowledgment.
+
 
 ---
+# Tecnical Development
 
 **TCP vs UDP — Comparing Transmission Types**
 **Predict Before Testing**
 
+TCP is connection-oriented because it establishes a connection using a handshake and maintains it with acknowledgments and sequencing. UDP is connectionless because it sends data without setting up a connection or tracking delivery. If UDP data never arrives, nothing happens automatically since there is no acknowledgment. TCP consumes more overhead because it requires connection setup, acknowledgments, and error-checking.
 
-1. What makes TCP “connection-oriented”?
-2. What makes UDP “connectionless”?
-3. If you send data using UDP and it never arrives, what happens?
-4. Which protocol do you believe consumes more overhead? Why?
 
 
 **View Listening TCP Ports**
@@ -105,11 +96,6 @@ Before any data is sent, three steps occur. First, a packet is sent from PC1 wit
 
 <img width="712" height="153" alt="Screenshot 2026-03-06 at 8 26 21 AM" src="https://github.com/user-attachments/assets/d255505a-ad1a-4d25-bd90-6afb79b016c8" />
 
-Which process is using port 22 (if visible)?
-• If port 22 does not appear, what does that suggest?
-• What is the difference between:
-o A port existing
-o A port listening
 
 <img width="717" height="149" alt="Screenshot 2026-03-06 at 8 30 31 AM" src="https://github.com/user-attachments/assets/4a904729-a9db-42a6-b2d1-750d7122e712" />
 
@@ -133,19 +119,13 @@ Terminal C:
 
 <img width="715" height="73" alt="Screenshot 2026-03-06 at 8 43 39 AM" src="https://github.com/user-attachments/assets/03fe07d4-beb1-4142-91c5-1a4e5cab5dce" />
 
-What evidence shows LISTEN?
-• What evidence shows ESTAB?
-• What changed between ss -tln and ss -tn?
-• Why does this prove TCP is connection-oriented?
+
+The LISTEN state is shown in the ss -tln output where port 5000 appears with the state LISTEN, meaning it is waiting for a connection. The ESTAB state is shown in the ss -tn output, where both 127.0.0.1:5000 and the port are connected, indicating an active session. The change between ss -tln and ss -tn is that the first shows a listening socket with no connection, while the second shows an actual established connection between two endpoints. This proves TCP is connection-oriented because it requires a connection to be established before data can be exchanged.
 
 After ending the session and running ss -tn again there was nothing to read: 
 
 <img width="712" height="40" alt="Screenshot 2026-03-06 at 8 50 59 AM" src="https://github.com/user-attachments/assets/ad18b475-5d48-44d5-995b-f0a754328b11" />
 
-
-**UDP Experiment**
-
-Terminal A: 
 
 ---
 
@@ -155,40 +135,24 @@ Terminal A:
 
 <img width="726" height="342" alt="Screenshot 2026-03-09 at 9 21 32 AM" src="https://github.com/user-attachments/assets/36aa821a-c77d-4d1f-adb8-c51f1a0b081b" />
 
+The command uses HTTP/1.1 protocol identified by the header. It runs TCP at the transport layer to ensure data arrives reliably and in the correct order. While the network moves the data, the application layer is responsible for interpreting specific status codes like "200 OK," serving as the final translator for the software.
 
-1. What protocol is being used?
-2. What transport protocol is underneath it?
-3. How do you know?
-4. Which layer is responsible for interpreting “200 OK”?
-Do not define HTTP yet—just describe what you observe.
 
 <img width="696" height="358" alt="Screenshot 2026-03-09 at 9 28 05 AM" src="https://github.com/user-attachments/assets/355253e6-a197-4932-9257-9c64b5cbf915" />
 
-1. What changed?
-2. What additional protocol must now be involved?
-3. Does HTTP itself provide encryption?
-4. Where does encryption logically occur?
+Switching to https introduces HTTP/2 and the TLS protocol. Since HTTP is naturally plain-text, encryption must occur at a higher "presentation" sub-layer to secure the data before it hits the wire. The TLS handshake seen in the output establishes trust, a mandatory step that must finish before any actual application data can be safely sent.
+
 
 <img width="721" height="74" alt="Screenshot 2026-03-09 at 9 30 00 AM" src="https://github.com/user-attachments/assets/8d927771-ff25-46b8-adfe-2109bf7c3de4" />
 
+The ss -tn command monitors the transport layer. This indicates the  current attempt at a TCP three-way handshake. The application or the OS decides when to end this session, but the underlying TCP layer remains indifferent to the data.
 
-
-1. What is being exchanged before data transfer?
-2. Is this Layer 4 behavior?
-3. What problem is this solving?
-4. Why must this occur before application data is sent?
 
 <img width="702" height="131" alt="Screenshot 2026-03-09 at 9 46 07 AM" src="https://github.com/user-attachments/assets/5f6a9e7f-824b-4ca2-b764-6dce058d4eb0" />
 
 <img alt="Screenshot 2026-03-09 at 9 46 36 AM" src="https://github.com/user-attachments/assets/ddf8dd98-22be-4af5-8829-e139ef66cc0c" />
 
-1. Is the connection still active?
-2. What state is it in?
-3. When does the session end?
-4. Who decides that?
-5. If you log into a website with a username and password:
-• Is that TCP managing your login?
-• Or is that handled at a higher layer?
+
 
 | Protocol | Layer | Purpose |
 |----------|-------|---------|
@@ -198,28 +162,9 @@ Do not define HTTP yet—just describe what you observe.
 | DNS | Application Layer | Translates domain names (like example.com) into IP addresses used by computers. |
 | TCP | Transport Layer | Provides reliable, ordered, and error-checked delivery of data between devices. |
 
-
-1. Why does encryption not occur at Layer 3?
-2. Why does TCP not handle user authentication?
-3. Why separate:
-• Transport reliability
-• Encryption
-• Application logic
-4. What would break if all of this were collapsed into one layer?
-
 ---
 
-B. Write a structured paragraph explaining:
-• What role Layer 5 plays in managing communication state
-• What role Layer 6 plays in formatting and encryption
-• What role Layer 7 plays in application behavior
-• Why Layer 4 alone is insufficient
-
-Your explanation must:
-• Reference at least one curl command
-• Reference the TLS handshake observation
-• Distinguish between TCP reliability and TLS encryption
-Avoid vague phrases such as: “Layer 7 is the top layer.”
+Layer 4 (Transport) is insufficient because it only ensures TCP reliability—the technical delivery of packets—without understanding what the data is or if it is secure. In contrast, Layer 5 (Session) manages the communication state, determining when a dialogue begins and ends beyond the simple packet-level handshake. Layer 6 (Presentation) handles formatting and the TLS handshake observed in the OpenSSL output; this is where TLS encryption occurs to transform plain text into a secure format that TCP then carries. Finally, Layer 7 (Application) governs behavior by interpreting specific instructions, such as the "301 Moved Permanently" status seen in the curl command. This modularity allows the network to reliably move data (Layer 4) while the upper layers ensure it is private (Layer 6) and meaningful to the user (Layer 7).
 
 
 
