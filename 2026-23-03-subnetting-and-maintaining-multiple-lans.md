@@ -59,12 +59,7 @@ Similar but not the same:
 
 <img width="637" height="193" alt="Screenshot 2026-03-26 at 8 42 19 AM" src="https://github.com/user-attachments/assets/62585d23-46be-46a4-af16-bc2512757784" />
 
-2. Written ExplanationàWrite your response in one paragraph that answers all of the
-following. Provide screenshots if they can help support your response.
-A: Explain how a device determines whether another device is on the same network.
-B: Describe a situation where two IP addresses look similar but are NOT on the same network.
-C: Describe a situation where two IP addresses look different but ARE on the same network.
-D Why is a router required when devices are on different networks?
+A device determines if another device is on the same network by using its subnet mask to compare the network portion of both IP addresses. If they match, the devices are on the same network. Two IPs can look similar but be on different networks, such as 192.168.1.10 and 192.168.1.130 with a subnet mask of 255.255.255.192, which separates them into different ranges. Two IPs can look different but be on the same network, like 10.0.1.5 and 10.0.2.8 with a 255.255.0.0 mask, which groups them together. A router is needed when devices are on different networks because it directs data between those networks and ensures it reaches the correct destination.
 
 ---
 
@@ -72,28 +67,15 @@ D Why is a router required when devices are on different networks?
 
 
 Scenario B: School Network
-You are designing a network for a school with two different user groups:
+Designing a network for a school with two different user groups:
 • Teachers (mix of wired desktops and wireless laptops)
 • Students (primarily wireless laptops)
 • Access to shared files
 • Internet access
 
-
-<img width="645" height="470" alt="Screenshot 2026-03-30 at 10 26 26 AM" src="https://github.com/user-attachments/assets/9e5d2f55-945c-4cce-9b63-51f2ff80caac" />
-
 <img width="728" height="521" alt="Screenshot 2026-03-30 at 10 23 10 AM" src="https://github.com/user-attachments/assets/60c5b59f-18fa-4fee-953d-6e14e5f50dc7" />
 
-
-• All devices placed
-• All devices labeled
-• Clean, organized layout
-
-Write at least one well-developed paragraph that explains your design decisions based on
-your assigned scenario.
-Your paragraph must include:
-• Why you selected the specific devices in your network
-• Why certain parts of your network are wired and others are wireless
-• Whether you chose a peer-to-peer or client-server model, and why
+The network is designed using a router, switch, access point, server, and multiple end point devices. The switch connects the office PCs and access point, allowing reliable and high-speed communication within the local network, while the router is used to connect different networks and manage traffic between them, including access to the server. A dedicated server is included to support a client-server model, which centralizes file storage and management, improving security and making it easier to control access compared to a peer-to-peer setup. Wired connections are used for the office PCs and server to provide stable, fast, and consistent performance for critical tasks, while wireless connectivity is provided through the access point for the laptop to allow mobility and convenience without needing physical cables. 
 
 <img width="567" height="384" alt="Screenshot 2026-03-30 at 10 31 47 AM" src="https://github.com/user-attachments/assets/0a24e147-5f9d-4822-a766-d6bab741884b" />
 
