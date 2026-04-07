@@ -164,7 +164,7 @@ The ss -tn command monitors the transport layer. This indicates the  current att
 
 ---
 
-Layer 4 (Transport) is insufficient because it only ensures TCP reliability—the technical delivery of packets—without understanding what the data is or if it is secure. In contrast, Layer 5 (Session) manages the communication state, determining when a dialogue begins and ends beyond the simple packet-level handshake. Layer 6 (Presentation) handles formatting and the TLS handshake observed in the OpenSSL output; this is where TLS encryption occurs to transform plain text into a secure format that TCP then carries. Finally, Layer 7 (Application) governs behavior by interpreting specific instructions, such as the "301 Moved Permanently" status seen in the curl command. This modularity allows the network to reliably move data (Layer 4) while the upper layers ensure it is private (Layer 6) and meaningful to the user (Layer 7).
+The transport layer is insufficient because it only ensures TCP reliability—the technical delivery of packets—without understanding what the data is or if it is secure. In contrast, Layer 5 manages the communication state, determining when a dialogue begins and ends beyond the simple packet-level handshake. Layer 6 handles formatting and the TLS handshake observed in the OpenSSL output; this is where TLS encryption occurs to transform plain text into a secure format that TCP then carries. Finally, the application layer governs behavior by interpreting specific instructions. This allows the network to reliably move data layer 4 while the upper layers ensure it is private layer 6 and meaningful to the user layer 7.
 
 
 
@@ -180,20 +180,11 @@ No connectivity issues:
 
 <img width="1092" height="90" alt="Screenshot 2026-03-11 at 12 46 05 PM" src="https://github.com/user-attachments/assets/da47108a-293e-4977-a40e-c96df4dda0eb" />
 
-1. What changed at the application layer?
-2. What changed at the transport layer?
-3. What port numbers are involved?
-4. What additional protocol appears between HTTP and TCP?
-5. Is TLS replacing TCP — or operating above it?
-Your explanation must trace:
-Application → Encryption → Transport → IP
+At the application layer, traffic changes from HTTP to HTTPS, meaning data is now encrypted instead of sent in plain text. At the transport layer, TCP is still used, but with added overhead from the TLS handshake. The connections use port 80 for HTTP and port 443 for HTTPS. The additional protocol that appears is TLS, which sits between HTTP and TCP to provide encryption. TLS does not replace TCP. It operates above it, so the full path becomes Application (HTTP) → Encryption (TLS) → Transport (TCP) → IP.
 
 <img width="420" height="463" alt="Screenshot 2026-03-11 at 12 53 55 PM" src="https://github.com/user-attachments/assets/61aeef90-cecf-4fdb-8054-9b2fad780648" />
 
-1. What port does DNS typically use?
-2. Does it usually use TCP or UDP?
-3. Why does DNS not require guaranteed delivery in most cases?
-4. When might DNS switch to TCP?
+DNS typically uses port 53 and usually operates over UDP because it is fast and has low overhead. It does not require guaranteed delivery in most cases since DNS queries are small, quick lookups that can simply be retried if a response is lost. However, DNS may switch to TCP when responses are too large for UDP (such as zone transfers or DNSSEC responses) or when reliability becomes necessary.
 
 <img width="906" height="296" alt="Screenshot 2026-03-11 at 12 56 11 PM" src="https://github.com/user-attachments/assets/e51553d7-cd0e-43e6-bed1-dddb5de16fdc" />
 
@@ -202,11 +193,7 @@ Application → Encryption → Transport → IP
 
 <img width="714" height="76" alt="Screenshot 2026-03-11 at 1 00 03 PM" src="https://github.com/user-attachments/assets/d35ec61b-59c6-4a55-9d94-4ef9d763c784" />
 
-1. What port is SSH using?
-2. What transport protocol is underneath it?
-3. Is this connection encrypted?
-4. What evidence supports your answer?
-5. Which OSI layers are involved in this remote session?
+SSH is using port 22, as shown by the connection 127.0.0.1:22. It runs over the TCP transport protocol, which is indicated by the ss -tn command (the -t shows TCP connections). Yes, the connection is encrypted, since SSH automatically encrypts all data during the session. Evidence of this includes the SSH key fingerprint verification and the secure login process requiring authentication. The OSI layers involved are the application layer (SSH), transport layer (TCP), and network layer (IP), working together to establish and maintain the remote session.
 
 <img width="713" height="75" alt="Screenshot 2026-03-11 at 1 02 41 PM" src="https://github.com/user-attachments/assets/0d9a62e6-8855-4a9f-8aab-12cd2bfac77d" />
 
