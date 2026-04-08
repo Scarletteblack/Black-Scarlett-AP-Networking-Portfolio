@@ -198,13 +198,6 @@ SSH is using port 22, as shown by the connection 127.0.0.1:22. It runs over the 
 <img width="713" height="75" alt="Screenshot 2026-03-11 at 1 02 41 PM" src="https://github.com/user-attachments/assets/0d9a62e6-8855-4a9f-8aab-12cd2bfac77d" />
 
 
-1. What protocol does SCP rely on?
-2. Does SCP require TCP?
-3. Is the file encrypted?
-4. What would happen if TCP reliability were removed?
-5. Which layers are involved in this transfer?
-Map the stack explicitly.
-
 <img width="563" height="266" alt="Screenshot 2026-03-23 at 1 29 00 PM" src="https://github.com/user-attachments/assets/f12ff49b-f672-453f-8cea-d3828b610b1e" />
 
 <img width="587" height="245" alt="Screenshot 2026-03-23 at 1 30 42 PM" src="https://github.com/user-attachments/assets/70a9ff30-c1b9-4ade-91c1-9841fca102bf" />
