@@ -32,6 +32,7 @@ title: Scarlett Black Digital Portfolio
 - [Switch Security](2026-01-14-switch-security.md)
 - [Routing](2026-02-19-routing.md)
 - [Ports and Protocols](2026-03-03-ports-and-protocols.md)
+- [Subnetting and Maintaining Multiple LANs](2026-23-03-subnetting-and-maintaining-multiple-lans.md)
 
 
 
