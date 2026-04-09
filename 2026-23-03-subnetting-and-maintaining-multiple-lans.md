@@ -17,10 +17,10 @@
 
 ---
 
-**PC0 --> PC1**
+**PC0 &rarr; PC1**
 <img width="285" height="177" alt="Screenshot 2026-03-26 at 8 23 47 AM" src="https://github.com/user-attachments/assets/39dbf787-524f-4fb6-a4b5-a43b759fbfe2" />
 
-**PC0 --> PC2**
+**PC0 &rarr; PC2**
 <img width="310" height="169" alt="Screenshot 2026-03-26 at 8 25 08 AM" src="https://github.com/user-attachments/assets/6921fd47-d032-4fdb-8d02-54032145fa72" />
 
 - PC0 to PC1 was sucsessful while PC0 to PC2 failed.
@@ -32,12 +32,12 @@ After changing the subnet mask of PC2 to 255.255.0.0 the ping from PC0 to PC2 st
 
 #### Scenario A:
 
-**PC0 --> PC1**
+**PC0 &rarr; PC1**
 
 <img width="275" height="158" alt="Screenshot 2026-03-26 at 8 31 59 AM" src="https://github.com/user-attachments/assets/1c1cf133-8c54-4839-b983-feca73658c31" />
 
 
-**PC0 --> PC2**
+**PC0 &rarr; PC2**
 
 <img width="312" height="155" alt="Screenshot 2026-03-26 at 8 32 57 AM" src="https://github.com/user-attachments/assets/64f8c596-5023-4e54-a524-1c7bc0feb1f6" />
 
